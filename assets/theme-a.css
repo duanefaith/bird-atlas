@@ -1,0 +1,21 @@
+/* A 自然图鉴：米白纸张、衬线标题、古典博物志 */
+body.theme-a{background:#f4efe3;color:#3a2e22;font:15px/1.7 "Noto Serif SC","Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong",serif;--imgbg:#e9e1cf}
+.theme-a a{color:#7a4b1d}
+.theme-a .hero{background:#efe7d4;border-bottom:3px double #8a6d47}
+.theme-a .hero h1{font-size:40px;letter-spacing:.12em;font-weight:700}.theme-a .kicker{color:#8a6d47}.theme-a .sub{color:#6b5a45}
+.theme-a .stats b{color:#7a4b1d;font-weight:700}
+.theme-a .filter{background:rgba(244,239,227,.96);border-bottom:1px solid #cbb994}.theme-a .filter button{background:#fbf8f0;color:#3a2e22}
+.theme-a .filter button.all.on{background:#5b4630;color:#fff}
+.theme-a h2{font-size:24px;letter-spacing:.06em;border-bottom:1px solid #b9a37d;padding-bottom:4px;margin:34px 0 14px}
+.theme-a h2 small{font-size:14px;font-weight:400;color:#8a6d47;font-style:italic;letter-spacing:0}
+.theme-a .oh::before{content:"❦ ";color:#a07c4c}
+.theme-a .tw{background:#fbf8f0;border:1px solid #cbb994;box-shadow:0 1px 0 #e0d4b8}
+.theme-a th{background:#e6dcc5;font-weight:700;border-bottom:2px solid #8a6d47;border-right:1px solid #d6c8a8}
+.theme-a td{border-bottom:1px solid #e0d4b8;border-right:1px solid #ece3cf}
+.theme-a td.fam{background:#efe7d4;font-weight:700;color:#5b4630}.theme-a td.fam i{font-weight:400}
+.theme-a td.nm b{font-size:17px}.theme-a td.nm i,.theme-a .card i{color:#6b5a45}
+.theme-a figure img{border:1px solid #cbb994;padding:3px;background:#fff}
+.theme-a .badge{border-radius:2px;font-family:Georgia,serif}
+.theme-a .unrec{background:#fbf8f0;border:1px solid #e0d4b8;padding:8px}
+.theme-a footer{border-top:3px double #8a6d47;margin-top:20px}
+@media (max-width:700px){.theme-a .hero h1{font-size:28px}.theme-a table.sp tr{border-bottom:1px solid #cbb994}}

@@ -1,0 +1,21 @@
+/* C 暗色摄影：深色背景、照片优先、作品集风 */
+body.theme-c{background:#0d0e10;color:#e6e4df;font:15px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans CJK SC",sans-serif;--imgbg:#17181b;--cardmin:400px;--gap:28px}
+.theme-c a{color:#e0b66c}
+.theme-c .hero{background:linear-gradient(180deg,#000 0%,#0d0e10 100%);border-bottom:1px solid #222}
+.theme-c .hero h1{font-size:44px;font-weight:300;letter-spacing:.18em}.theme-c .kicker{color:#e0b66c}.theme-c .sub{color:#9a978f}
+.theme-c .stats b{font-weight:300;color:#fff}.theme-c .stats span{color:#8a877f}
+.theme-c .filter{background:rgba(13,14,16,.94);border-bottom:1px solid #222}
+.theme-c .filter button{background:#16171a;color:#ddd}.theme-c .filter button.all{border-color:#444}.theme-c .filter button.all.on{background:#e6e4df;color:#111}
+.theme-c .intro{color:#bdb9b0;font-size:14px}
+.theme-c h2{font-size:26px;font-weight:300;letter-spacing:.12em;margin:48px 0 4px}.theme-c h2 small{font-size:13px;letter-spacing:.05em;color:#8a877f}
+.theme-c .intro h2{font-size:17px;margin:20px 0 4px}
+.theme-c .family h3{font-size:14px;font-weight:400;color:#9a978f;letter-spacing:.1em;border-bottom:1px solid #222;padding-bottom:6px}
+.theme-c .card{background:transparent}
+.theme-c .card .figs{gap:4px}.theme-c .card .figs figure img{aspect-ratio:3/2}
+.theme-c figcaption{color:#77746d}
+.theme-c .card .info{padding:10px 2px 0;border-left:3px solid var(--ic);padding-left:12px;margin-top:8px}
+.theme-c .card h4{font-weight:500;font-size:20px;letter-spacing:.04em}.theme-c .card .en{color:#9a978f}.theme-c .card .meta{color:#8a877f}
+.theme-c .badge{background:transparent!important;color:#eee;border:1.5px solid;border-left-width:6px;border-radius:3px}
+.theme-c .unrec{background:#141518;padding:8px;border-radius:4px}.theme-c .conf{color:#ff8a80}
+.theme-c footer{color:#77746d}
+@media (max-width:700px){.theme-c .hero h1{font-size:30px;letter-spacing:.1em}}

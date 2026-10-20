@@ -1,0 +1,57 @@
+/* 三套风格共用：布局骨架、IUCN 徽章、筛选栏、灯箱、竖图不裁切 */
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;line-height:1.6;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+main{max-width:1320px;margin:0 auto;padding:0 18px 48px}
+.hero .hin{max-width:1320px;margin:0 auto;padding:36px 18px 22px}.hero h1{margin:0}.kicker{margin:0 0 4px;letter-spacing:.25em;font-size:12px;opacity:.7}
+.stats{display:flex;flex-wrap:wrap;gap:22px;margin-top:16px}.stats div{display:flex;align-items:baseline;gap:4px}.stats b{font-size:28px}
+.filter{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 18px}
+.filter .fl{font-weight:600;margin-right:4px}.filter button{font:inherit;font-size:13px;padding:4px 11px;border-radius:999px;cursor:pointer;border:1px solid transparent}
+.filter button i{font-style:normal;opacity:.75;margin-left:2px}.filter button:disabled{opacity:.35;cursor:not-allowed}
+.filter .shown{margin-left:auto;font-size:14px}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:6px 36px}.intro .wide{grid-column:1/-1}.intro ul{padding-left:20px;margin:6px 0}
+.legend{display:flex;flex-wrap:wrap;gap:8px}.toc{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:14px}
+:root{--cr:rgb(251,165,160);--en:rgb(255,198,140);--vu:rgb(255,236,140);--nt:rgb(196,232,180);--lc:rgb(226,226,226);--dd:rgb(190,220,250);
+ --crs:#d93a32;--ens:#ec7a1c;--vus:#d9aa00;--nts:#4f9a3c;--lcs:#9a9a9a;--dds:#3d8fdc}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:1px 8px;border-radius:4px;font-weight:700;font-size:13px;white-space:nowrap;color:#222;border-left:5px solid}
+.badge em{font-style:normal;font-weight:400;font-size:12px}
+.b-cr{background:var(--cr);border-color:var(--crs)}.b-en{background:var(--en);border-color:var(--ens)}.b-vu{background:var(--vu);border-color:var(--vus)}
+.b-nt{background:var(--nt);border-color:var(--nts)}.b-lc{background:var(--lc);border-color:var(--lcs)}.b-dd{background:var(--dd);border-color:var(--dds)}
+.k-cr{--kc:var(--crs)}.k-en{--kc:var(--ens)}.k-vu{--kc:var(--vus)}.k-nt{--kc:var(--nts)}.k-lc{--kc:var(--lcs)}.k-dd{--kc:var(--dds)}
+.filter button.k{border-color:var(--kc)}.filter button.k.on{background:var(--kc);color:#fff}
+.i-cr{--ic:var(--crs)}.i-en{--ic:var(--ens)}.i-vu{--ic:var(--vus)}.i-nt{--ic:var(--nts)}.i-lc{--ic:var(--lcs)}.i-dd{--ic:var(--dds)}
+/* 照片：完整显示，不裁切（object-fit:contain + 中性底色） */
+figure{margin:0}figure img{display:block;width:100%;object-fit:contain;cursor:zoom-in;background:var(--imgbg,#e8e8e8)}
+figcaption{font-size:12px;word-break:break-all;opacity:.8}
+/* 表格模式 */
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%}th,td{vertical-align:middle;text-align:left;padding:8px 10px}
+td.num{text-align:center}td.nm{min-width:170px;border-left:6px solid var(--ic)}
+table.sp .figs{display:flex;flex-wrap:wrap;gap:8px}table.sp figure{width:210px}table.sp figure img{height:158px}
+/* 卡片模式 */
+.family h3{margin:22px 0 10px}.family h3 i{font-weight:400;font-size:.8em;opacity:.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--cardmin,320px),1fr));gap:var(--gap,18px)}
+.card .figs{display:grid;grid-template-columns:1fr 1fr;gap:3px}.card .figs figure:first-child{grid-column:1/-1}
+.card .figs figure img{aspect-ratio:4/3}.card .figs.n2 figure:nth-child(2){grid-column:1/-1}
+.card .figs figcaption{padding:1px 6px}
+.card .info{padding:10px 14px 14px}.card .tt{display:flex;justify-content:space-between;align-items:center;gap:8px}.card h4{margin:0;font-size:19px}
+.card p{margin:4px 0}.card .en{font-size:13px;opacity:.85}.card .meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;opacity:.8}
+/* 未识别 */
+.ugrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}.unrec{display:flex;gap:10px;align-items:flex-start}
+.thumb{position:relative;display:inline-block;line-height:0;flex:none}.thumb img{width:150px;height:auto}
+.bx{position:absolute;border:2px solid #ff1744;box-shadow:0 0 0 1px #fff;pointer-events:none}
+.ui{font-size:13px}.conf{color:#c62828;font-weight:700}.mono{font-family:ui-monospace,Menlo,monospace;font-size:11px;opacity:.75;word-break:break-all}
+footer{text-align:center;font-size:13px;padding:24px;opacity:.75}
+/* 灯箱：完整显示 */
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:99;display:flex;align-items:center;justify-content:center;cursor:zoom-out}
+.lbin{max-width:96vw;max-height:94vh;text-align:center}.lbimg{position:relative;display:inline-block;line-height:0}
+.lbimg img{max-width:96vw;max-height:86vh;width:auto;height:auto;object-fit:contain}.lbcap{color:#eee;margin-top:6px;font-size:14px}
+@media (max-width:700px){
+ main{padding:0 10px 36px}.hero .hin{padding:22px 12px 14px}.stats b{font-size:22px}.intro{grid-template-columns:1fr}
+ .filter{padding:6px 10px}.filter .shown{margin-left:0;width:100%}
+ table.sp thead{display:none}table.sp,table.sp tbody{display:block}
+ table.sp tr{display:grid;grid-template-columns:1fr auto auto}table.sp td{border:0!important}
+ table.sp td.fam{grid-column:1/-1}table.sp td.nm{grid-column:1/-1;min-width:0}table.sp td.ph{grid-column:1/-1}
+ table.sp td.num,table.sp td.cl{font-size:12px}table.sp td.num[data-l]::before,table.sp td.cl[data-l]::before{content:attr(data-l) "：";opacity:.7}
+ table.sp .figs{display:grid;grid-template-columns:1fr 1fr}table.sp figure{width:auto}table.sp figure img{height:auto;aspect-ratio:4/3}
+ .grid{grid-template-columns:1fr}.thumb img{width:120px}
+}
