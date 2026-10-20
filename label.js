@@ -3,7 +3,7 @@ var KEY='bird-atlas-label-v1',D,ST=load(),SP={},byLabel={};
 function load(){try{return JSON.parse(localStorage.getItem(KEY))||{items:{},picks:{}}}catch(e){return{items:{},picks:{}}}}
 function save(){localStorage.setItem(KEY,JSON.stringify(ST));stat()}
 function h(t,a,c){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else if(k==='html')e.innerHTML=a[k];else e.setAttribute(k,a[k])}(c||[]).forEach(function(x){e.appendChild(typeof x==='string'?document.createTextNode(x):x)});return e}
-function T(n){return 'img/t/'+encodeURIComponent(n)}function L(n){return 'img/l/'+encodeURIComponent(n)}
+function T(n){return 'img/t/'+encodeURIComponent(n)}function T2(n){return 'img/t2/'+encodeURIComponent(n)}function L(n){return 'img/l/'+encodeURIComponent(n)}
 fetch('data/label.json?v=e27cce1a0d').then(function(r){return r.json()}).then(function(d){D=d;init()});
 function lab(s){return s[1]+(s[2]?'（'+s[2]+'）':'')+' #'+s[0]}
 function init(){
@@ -19,7 +19,7 @@ function desc(it){if(!it)return'';if(it.action==='accept')return'✔ 采纳：'+
 function renderBoxes(){var box=document.getElementById('boxes');
  D.boxes.forEach(function(b){
   var bx=h('span',{'class':'bx',style:'left:'+b.bp[0]+'%;top:'+b.bp[1]+'%;width:'+b.bp[2]+'%;height:'+b.bp[3]+'%'});
-  var img=h('img',{src:T(b.name),loading:'lazy',alt:''});img.onclick=function(){openLB(L(b.name),b.name+' 框'+b.bi+' · '+b.zh+' '+b.conf.toFixed(1)+'%',b.bp.join(','))};
+  var img=h('img',{src:T(b.name),srcset:T(b.name)+' 1x, '+T2(b.name)+' 2x',loading:'lazy',alt:''});img.onclick=function(){openLB(L(b.name),b.name+' 框'+b.bi+' · '+b.zh+' '+b.conf.toFixed(1)+'%',b.bp.join(','))};
   var res=h('div',{'class':'res'});
   var bA=h('button',{text:'采纳「'+b.zh+'」'}),bR=h('button',{'class':'rej',text:'不是鸟 / 忽略'}),bC=h('button',{'class':'chg',text:'改为…'});
   var inp=h('input',{list:'splist',placeholder:'输入中文名搜索，或手写名称'}),ok=h('button',{text:'确定'}),row=h('div',{'class':'chgrow',hidden:''},[inp,ok]);
@@ -45,7 +45,7 @@ function renderPicks(){var root=document.getElementById('picks');
   d.addEventListener('toggle',function(){if(!d.open||built)return;built=true;var g=h('div',{'class':'pg'});var sel=(ST.picks[s.id]||[]).slice();
    var rs=h('button',{text:'恢复当前推荐'});rs.onclick=function(){delete ST.picks[s.id];save();sel=[];draw();sum()};
    function draw(){g.innerHTML='';var show=sel.length?sel:s.picks;s.all.forEach(function(n){var i=show.indexOf(n);
-     var it=h('div',{'class':'pi'+(i>=0?' sel':'')},[h('img',{src:T(n),loading:'lazy',title:n}),h('div',{'class':'fn',text:n})]);if(i>=0)it.appendChild(h('span',{'class':'no',text:String(i+1)}));
+     var it=h('div',{'class':'pi'+(i>=0?' sel':'')},[h('img',{src:T(n),srcset:T(n)+' 1x, '+T2(n)+' 2x',loading:'lazy',title:n}),h('div',{'class':'fn',text:n})]);if(i>=0)it.appendChild(h('span',{'class':'no',text:String(i+1)}));
      it.onclick=function(){var j=sel.indexOf(n);if(j>=0)sel.splice(j,1);else{if(sel.length>=3){alert('最多 3 张，先点掉一张');return}sel.push(n)}
       if(sel.length&&sel.join()!==s.picks.join())ST.picks[s.id]=sel.slice();else delete ST.picks[s.id];save();draw();sum()};
      g.appendChild(it)})}
