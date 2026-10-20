@@ -19,3 +19,4 @@ body.theme-c{background:#0d0e10;color:#e6e4df;font:15px/1.6 -apple-system,BlinkM
 .theme-c .unrec{background:#141518;padding:8px;border-radius:4px}.theme-c .conf{color:#ff8a80}
 .theme-c footer{color:#77746d}
 @media (max-width:700px){.theme-c .hero h1{font-size:30px;letter-spacing:.1em}}
+.theme-c.page-label{--pbg:#141518;--pbd:#2a2b2f;--acc:#b8893f}.theme-c.page-label button,.theme-c.page-label input#flt,.theme-c.page-label .chgrow input{background:#1b1c20;color:#e6e4df}.theme-c.page-label #submitPane textarea{background:#111;color:#ddd}

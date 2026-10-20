@@ -1,0 +1,27 @@
+/* 标注页布局（各风格通用，颜色取自主题变量） */
+.page-label{--pbg:#fff;--pbd:#ddd;--pink:inherit;--acc:#1565c0;--ok:#2e7d32;--rej:#c62828;--chg:#ef6c00}
+.page-label main{padding-top:6px}
+.page-label .bar{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 6px;padding:10px 12px;background:var(--pbg);border:1px solid var(--pbd)}
+.page-label .bar #stat{font-weight:600}.page-label .bar input#flt{flex:1;min-width:150px;padding:6px 8px;font:inherit;font-size:14px;border:1px solid var(--pbd);background:#fff;color:inherit}
+.page-label .chk{font-size:14px;white-space:nowrap}
+.page-label button{font:inherit;font-size:14px;padding:5px 12px;border:1px solid var(--pbd);border-radius:3px;background:#fff;color:inherit;cursor:pointer}
+.page-label button.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+.page-label button.on{background:var(--ok);border-color:var(--ok);color:#fff}.page-label button.on.rej{background:var(--rej);border-color:var(--rej)}.page-label button.on.chg{background:var(--chg);border-color:var(--chg)}
+.page-label .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.page-label .card{background:var(--pbg);border:1px solid var(--pbd);padding:10px;display:flex;flex-direction:column}
+.page-label .card.done{box-shadow:0 0 0 2px var(--ok)}
+/* 照片完整显示：竖图限高、居中，框位叠加在图片上 */
+.page-label .card .thumb{align-self:center;max-width:100%;background:var(--imgbg)}
+.page-label .card .thumb img{display:block;width:auto;height:auto;max-width:100%;max-height:360px;cursor:zoom-in}
+.page-label .card .meta{margin:8px 0 6px;font-size:13.5px}.page-label .card .acts{display:flex;flex-wrap:wrap;gap:6px}
+.page-label .card .chgrow{margin-top:6px;display:flex;gap:6px}.page-label .card .chgrow input{flex:1;min-width:0;padding:5px 7px;font:inherit;font-size:14px;border:1px solid var(--pbd)}
+.page-label .card .res{font-size:13px;margin-top:6px;color:var(--ok);min-height:1em}
+.page-label #submitPane{background:var(--pbg);border:1px solid var(--pbd);border-left:5px solid var(--acc);padding:12px;margin:10px 0}
+.page-label #submitPane textarea{width:100%;height:140px;font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.page-label details.sp{background:var(--pbg);border:1px solid var(--pbd);margin:6px 0;padding:7px 12px}.page-label details.sp summary{cursor:pointer}
+.page-label .pg{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.page-label .pg .pi{position:relative;cursor:pointer;width:156px}
+.page-label .pg img{display:block;width:156px;height:117px;object-fit:contain;background:var(--imgbg);border:3px solid transparent}
+.page-label .pg .pi.sel img{border-color:var(--chg)}.page-label .pg .pi .no{position:absolute;left:5px;top:5px;background:var(--chg);color:#fff;border-radius:10px;padding:0 7px;font-size:12px}
+.page-label .pg .pi .fn{font-size:11px;word-break:break-all;opacity:.8}
+@media (max-width:700px){.page-label .cards{grid-template-columns:1fr}.page-label .bar{padding:8px}.page-label .bar input#flt{order:5;flex-basis:100%}
+ .page-label .pg .pi,.page-label .pg img{width:calc(50vw - 30px)}.page-label .pg img{height:calc((50vw - 30px)*.75)}}
