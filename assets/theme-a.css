@@ -22,7 +22,7 @@ body.theme-a{background:#f4efe3;color:#3a2e22;font:15px/1.7 "Noto Serif SC","Not
 /* 标注页 */
 .theme-a.page-label{--pbg:#fbf8f0;--pbd:#cbb994;--acc:#7a4b1d;--ok:#4f7a3a;--rej:#a8382f;--chg:#b8692a}
 .theme-a.page-label .bar{background:rgba(244,239,227,.97);box-shadow:0 1px 0 #e0d4b8}
-.theme-a.page-label .card .thumb img{border:1px solid #cbb994;padding:3px;background:#fff}
+.theme-a.page-label .card .thumb img{border:0;padding:0;outline:1px solid #cbb994;outline-offset:3px}
 .theme-a.page-label .card .meta b{color:#5b4630}.theme-a.page-label button{background:#fffdf7}
 .theme-a.page-label button.primary{background:#7a4b1d;color:#fff}.theme-a.page-label button.on{color:#fff}
 .theme-a.page-label button.on{background:var(--ok)}.theme-a.page-label button.on.rej{background:var(--rej)}.theme-a.page-label button.on.chg{background:var(--chg)}

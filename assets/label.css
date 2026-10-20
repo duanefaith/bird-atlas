@@ -13,7 +13,7 @@
 /* 照片完整显示：竖图限高、居中，框位叠加在图片上 */
 .page-label .card .thumb{align-self:center;max-width:100%;background:var(--imgbg)}
 .page-label .card .thumb img{display:block;width:auto;height:auto;max-width:100%;max-height:360px;cursor:zoom-in}
-.page-label .card .meta{margin:8px 0 6px;font-size:13.5px}.page-label .card .acts{display:flex;flex-wrap:wrap;gap:6px}
+.page-label .card .meta{display:block;opacity:1;margin:10px 0 6px;font-size:13.5px}.page-label .card .acts{display:flex;flex-wrap:wrap;gap:6px}
 .page-label .card .chgrow{margin-top:6px;display:flex;gap:6px}.page-label .card .chgrow input{flex:1;min-width:0;padding:5px 7px;font:inherit;font-size:14px;border:1px solid var(--pbd)}
 .page-label .card .res{font-size:13px;margin-top:6px;color:var(--ok);min-height:1em}
 .page-label #submitPane{background:var(--pbg);border:1px solid var(--pbd);border-left:5px solid var(--acc);padding:12px;margin:10px 0}
