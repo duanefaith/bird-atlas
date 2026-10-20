@@ -64,3 +64,9 @@ details.sp{background:#fff;border:1px solid #ddd;margin:6px 0;padding:6px 10px;b
 }
 
 [hidden]{display:none!important}
+.lbbar{margin-top:8px;display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap;font-size:13px;line-height:1.4}
+.lbst{color:#ccc;padding:2px 8px;border-radius:10px;background:rgba(255,255,255,.12)}.lbst.loading::before{content:"";display:inline-block;width:9px;height:9px;margin-right:6px;border:2px solid #aaa;border-top-color:transparent;border-radius:50%;animation:lbspin 1s linear infinite;vertical-align:-1px}
+.lbst.ok{color:#b9f6ca}.lbst.fail{color:#ffcc80}
+.lbdl{color:#fff!important;background:rgba(255,255,255,.18);padding:3px 12px;border-radius:12px;text-decoration:none;cursor:pointer}.lbdl:hover{background:rgba(255,255,255,.3)}
+@keyframes lbspin{to{transform:rotate(360deg)}}
+.lbimg img{max-height:82vh}
