@@ -1,0 +1,24 @@
+name: 通知标注自动生效
+on:
+  issues:
+    types: [opened, edited, reopened, labeled]
+concurrency:
+  group: annotation-webhook-${{ github.event.issue.number }}
+  cancel-in-progress: true
+jobs:
+  notify:
+    if: github.event.issue.user.login == 'duanefaith' && github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'annotation')
+    runs-on: ubuntu-latest
+    steps:
+      - name: 请求自动任务 webhook
+        env:
+          URL: ${{ secrets.ROUTINE_WEBHOOK_URL }}
+          KEY: ${{ secrets.ROUTINE_WEBHOOK_KEY }}
+          NUM: ${{ github.event.issue.number }}
+          ACT: ${{ github.event.action }}
+        run: |
+          if [ -z "$URL" ]; then echo "未配置 ROUTINE_WEBHOOK_URL，跳过"; exit 0; fi
+          curl -fsS -X POST "$URL" \
+            -H "Authorization: Bearer $KEY" \
+            -H "Content-Type: application/json" \
+            -d "{\"repo\":\"${GITHUB_REPOSITORY}\",\"issue\":${NUM},\"action\":\"${ACT}\"}"
