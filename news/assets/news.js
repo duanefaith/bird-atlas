@@ -15,7 +15,7 @@
       if(na){var vis=na.querySelector('.nac:not([hidden])');na.hidden=!vis;if(F.type==='na'&&vis)na.open=true;}
       var v=(!F.prov||c.dataset.prov===F.prov)&&any;
       c.hidden=!v;if(v)n++;
-      var m=markers[c.id];if(m&&map){m.forEach(function(x){if(v)x.addTo(map);else x.remove();});}
+      showMarkers(c.id,v);
     });
     document.querySelectorAll('section.prov').forEach(function(s){
       var any=s.querySelector('.nc:not([hidden])');s.hidden=!!F.prov&&s.dataset.prov!==F.prov;
@@ -37,48 +37,117 @@
     var ps=c.closest('details.pendsec');if(ps)ps.open=true;var d=c.querySelector(':scope > details');if(d)d.open=true;
     if(scroll)c.scrollIntoView({behavior:'smooth',block:'center'});
   }
-  var pend={};
+  var pend={}, MAP=null;   // MAP：地图适配层（高德 JS API v2 优先，失败回退 Leaflet + 高德瓦片）
+  function visiblePts(){var rec=[],all=[];
+    Object.keys(markers).forEach(function(id){var c=byId[id];if(c&&c.hidden)return;
+      markers[id].forEach(function(m){all.push(m);if(!pend[id])rec.push(m);});});
+    return rec.length?rec:all;}
   function fit(){   // 默认/筛选后：缩放到可见的「推荐」地点（实心点 + 其◆帖子点位）；没有推荐点时退回到全部可见点
-    if(!map)return;
-    var rec=[],all=[];
-    Object.keys(markers).forEach(function(id){
-      var c=byId[id];if(c&&c.hidden)return;
-      markers[id].forEach(function(m){var ll=m.getLatLng();all.push(ll);if(!pend[id])rec.push(ll);});
-    });
-    var pts=rec.length?rec:all;
-    if(!pts.length){map.setView([31.2,120.8],7);return;}
-    var mob=window.innerWidth<700;
-    map.fitBounds(L.latLngBounds(pts),{padding:mob?[28,28]:[40,40],maxZoom:13});
+    if(!MAP)return;MAP.fit(visiblePts(),window.innerWidth<700?28:40,13);
   }
   var COLORS={rare:'#b8692a',g1:'#a8382f',hawk:'#4f6f8a',social:'#c2185b',other:'#4f7a3a',hot:'#8a6d47'};
-  function initMap(data){
-    if(!window.L||!document.getElementById('map'))return;
-    map=L.map('map',{zoomControl:true,attributionControl:true,zoomSnap:0.25,zoomDelta:0.5});map.attributionControl.setPrefix(false);
+  function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function nav(lat,lng,name){return 'https://uri.amap.com/marker?position='+lng+','+lat+'&name='+encodeURIComponent(name)+'&src=bird-atlas&coordinate=gaode&callnative=1';}
+  function popHtml(p,s){
+    var lat=s?s.glat:p.glat,lng=s?s.glng:p.glng,nm=s?p.name+' · '+s.name:p.name;
+    return '<div class="mpop"><b>'+esc(nm)+'</b>'+(p.top&&p.top.length?'<br><span>'+esc(p.top.join('、'))+'</span>':'')+
+      '<br><a href="'+nav(lat,lng,nm)+'" target="_blank" rel="noopener">📍 导航到这里</a> · <a href="#'+p.id+'" data-card="'+p.id+'">看卡片 ↓</a></div>';}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-card]');if(!a)return;e.preventDefault();hl(a.dataset.card,true);});
+  function setStatus(mode,err){var el=document.getElementById('map');if(el){el.dataset.engine=mode;if(err)el.dataset.err=err;}
+    window.__mapStatus={engine:mode,error:err||null};}
+  // ---- 高德 JS API v2 ----
+  function amapAdapter(A,el){
+    var map=new A.Map(el,{zoom:7,center:[120.8,31.2],resizeEnable:true,viewMode:'2D'});
+    map.addControl(new A.Scale());map.addControl(new A.ToolBar({position:{right:'10px',top:'10px'}}));
+    var iw=new A.InfoWindow({offset:new A.Pixel(0,-10),closeWhenClickMap:true});
+    return {map:map,ready:function(cb){map.on('complete',cb);},
+      circle:function(p,hollow){var m=new A.CircleMarker({center:[p.glng,p.glat],radius:hollow?5:(p.is_new?9:7),
+          strokeColor:hollow?(COLORS[p.type]||'#7a4b1d'):'#fff',strokeWeight:2,fillColor:hollow?'#fff':(COLORS[p.type]||'#7a4b1d'),
+          fillOpacity:hollow?.85:.92,zIndex:hollow?11:12,cursor:'pointer',bubble:false});
+        m._ll=[p.glng,p.glat];m.setMap(map);return m;},
+      spot:function(s){var m=new A.Marker({position:[s.glng,s.glat],content:'<div class="spotmk amk">◆</div>',offset:new A.Pixel(-7,-7),anchor:'top-left',zIndex:13});
+        m._ll=[s.glng,s.glat];m.setMap(map);return m;},
+      bind:function(m,html,title,onclick){m.on('click',function(){iw.setContent(html);iw.open(map,m._ll);onclick();});
+        if(m.setTitle)m.setTitle(title);m.on('mouseover',function(){if(!iw.getIsOpen()){iw.setContent(html);iw.open(map,m._ll);}});},
+      show:function(m,v){if(v)m.show();else m.hide();},
+      fit:function(ms,pad,maxZ){if(!ms.length){map.setZoomAndCenter(7,[120.8,31.2]);return;}
+        map.setFitView(ms,true,[pad,pad,pad,pad],maxZ);},
+      focus:function(m){map.setZoomAndCenter(Math.max(map.getZoom(),13),m._ll);m.emit('click',{target:m});},
+      resize:function(){if(map.resize)map.resize();}};
+  }
+  // ---- 回退：Leaflet + 高德瓦片 ----
+  function leafletAdapter(el){
+    var map=L.map(el,{zoomControl:true,attributionControl:true,zoomSnap:0.25,zoomDelta:0.5});map.attributionControl.setPrefix(false);
     L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}',
       {subdomains:'1234',maxZoom:18,attribution:'© 高德地图'}).addTo(map);
+    return {map:map,
+      circle:function(p,hollow){return (hollow?L.circleMarker([p.glat,p.glng],{radius:5,color:COLORS[p.type]||'#7a4b1d',weight:2,fillColor:'#fff',fillOpacity:.85})
+          :L.circleMarker([p.glat,p.glng],{radius:p.is_new?9:7,color:'#fff',weight:2,fillColor:COLORS[p.type]||'#7a4b1d',fillOpacity:.92})).addTo(map);},
+      spot:function(s){return L.marker([s.glat,s.glng],{icon:L.divIcon({className:'spotmk',html:'◆',iconSize:[14,14],iconAnchor:[7,7]})}).addTo(map);},
+      bind:function(m,html,title,onclick){m.bindTooltip(title,{direction:'top'});m.bindPopup(html);m.on('click',onclick);},
+      show:function(m,v){if(v)m.addTo(map);else m.remove();},
+      fit:function(ms,pad,maxZ){if(!ms.length){map.setView([31.2,120.8],7);return;}
+        map.fitBounds(L.latLngBounds(ms.map(function(m){return m.getLatLng();})),{padding:[pad,pad],maxZoom:maxZ});},
+      focus:function(m){map.setView(m.getLatLng(),Math.max(map.getZoom(),13));m.openPopup();},
+      resize:function(){map.invalidateSize();}};
+  }
+  function build(data,ad){
+    MAP=ad;map=ad.map;
     data.places.forEach(function(p){
       if(p.glat==null)return;
-      var ms=[];
-      var m=p.pending?L.circleMarker([p.glat,p.glng],{radius:5,color:COLORS[p.type]||'#7a4b1d',weight:2,fillColor:'#fff',fillOpacity:.85})
-                     :L.circleMarker([p.glat,p.glng],{radius:p.is_new?9:7,color:'#fff',weight:2,fillColor:COLORS[p.type]||'#7a4b1d',fillOpacity:.92});
-      m.bindTooltip(p.name+' · '+p.top.join('、'),{direction:'top'});
-      m.on('click',function(){hl(p.id,true);});
-      ms.push(m);
+      var ms=[],m=ad.circle(p,!!p.pending);
+      ad.bind(m,popHtml(p),p.name+' · '+(p.top||[]).join('、'),function(){hl(p.id,false);});ms.push(m);
       var seen={};
       (p.spots||[]).forEach(function(s){
         var k=s.glat+','+s.glng;if(seen[k]||s.glat==null)return;seen[k]=1;
         if(Math.abs(s.glat-p.glat)<1e-5&&Math.abs(s.glng-p.glng)<1e-5)return;
-        var d=L.marker([s.glat,s.glng],{icon:L.divIcon({className:'spotmk',html:'◆',iconSize:[14,14],iconAnchor:[7,7]})});
-        d.bindTooltip(p.name+' · '+s.name,{direction:'top'});d.on('click',function(){hl(p.id,true);});ms.push(d);
+        var d=ad.spot(s);ad.bind(d,popHtml(p,s),p.name+' · '+s.name,function(){hl(p.id,false);});ms.push(d);
       });
-      ms.forEach(function(x){x.addTo(map);});markers[p.id]=ms;pend[p.id]=!!p.pending;
+      markers[p.id]=ms;pend[p.id]=!!p.pending;
     });
     fit();
     cards.forEach(function(c){c.addEventListener('click',function(e){
       if(e.target.closest('a,summary,details:not(:scope > details)'))return;var m=markers[c.id];
-      if(m){hl(c.id,false);map.setView(m[0].getLatLng(),Math.max(map.getZoom(),13));m[0].openTooltip();
-        document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});}});});
+      if(m){hl(c.id,false);ad.focus(m[0]);document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});}});});
+    var el=document.getElementById('map'),t=null;
+    var rs=function(){clearTimeout(t);t=setTimeout(function(){ad.resize();},150);};
+    if(window.ResizeObserver)new ResizeObserver(rs).observe(el);else window.addEventListener('resize',rs);
+    window.addEventListener('orientationchange',rs);
     apply();
+  }
+  function showMarkers(id,v){var m=markers[id];if(m&&MAP)m.forEach(function(x){MAP.show(x,v);});}
+  function fallback(data,err){
+    var el=document.getElementById('map');if(MAP)return;
+    if(el&&el.__amap){try{el.__amap.destroy();}catch(e){}el.__amap=null;}
+    if(el)el.innerHTML='';
+    setStatus('leaflet',err);
+    var go=function(){if(window.L&&el)build(data,leafletAdapter(el));};
+    if(window.L)return go();
+    var sc=document.createElement('script');sc.src=el.dataset.leaflet||'assets/leaflet.js';sc.onload=go;document.head.appendChild(sc);
+  }
+  function initMap(data){
+    var el=document.getElementById('map');if(!el)return;
+    var key=window.AMAP_JS_KEY,code=null,done=false;
+    if(!key||!window.AMapLoader)return fallback(data,!key?'NO_KEY':'LOADER_UNAVAILABLE');
+    var RX=/(INVALID_[A-Z_]+|USERKEY_[A-Z_]+|USER_DAILY_QUERY_OVER_LIMIT|DAILY_QUERY_OVER_LIMIT|SERVICE_NOT_AVAILABLE|INSUFFICIENT_PRIVILEGES|[A-Z_]*SECURITY[A-Z_]*ERROR|NO_KEY)/;
+    var orig={};['error','warn','log'].forEach(function(k){orig[k]=console[k];console[k]=function(){
+      try{var m=RX.exec([].map.call(arguments,String).join(' '));if(m&&!code)code=m[1];}catch(e){}return orig[k].apply(console,arguments);};});
+    var restore=function(){Object.keys(orig).forEach(function(k){console[k]=orig[k];});};
+    var fail=function(e){if(done)return;done=true;restore();fallback(data,code||(e&&(e.message||e.info||String(e)))||'AMAP_LOAD_FAILED');};
+    var to=setTimeout(function(){fail('AMAP_TIMEOUT');},10000);
+    window.AMapLoader.load({key:key,version:'2.0',plugins:['AMap.Scale','AMap.ToolBar','AMap.Geocoder']}).then(function(A){
+      if(done)return;var ad;try{ad=amapAdapter(A,el);}catch(e){clearTimeout(to);return fail(e);}
+      el.__amap=ad.map;
+      // 无效 key / 域名不在白名单时底图照样能出，但服务报错 → 用一次官方逆地理编码校验 key（INVALID_USER_KEY、INVALID_USER_DOMAIN、USERKEY_PLAT_NOMATCH 等）
+      var verified=false,mapok=false;
+      var go=function(){if(done||!verified||!mapok)return;clearTimeout(to);done=true;restore();setStatus('amap');build(data,ad);};
+      ad.ready(function(){mapok=true;go();});
+      try{new A.Geocoder().getAddress([121.47,31.23],function(st,res){
+        if(done)return;
+        if(st==='error'){var m=RX.exec(String(res&&(res.info||res))||'');return fail(code||(m&&m[1])||String(res&&res.info||res||'GEOCODER_ERROR'));}
+        if(code)return fail(code);verified=true;go();});}
+      catch(e){verified=true;go();}
+    }).catch(function(e){clearTimeout(to);fail(e);});
   }
   fetch('data/news.json?v=ac2fad8c70',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
     window.NEWS=d;var s=document.getElementById('dataok');if(s)s.textContent='已载入 '+d.places.length+' 个地点';initMap(d);

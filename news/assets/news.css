@@ -86,3 +86,9 @@
 @media (max-width:700px){.pcards{grid-template-columns:1fr}}
 .emptyline{font-size:13px;color:#7a6650;margin:8px 0 4px;line-height:1.7}.emptyline a{color:#5b4630}
 #map .leaflet-control-attribution{font-size:10px;line-height:1.4;padding:0 5px;background:rgba(251,248,240,.8);color:#7a6a55}
+/* 高德 JS API 地图 */
+.mpop{font-size:13px;line-height:1.55;color:#3b2f22;min-width:140px;max-width:240px}
+.mpop b{font-size:14px}.mpop a{color:#7a4b1d}
+#map .amk{width:14px;height:14px;line-height:14px;text-align:center;font-size:13px}
+#map .amap-info-content{border-radius:6px;background:#fbf8f0;border:1px solid #cbb994}
+#map .amap-logo{opacity:.7}#map .amap-copyright{font-size:10px!important}
