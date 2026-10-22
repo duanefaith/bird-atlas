@@ -15,7 +15,7 @@
    var cs=o.querySelector('.cs'),cf=o.querySelector('.cf');if(cs)cs.textContent=v;if(cf)cf.textContent=Object.keys(fams).length;
    var a=document.querySelector('.toc a[data-o="'+o.id+'"]');if(a)a.hidden=!v});
   keys.forEach(function(b){b.classList.toggle('on',!!sel.k[b.dataset.k])});cks.forEach(function(b){b.classList.toggle('on',!!sel.c[b.dataset.c])});
-  allB.classList.toggle('on',!ak&&!ac);shown.textContent=n;
+  allB.classList.toggle('on',!ak&&!ac);shown.textContent=n;if(window.__foldRefresh)window.__foldRefresh();
   if(write){var h=[];if(ak)h.push('iucn='+keys.map(function(b){return b.dataset.k}).filter(function(k){return sel.k[k]}).join(','));
    if(ac)h.push('cn='+cks.map(function(b){return b.dataset.c}).filter(function(k){return sel.c[k]}).join(','));
    history.replaceState(null,'',location.pathname+location.search+(h.length?'#'+h.join('&'):''))}}

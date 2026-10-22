@@ -67,3 +67,16 @@ footer{text-align:center;font-size:13px;padding:24px;opacity:.75}
 .cn.cn-c1{background:#a3241a;color:#fff}.cn.cn-c2{background:#fbeedd}
 .filter button.c{border-color:var(--cc)}.filter button.c.on{background:var(--cc);color:#fff}
 footer a{color:inherit}
+/* 标题折叠/展开（fold.js） */
+.fold-hide{display:none!important}
+.fold-h{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.fold-tg{font:inherit;font-size:.8em;line-height:1;width:1.5em;height:1.5em;margin:0 .35em 0 0;padding:0;border:1px solid currentColor;border-radius:3px;background:transparent;color:inherit;opacity:.65;cursor:pointer;vertical-align:.12em;flex:none}
+.fold-h:hover .fold-tg{opacity:1}
+.fold-h.folded{opacity:.85}
+td.fam.fold-h .fold-tg{display:block;margin:0 0 4px}
+tr.famfold > td:not(.fam){display:none}
+td.nm.fold-h .fold-tg{font-size:12px;float:right;margin:2px 0 0 6px}
+.fold-all{display:inline-flex;gap:6px;margin-left:8px}
+.fold-all button{font:inherit;font-size:13px;padding:3px 10px;border-radius:999px;cursor:pointer;border:1px dashed currentColor;background:transparent;color:inherit}
+.fold-target{outline:3px solid #d9aa00;outline-offset:2px;transition:outline-color 1s}
+[id^="sp"]{scroll-margin-top:110px}section[id],article[id]{scroll-margin-top:110px}

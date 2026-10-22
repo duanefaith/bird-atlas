@@ -26,3 +26,6 @@ body.theme-a{background:#f4efe3;color:#3a2e22;font:15px/1.7 "Noto Serif SC","Not
 .theme-a.page-label .card .meta b{color:#5b4630}.theme-a.page-label button{background:#fffdf7}
 .theme-a.page-label button.primary{background:#7a4b1d;color:#fff}.theme-a.page-label button.on{color:#fff}
 .theme-a.page-label button.on{background:var(--ok)}.theme-a.page-label button.on.rej{background:var(--rej)}.theme-a.page-label button.on.chg{background:var(--chg)}
+.theme-a .fold-tg{color:#7a4b1d;border-color:#cbb994;background:#fbf8f0}
+.theme-a .fold-all button{color:#5b4630;border-color:#a07c4c;background:#fbf8f0}
+.theme-a .fold-target{outline-color:#d9aa00}
