@@ -34,3 +34,53 @@
 .nc .wh{margin:3px 0 0;font-size:14px;line-height:1.55}.nc .wh b{display:inline-block;font-size:12px;background:#efe7d4;border:1px solid #cbb994;color:#5b4630;padding:0 6px;margin-right:6px;border-radius:2px}
 .nc .wh.how b{background:#e3ecdc;border-color:#9fbd8a;color:#3f6330}
 .pr.spot{color:#2e7d32;border-color:#2e7d32;background:#eef6ea}.pr.gate{color:#6a5acd;border-color:#6a5acd}
+
+/* v4 按地点 */
+.nc.t-hot{--tc:#8a6d47}
+.nc h4{margin-bottom:2px}
+.nc .subs{margin:2px 0 0;font-size:12.5px;color:#7a6650}
+.nc .rows{list-style:none;margin:8px 0 0;padding:0;border-top:1px dashed #d8c9a6}
+.nc .row{padding:6px 0 6px;border-bottom:1px dashed #e2d6bb}
+.nc .row .r1{display:flex;flex-wrap:wrap;align-items:center;gap:3px 6px}
+.nc .row .sp{font-size:16px;font-weight:700;color:#3a2e22;text-decoration:none;border-bottom:1px solid #cbb994}
+.nc .row a.sp:hover{color:#7a4b1d;border-bottom-color:#7a4b1d}
+.nc .chip{font-size:11px;line-height:1.5;padding:0 5px;border:1px solid #cbb994;border-radius:999px;color:#7a6650;text-decoration:none;background:#fffdf7}
+.nc .chip.eb{color:#3d6f8f;border-color:#9fbcd0}.nc .chip.at{color:#7a4b1d}
+.nc .row .r2{font-size:13px;color:#6b5a45;margin-top:2px;line-height:1.5}
+.nc .row .r2 a.ck{font-size:12px;margin-left:4px;color:#3d6f8f}
+.nc .row .r3{font-size:13px;margin-top:3px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
+.nc .row .r3 a.spotnav{font-size:12.5px;text-decoration:none;background:#2e7d32;color:#fff;padding:1px 9px;border-radius:999px}
+.st{font-size:12px;padding:0 6px;border-radius:2px;white-space:nowrap;font-weight:700}
+.st.st3{background:#2e7d32;color:#fff}.st.st2{background:#cfe3c4;color:#2f5a22}.st.st1{background:#eee6d6;color:#7a6650;font-weight:400}.st.st0{background:#f2f2f2;color:#999}
+.nc .row.hawk .r2 a{color:#3a2e22}
+.nc details{margin-top:8px;font-size:13.5px}
+.nc details summary{cursor:pointer;color:#5b4630;font-weight:700;list-style-position:inside}
+.nc details.na .nacs{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.nc a.nac{font-size:12.5px;text-decoration:none;border:1px solid #d8c9a6;background:#fffdf7;color:#5b4630;padding:1px 7px;border-radius:999px}
+.nc a.nac sup{font-size:9px;color:#8a6d47;margin-left:1px}
+.nc details.notes ul{margin:6px 0 0;padding-left:16px}
+.nc details.notes li{margin:4px 0;line-height:1.55}
+.nc details.notes .who{font-size:12px;color:#8a6d47;margin-right:4px}
+.nc details.notes .lbl{font-style:normal;font-size:11px;background:#efe7d4;border:1px solid #cbb994;padding:0 4px;margin-left:3px;border-radius:2px;color:#6b5a45}
+.nc details.notes b.k{font-size:11px;background:#e3ecdc;border:1px solid #9fbd8a;color:#3f6330;padding:0 4px;margin-right:4px;border-radius:2px}
+.nc details.notes a.src{font-size:12px;margin-left:4px}
+.dim{color:#8a6d47;font-size:12px}
+.legend{font-size:12.5px;color:#6b5a45;margin:0 0 12px}
+.unloc{margin:12px 0 0;padding:8px 12px;border:1px dashed #cbb994;background:#fbf8f0}
+.unloc h3{margin:0 0 4px;font-size:15px}.unloc ul{margin:0;padding-left:18px;font-size:14px}
+.spotmk{color:#2e7d32;font-size:14px;line-height:14px;text-align:center;text-shadow:0 0 2px #fff,0 0 2px #fff}
+.pr.spot{color:#2e7d32;border-color:#2e7d32;background:#eef6ea}.pr.gate{color:#6a5acd;border-color:#6a5acd}.pr.precise{color:#4f7a3a;border-color:#4f7a3a}
+
+.nc .row.ph{display:none!important}
+.nc .tg.wt{background:transparent;border:1px solid #8a6d47;color:#8a6d47;font-weight:400}
+.nc .tg.unv{background:transparent;border:1px dashed #a07c4c;color:#8a6d47;font-weight:400}
+.nc a.allc{font-size:12px;text-decoration:none;border:1px solid #e2d6bb;background:#fffdf7;color:#5b4630;padding:0 6px;border-radius:999px}
+.nc a.allc.na{background:#7a4b1d;color:#fff;border-color:#7a4b1d}
+.nc a.allc sup{font-size:9px;margin-left:1px}.nc a.allc.na sup{color:#f1e3c8}
+.pendsec{margin:14px 0 0;border:1px dashed #cbb994;background:#f6f1e4;padding:6px 12px}
+.pendsec>summary{cursor:pointer;font-weight:700;color:#5b4630;padding:4px 0}
+.pcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:8px;margin:8px 0 6px}
+.nc.pc{padding:6px 12px;border-left-width:4px;background:#fbf8f0;opacity:.95}
+.nc.pc>details>summary{cursor:pointer;list-style-position:inside;line-height:1.5}
+.nc.pc>details>summary b{font-size:15px}
+@media (max-width:700px){.pcards{grid-template-columns:1fr}}
