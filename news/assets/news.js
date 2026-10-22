@@ -10,6 +10,7 @@
     cards.forEach(function(c){
       var any=false;
       c.querySelectorAll('.row,.nac').forEach(function(x){var v=ok(x);x.hidden=!v;if(v)any=true;});
+      if(!any)c.querySelectorAll('.allc').forEach(function(x){if(ok(x))any=true;});   // 全部鸟种列表只计数，不隐藏
       var na=c.querySelector('details.na');
       if(na){var vis=na.querySelector('.nac:not([hidden])');na.hidden=!vis;if(F.type==='na'&&vis)na.open=true;}
       var v=(!F.prov||c.dataset.prov===F.prov)&&any;
@@ -65,7 +66,7 @@
         document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});}});});
     apply();
   }
-  fetch('data/news.json?v=edab48a927',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
+  fetch('data/news.json?v=ac2fad8c70',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
     window.NEWS=d;var s=document.getElementById('dataok');if(s)s.textContent='已载入 '+d.places.length+' 个地点';initMap(d);
   }).catch(function(e){var s=document.getElementById('dataok');if(s)s.textContent='地图数据加载失败';});
   apply();

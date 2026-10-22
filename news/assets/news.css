@@ -84,3 +84,4 @@
 .nc.pc>details>summary{cursor:pointer;list-style-position:inside;line-height:1.5}
 .nc.pc>details>summary b{font-size:15px}
 @media (max-width:700px){.pcards{grid-template-columns:1fr}}
+.emptyline{font-size:13px;color:#7a6650;margin:8px 0 4px;line-height:1.7}.emptyline a{color:#5b4630}
