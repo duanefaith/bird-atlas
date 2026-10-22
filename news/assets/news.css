@@ -1,0 +1,32 @@
+/* 鸟讯页：沿用 A 自然图鉴（base.css + theme-a.css），这里只补鸟讯专用部件 */
+.page-news .hero .hin{padding-bottom:16px}
+.page-news .filter{gap:5px 6px}
+.page-news .filter .fl{font-size:13px;margin-left:6px}
+.page-news .filter button.on{background:#5b4630;color:#fff;border-color:#5b4630}
+.page-news .filter button{border-color:#cbb994}
+.page-news .filter label{font-size:13px;display:inline-flex;align-items:center;gap:3px;margin-left:6px}
+#map{height:420px;border:1px solid #cbb994;background:#e9e1cf;margin:16px 0 6px}
+.maphint{font-size:12px;color:#8a6d47;margin:0 0 10px}
+.ncards{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.nc{background:#fbf8f0;border:1px solid #cbb994;border-left:6px solid var(--tc,#8a6d47);padding:10px 14px 12px;scroll-margin-top:110px;transition:box-shadow .2s,background .2s}
+.nc.hl{background:#fff6d8;box-shadow:0 0 0 3px #d9aa00}
+.nc.t-rare{--tc:#b8692a}.nc.t-g1{--tc:#a8382f}.nc.t-hawk{--tc:#4f6f8a}.nc.t-social{--tc:#c2185b}.nc.t-other{--tc:#4f7a3a}
+.nc h4{margin:0;font-size:18px;letter-spacing:.03em;display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
+.nc .tg{font:700 12px/1.5 Georgia,"Noto Serif SC",serif;padding:0 6px;border-radius:2px;background:#e6dcc5;color:#5b4630;white-space:nowrap}
+.nc .tg.g1{background:#d93a32;color:#fff}.nc .tg.g2{background:#ec7a1c;color:#fff}.nc .tg.na{background:#7a4b1d;color:#fff}
+.nc .tg.rare{background:#d9aa00;color:#222}.nc .tg.unc{background:transparent;border:1px dashed #a07c4c;color:#8a6d47;font-weight:400}
+.nc .tg.new{background:#4f9a3c;color:#fff}.nc .tg.soc{background:#c2185b;color:#fff}.nc .tg.hk{background:#4f6f8a;color:#fff}
+.nc .pl{margin:4px 0 0;font-weight:600;color:#3a2e22}
+.nc .mt{margin:2px 0 0;font-size:13px;color:#6b5a45;display:flex;flex-wrap:wrap;gap:2px 12px}
+.nc .rp{margin:4px 0 0;font-size:14px}
+.nc .lk{margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.nc .lk a{font-size:13px;text-decoration:none;border:1px solid #cbb994;background:#fffdf7;padding:3px 10px;border-radius:999px}
+.nc .lk a.nav{background:#7a4b1d;color:#fff;border-color:#7a4b1d}
+.pr{font-size:12px;padding:0 6px;border-radius:999px;border:1px solid}
+.pr.precise{color:#4f7a3a;border-color:#4f7a3a}.pr.park{color:#8a6d47;border-color:#a07c4c}.pr.osm{color:#3d8fdc;border-color:#3d8fdc}.pr.unknown{color:#999;border-color:#bbb}
+.common{margin:12px 0 0;padding:8px 12px;background:#efe7d4;border:1px dashed #cbb994;font-size:14px}
+.empty{color:#8a6d47;font-style:italic}
+.page-news footer{max-width:1320px;margin:20px auto 0;padding:12px 18px 30px;font-size:13px;color:#6b5a45}
+.leaflet-container{font:inherit}.mk-new{filter:drop-shadow(0 0 2px #4f9a3c)}
+@media (max-width:700px){#map{height:300px}.ncards{grid-template-columns:1fr}.page-news .filter{position:static}.nc h4{font-size:17px}
+ .page-news .stats{gap:14px}.page-news .stats b{font-size:22px}}
