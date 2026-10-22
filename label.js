@@ -4,7 +4,7 @@ function load(){try{return JSON.parse(localStorage.getItem(KEY))||{items:{},pick
 function save(){localStorage.setItem(KEY,JSON.stringify(ST));stat()}
 function h(t,a,c){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else if(k==='html')e.innerHTML=a[k];else e.setAttribute(k,a[k])}(c||[]).forEach(function(x){e.appendChild(typeof x==='string'?document.createTextNode(x):x)});return e}
 function T(n){return 'img/t/'+encodeURIComponent(n)}function T2(n){return 'img/t2/'+encodeURIComponent(n)}function L(n){return 'img/l/'+encodeURIComponent(n)}
-fetch('data/label.json?v=e27cce1a0d').then(function(r){return r.json()}).then(function(d){D=d;init()});
+fetch('data/label.json?v=34d6597e81').then(function(r){return r.json()}).then(function(d){D=d;init()});
 function lab(s){return s[1]+(s[2]?'（'+s[2]+'）':'')+' #'+s[0]}
 function init(){
  var dl=document.getElementById('splist');D.species.forEach(function(s){SP[s[0]]=s;var l=lab(s);byLabel[l]=s[0];if(!(s[1] in byLabel))byLabel[s[1]]=s[0];dl.appendChild(h('option',{value:l}))});
