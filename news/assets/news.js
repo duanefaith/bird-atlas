@@ -46,7 +46,7 @@
         document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'});}});});
     apply();
   }
-  fetch('data/news.json?v=676a7d559d',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
+  fetch('data/news.json?v=982bb66428',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
     window.NEWS=d;var s=document.getElementById('dataok');if(s)s.textContent='已载入 '+d.items.length+' 条';initMap(d);
   }).catch(function(e){var s=document.getElementById('dataok');if(s)s.textContent='地图数据加载失败';});
   apply();
