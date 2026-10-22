@@ -53,7 +53,7 @@
   var COLORS={rare:'#b8692a',g1:'#a8382f',hawk:'#4f6f8a',social:'#c2185b',other:'#4f7a3a',hot:'#8a6d47'};
   function initMap(data){
     if(!window.L||!document.getElementById('map'))return;
-    map=L.map('map',{zoomControl:true,attributionControl:true});
+    map=L.map('map',{zoomControl:true,attributionControl:true,zoomSnap:0.25,zoomDelta:0.5});
     L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}',
       {subdomains:'1234',maxZoom:18,attribution:'© 高德地图'}).addTo(map);
     data.places.forEach(function(p){
