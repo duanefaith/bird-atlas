@@ -21,19 +21,34 @@
       var any=s.querySelector('.nc:not([hidden])');s.hidden=!!F.prov&&s.dataset.prov!==F.prov;
       var em=s.querySelector('.empty');if(em)em.hidden=!!any;});
     var sh=document.getElementById('shown');if(sh)sh.textContent=n;
+    if(refit)fit();
   }
+  var refit=false;
   document.querySelectorAll('.filter [data-f]').forEach(function(b){
     b.addEventListener('click',function(){
       var f=b.dataset.f;F[f]=b.dataset.v;
       document.querySelectorAll('.filter [data-f="'+f+'"]').forEach(function(x){x.classList.toggle('on',x===b);});
-      apply();});
+      refit=true;apply();refit=false;});
   });
-  var nw=document.getElementById('onlyNew');if(nw)nw.addEventListener('change',function(){F.onlyNew=nw.checked;apply();});
+  var nw=document.getElementById('onlyNew');if(nw)nw.addEventListener('change',function(){F.onlyNew=nw.checked;refit=true;apply();refit=false;});
   function hl(id,scroll){
     cards.forEach(function(c){c.classList.remove('hl');});
     var c=byId[id];if(!c)return;c.classList.add('hl');
     var ps=c.closest('details.pendsec');if(ps)ps.open=true;var d=c.querySelector(':scope > details');if(d)d.open=true;
     if(scroll)c.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+  var pend={};
+  function fit(){   // 默认/筛选后：缩放到可见的「推荐」地点（实心点 + 其◆帖子点位）；没有推荐点时退回到全部可见点
+    if(!map)return;
+    var rec=[],all=[];
+    Object.keys(markers).forEach(function(id){
+      var c=byId[id];if(c&&c.hidden)return;
+      markers[id].forEach(function(m){var ll=m.getLatLng();all.push(ll);if(!pend[id])rec.push(ll);});
+    });
+    var pts=rec.length?rec:all;
+    if(!pts.length){map.setView([31.2,120.8],7);return;}
+    var mob=window.innerWidth<700;
+    map.fitBounds(L.latLngBounds(pts),{padding:mob?[28,28]:[40,40],maxZoom:13});
   }
   var COLORS={rare:'#b8692a',g1:'#a8382f',hawk:'#4f6f8a',social:'#c2185b',other:'#4f7a3a',hot:'#8a6d47'};
   function initMap(data){
@@ -41,7 +56,6 @@
     map=L.map('map',{zoomControl:true,attributionControl:true});
     L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}',
       {subdomains:'1234',maxZoom:18,attribution:'© 高德地图'}).addTo(map);
-    var pts=[];
     data.places.forEach(function(p){
       if(p.glat==null)return;
       var ms=[];
@@ -49,7 +63,7 @@
                      :L.circleMarker([p.glat,p.glng],{radius:p.is_new?9:7,color:'#fff',weight:2,fillColor:COLORS[p.type]||'#7a4b1d',fillOpacity:.92});
       m.bindTooltip(p.name+' · '+p.top.join('、'),{direction:'top'});
       m.on('click',function(){hl(p.id,true);});
-      ms.push(m);pts.push([p.glat,p.glng]);
+      ms.push(m);
       var seen={};
       (p.spots||[]).forEach(function(s){
         var k=s.glat+','+s.glng;if(seen[k]||s.glat==null)return;seen[k]=1;
@@ -57,9 +71,9 @@
         var d=L.marker([s.glat,s.glng],{icon:L.divIcon({className:'spotmk',html:'◆',iconSize:[14,14],iconAnchor:[7,7]})});
         d.bindTooltip(p.name+' · '+s.name,{direction:'top'});d.on('click',function(){hl(p.id,true);});ms.push(d);
       });
-      ms.forEach(function(x){x.addTo(map);});markers[p.id]=ms;
+      ms.forEach(function(x){x.addTo(map);});markers[p.id]=ms;pend[p.id]=!!p.pending;
     });
-    if(pts.length)map.fitBounds(pts,{padding:[24,24],maxZoom:12});else map.setView([31.2,120.8],7);
+    fit();
     cards.forEach(function(c){c.addEventListener('click',function(e){
       if(e.target.closest('a,summary,details:not(:scope > details)'))return;var m=markers[c.id];
       if(m){hl(c.id,false);map.setView(m[0].getLatLng(),Math.max(map.getZoom(),13));m[0].openTooltip();
