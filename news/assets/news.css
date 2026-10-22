@@ -92,3 +92,12 @@
 #map .amk{width:14px;height:14px;line-height:14px;text-align:center;font-size:13px}
 #map .amap-info-content{border-radius:6px;background:#fbf8f0;border:1px solid #cbb994}
 #map .amap-logo{opacity:.7}#map .amap-copyright{font-size:10px!important}
+/* 宽屏：卡片在左、地图在右侧 sticky；地图宽高比按推荐点外包框（JS 设定尺寸） */
+@media (min-width:1200px){
+  .page-news main.nmain{max-width:min(3000px,96vw)}
+  body.news-wide .nlay{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:start}
+  body.news-wide .mapcol{grid-column:2;grid-row:1;position:sticky;top:calc(var(--fh,0px) + 12px);max-width:1100px}
+  body.news-wide .listcol{grid-column:1;grid-row:1;min-width:0}
+  body.news-wide .mapcol .maphint{max-width:var(--mw,100%)}
+  body.news-wide #map{margin-top:16px}
+}

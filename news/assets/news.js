@@ -125,8 +125,42 @@
     if(window.L)return go();
     var sc=document.createElement('script');sc.src=el.dataset.leaflet||'assets/leaflet.js';sc.onload=go;document.head.appendChild(sc);
   }
+  // ---- 地图尺寸：按推荐点的外包框（墨卡托）定宽高比，宽屏时地图在右侧 sticky，卡片在左侧 ----
+  var WIDE=1200;
+  function mercY(lat){var r=Math.max(-85,Math.min(85,lat))*Math.PI/180;return Math.log(Math.tan(Math.PI/4+r/2))*180/Math.PI;}
+  function aspectOf(data){
+    var pts=[],all=[];
+    data.places.forEach(function(p){if(p.glat==null)return;var a=[[p.glng,p.glat]];(p.spots||[]).forEach(function(s){if(s.glat!=null)a.push([s.glng,s.glat]);});
+      all.push.apply(all,a);if(!p.pending)pts.push.apply(pts,a);});
+    if(!pts.length)pts=all;if(pts.length<2)return 1.2;
+    var x0=1e9,x1=-1e9,y0=1e9,y1=-1e9;pts.forEach(function(q){var y=mercY(q[1]);x0=Math.min(x0,q[0]);x1=Math.max(x1,q[0]);y0=Math.min(y0,y);y1=Math.max(y1,y);});
+    var dx=Math.max(x1-x0,.05),dy=Math.max(y1-y0,.05);return Math.max(.8,Math.min(1.6,dx/dy));}
+  var ASPECT=1.2,lastW=0;
+  function sizeMap(){
+    var el=document.getElementById('map');if(!el)return false;
+    var vw=window.innerWidth,vh=window.innerHeight,fl=document.querySelector('.filter'),fh=fl&&getComputedStyle(fl).position==='sticky'?fl.offsetHeight:0;
+    document.documentElement.style.setProperty('--fh',fh+'px');
+    var w,h;
+    if(vw<700){el.style.width='';el.style.height='';el.parentElement.style.width='';document.body.classList.remove('news-wide');return true;}   // 手机保持原样
+    if(vw>=WIDE){
+      document.body.classList.add('news-wide');
+      var lay=document.querySelector('.nlay'),lw=lay?lay.clientWidth:vw;
+      var maxH=Math.min(vh*.75,vh-fh-56),maxW=Math.min(1100,lw*.58);
+      h=maxH;w=h*ASPECT;if(w>maxW){w=maxW;h=w/ASPECT;}
+      if(w<420){w=Math.min(420,maxW);h=Math.min(maxH,w/ASPECT);}
+    }else{
+      document.body.classList.remove('news-wide');
+      var col=el.parentElement.clientWidth;w=col;h=Math.max(320,Math.min(vh*.7,w/ASPECT));
+      el.style.width='';el.parentElement.style.width='';el.style.height=Math.round(h)+'px';return true;
+    }
+    el.style.width=Math.round(w)+'px';el.style.height=Math.round(h)+'px';el.parentElement.style.width=Math.round(w)+'px';return true;
+  }
+  var rsT=null;
+  window.addEventListener('resize',function(){if(window.innerWidth===lastW&&window.innerWidth<700)return;lastW=window.innerWidth;
+    clearTimeout(rsT);rsT=setTimeout(function(){sizeMap();if(MAP){MAP.resize();setTimeout(fit,120);}},200);});
   function initMap(data){
     var el=document.getElementById('map');if(!el)return;
+    ASPECT=aspectOf(data);lastW=window.innerWidth;sizeMap();
     var key=window.AMAP_JS_KEY,code=null,done=false;
     if(!key||!window.AMapLoader)return fallback(data,!key?'NO_KEY':'LOADER_UNAVAILABLE');
     var RX=/(INVALID_[A-Z_]+|USERKEY_[A-Z_]+|USER_DAILY_QUERY_OVER_LIMIT|DAILY_QUERY_OVER_LIMIT|SERVICE_NOT_AVAILABLE|INSUFFICIENT_PRIVILEGES|[A-Z_]*SECURITY[A-Z_]*ERROR|NO_KEY)/;
