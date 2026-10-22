@@ -33,7 +33,7 @@
   var nw=document.getElementById('onlyNew');if(nw)nw.addEventListener('change',function(){F.onlyNew=nw.checked;refit=true;apply();refit=false;});
   function hl(id,scroll){
     cards.forEach(function(c){c.classList.remove('hl');});
-    var c=byId[id];if(!c)return;c.classList.add('hl');
+    var c=byId[id];if(!c)return;c.classList.add('hl');if(window.Fold)window.Fold.reveal(c);
     var ps=c.closest('details.pendsec');if(ps)ps.open=true;var d=c.querySelector(':scope > details');if(d)d.open=true;
     if(scroll)c.scrollIntoView({behavior:'smooth',block:'center'});
   }
