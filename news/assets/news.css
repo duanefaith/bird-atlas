@@ -45,7 +45,7 @@
 .nc .row .sp{font-size:16px;font-weight:700;color:#3a2e22;text-decoration:none;border-bottom:1px solid #cbb994}
 .nc .row a.sp:hover{color:#7a4b1d;border-bottom-color:#7a4b1d}
 .nc .chip{font-size:11px;line-height:1.5;padding:0 5px;border:1px solid #cbb994;border-radius:999px;color:#7a6650;text-decoration:none;background:#fffdf7}
-.nc .chip.eb{color:#3d6f8f;border-color:#9fbcd0}.nc .chip.at{color:#7a4b1d}
+.nc .chip.eb{color:#3d6f8f;border-color:#9fbcd0}.nc .chip.at{color:#7a4b1d}.nc .chip.pt{color:#c2185b;border-color:#e8a0bd;background:#fff5f8}.nc .ptmore{font-size:11px;color:#8a6d47;margin-left:2px}
 .nc .row .r2{font-size:13px;color:#6b5a45;margin-top:2px;line-height:1.5}
 .nc .row .r2 a.ck{font-size:12px;margin-left:4px;color:#3d6f8f}
 .nc .row .r3{font-size:13px;margin-top:3px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
@@ -101,3 +101,10 @@
   body.news-wide .mapcol .maphint{max-width:var(--mw,100%)}
   body.news-wide #map{margin-top:16px}
 }
+
+/* 推荐置顶：各省推荐区在待验证之上，带 📌 标记 */
+.page-news .rech{margin:4px 0 10px;font-size:16px;letter-spacing:.04em;color:#5b4630;display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px}
+.page-news .rech .pin{font-size:14px;line-height:1}
+.page-news .rech small{font-size:12.5px;font-weight:400;color:#8a6d47;letter-spacing:0}
+.page-news .recards{margin-bottom:4px}
+.page-news section.prov > h2.oh{margin-bottom:2px}

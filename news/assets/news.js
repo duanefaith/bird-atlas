@@ -19,7 +19,9 @@
     });
     document.querySelectorAll('section.prov').forEach(function(s){
       var any=s.querySelector('.nc:not([hidden])');s.hidden=!!F.prov&&s.dataset.prov!==F.prov;
-      var em=s.querySelector('.empty');if(em)em.hidden=!!any;});
+      var em=s.querySelector('.empty');if(em)em.hidden=!!any;
+      var rh=s.querySelector('.rech'), rc=s.querySelector('.recards');
+      if(rh&&rc){rh.hidden=!rc.querySelector('.nc:not([hidden])');}});
     var sh=document.getElementById('shown');if(sh)sh.textContent=n;
     if(refit)fit();
   }
