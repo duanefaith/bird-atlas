@@ -47,7 +47,7 @@
   function fit(){   // 默认/筛选后：缩放到可见的「推荐」地点（实心点 + 其◆帖子点位）；没有推荐点时退回到全部可见点
     if(!MAP)return;MAP.fit(visiblePts(),window.innerWidth<700?28:40,13);
   }
-  var COLORS={rare:'#b8692a',g1:'#a8382f',hawk:'#4f6f8a',social:'#c2185b',other:'#4f7a3a',hot:'#8a6d47'};
+  var COLORS={rare:'#b8692a',g1:'#a8382f',g2:'#ec7a1c',hawk:'#4f6f8a',social:'#c2185b',other:'#4f7a3a',hot:'#8a6d47'};
   function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   function nav(lat,lng,name){return 'https://uri.amap.com/marker?position='+lng+','+lat+'&name='+encodeURIComponent(name)+'&src=bird-atlas&coordinate=gaode&callnative=1';}
   function popHtml(p,s){
@@ -185,7 +185,7 @@
       catch(e){verified=true;go();}
     }).catch(function(e){clearTimeout(to);fail(e);});
   }
-  fetch('data/news.json?v=9acaba54ab',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
+  fetch('data/news.json?v=c154d5c5a1',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
     window.NEWS=d;var s=document.getElementById('dataok');if(s)s.textContent='已载入 '+d.places.length+' 个地点';initMap(d);
   }).catch(function(e){var s=document.getElementById('dataok');if(s)s.textContent='地图数据加载失败';});
   apply();
