@@ -25,3 +25,12 @@
 .page-label .pg .pi .fn{font-size:11px;word-break:break-all;opacity:.8}
 @media (max-width:700px){.page-label .cards{grid-template-columns:1fr}.page-label .bar{padding:8px}.page-label .bar input#flt{order:5;flex-basis:100%}
  .page-label .pg .pi,.page-label .pg img{width:calc(50vw - 30px)}.page-label .pg img{height:calc((50vw - 30px)*.75)}}
+.page-label .tabs{display:flex;flex-wrap:wrap;gap:6px}
+.page-label .tabs .tab{font-size:13px;padding:4px 10px;border-radius:999px;background:transparent}
+.page-label .tabs .tab.on{background:var(--acc);border-color:var(--acc);color:#fff}
+.page-label .tag{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:999px;font-size:11px;font-weight:600;vertical-align:middle}
+.page-label .tag.todo{background:#fff3e0;color:#ef6c00}
+.page-label .tag.ok{background:#e8f5e9;color:#2e7d32}
+.page-label .tag.rej{background:#ffebee;color:#c62828}
+.page-label .card.focus{box-shadow:0 0 0 3px var(--acc)}
+.page-label .card.st-ok .meta .tag.ok{opacity:.9}

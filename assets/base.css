@@ -80,3 +80,8 @@ td.nm.fold-h .fold-tg{font-size:12px;float:right;margin:2px 0 0 6px}
 .fold-all button{font:inherit;font-size:13px;padding:3px 10px;border-radius:999px;cursor:pointer;border:1px dashed currentColor;background:transparent;color:inherit}
 .fold-target{outline:3px solid #d9aa00;outline-offset:2px;transition:outline-color 1s}
 [id^="sp"]{scroll-margin-top:110px}section[id],article[id]{scroll-margin-top:110px}
+
+.fix{font-size:12px;opacity:.85;text-decoration:underline;text-underline-offset:2px}
+.fix:hover{opacity:1}
+#lb .lbedit{display:inline-block;margin-left:10px;padding:2px 8px;border:1px solid rgba(255,255,255,.45);border-radius:3px;color:#fff;text-decoration:none;font-size:13px}
+#lb .lbedit:hover{background:rgba(255,255,255,.15)}

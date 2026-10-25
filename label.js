@@ -1,31 +1,58 @@
 (function(){
-var KEY='bird-atlas-label-v1',D,ST=load(),SP={},byLabel={};
+var KEY='bird-atlas-label-v1',D,ST=load(),SP={},byLabel={},TAB='todo';
 function load(){try{return JSON.parse(localStorage.getItem(KEY))||{items:{},picks:{}}}catch(e){return{items:{},picks:{}}}}
 function save(){localStorage.setItem(KEY,JSON.stringify(ST));stat()}
 function h(t,a,c){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else if(k==='html')e.innerHTML=a[k];else e.setAttribute(k,a[k])}(c||[]).forEach(function(x){e.appendChild(typeof x==='string'?document.createTextNode(x):x)});return e}
 function T(n){return 'img/t/'+encodeURIComponent(n)}function T2(n){return 'img/t2/'+encodeURIComponent(n)}function L(n){return 'img/l/'+encodeURIComponent(n)}
-fetch('data/label.json?v=6a15f44f4a').then(function(r){return r.json()}).then(function(d){D=d;init()});
+function qs(){var o={};location.search.slice(1).split('&').forEach(function(p){if(!p)return;var i=p.indexOf('='),k=decodeURIComponent(i<0?p:p.slice(0,i)),v=decodeURIComponent(i<0?'':p.slice(i+1));o[k]=v});return o}
+fetch('data/label.json?v=72fbaac537').then(function(r){return r.json()}).then(function(d){D=d;init()});
 function lab(s){return s[1]+(s[2]?'（'+s[2]+'）':'')+' #'+s[0]}
+function counts(){var c={todo:0,ok:0,rej:0,all:D.boxes.length};D.boxes.forEach(function(b){c[b.status]=(c[b.status]||0)+1});return c}
 function init(){
+ var q=qs();
+ if(q.tab&&{todo:1,ok:1,rej:1,all:1}[q.tab])TAB=q.tab;
+ else if(q.key||q.photo||q.q)TAB='all';
  var dl=document.getElementById('splist');D.species.forEach(function(s){SP[s[0]]=s;var l=lab(s);byLabel[l]=s[0];if(!(s[1] in byLabel))byLabel[s[1]]=s[0];dl.appendChild(h('option',{value:l}))});
  var keys={};D.boxes.forEach(function(b){keys[b.key]=1});for(var k in ST.items)if(!keys[k])delete ST.items[k];
- renderBoxes();renderPicks();stat();
- document.getElementById('flt').oninput=filter;document.getElementById('onlyTodo').onchange=filter;
+ renderTabs();renderBoxes();renderPicks();stat();
+ var flt=document.getElementById('flt');
+ if(q.key){var hit=D.boxes.find(function(b){return b.key===q.key});if(hit)flt.value=hit.name}
+ else if(q.photo)flt.value=q.photo;
+ else if(q.q)flt.value=q.q;
+ flt.oninput=filter;document.getElementById('onlyTodo').onchange=filter;
  document.getElementById('clear').onclick=function(){if(confirm('清空本浏览器里所有未提交的选择？')){ST={items:{},picks:{}};save();location.reload()}};
  document.getElementById('submit').onclick=submit;
+ filter();
+ if(q.key){var card=Array.prototype.find.call(document.querySelectorAll('.card'),function(c){return c.dataset.key===q.key});if(card){card.classList.add('focus');setTimeout(function(){card.scrollIntoView({behavior:'smooth',block:'center'})},80)}}
 }
-function stat(){var n=Object.keys(ST.items).length,p=Object.keys(ST.picks).length;document.getElementById('stat').textContent='已选择 '+n+' / '+D.boxes.length+' 个框'+(p?'，改推荐图 '+p+' 种':'');document.getElementById('nbox').textContent=D.boxes.length+' 个（未识别且未人工确认）'}
+function renderTabs(){var root=document.getElementById('tabs');if(!root)return;root.innerHTML='';
+ var c=counts(),labs=[['todo','待确认'],['ok','已采纳'],['rej','已忽略'],['all','全部']];
+ labs.forEach(function(x){var b=h('button',{'type':'button','class':'tab'+(TAB===x[0]?' on':''),'data-tab':x[0],text:x[1]+' '+(c[x[0]]||0)});
+  b.onclick=function(){TAB=x[0];renderTabs();filter();var u=new URL(location.href);u.searchParams.set('tab',TAB);history.replaceState(null,'',u)};
+  root.appendChild(b)})}
+function stat(){var n=Object.keys(ST.items).length,p=Object.keys(ST.picks).length,c=counts();
+ document.getElementById('stat').textContent='已选择 '+n+' 项'+(p?'，改推荐图 '+p+' 种':'');
+ document.getElementById('nbox').textContent='共 '+c.all+' 个框（待确认 '+c.todo+' · 已采纳 '+c.ok+' · 已忽略 '+c.rej+'）'}
 function desc(it){if(!it)return'';if(it.action==='accept')return'✔ 采纳：'+it.zh;if(it.action==='reject')return'✘ 不是鸟 / 忽略';if(it.action==='species')return'✎ 改为：'+SP[it.id][1]+' #'+it.id;if(it.action==='name')return'✎ 改为（手写，需人工确认）：'+it.name;return''}
-function renderBoxes(){var box=document.getElementById('boxes');
+function statusTag(b){if(b.status==='todo')return h('span',{'class':'tag todo',text:'待确认'});if(b.status==='rej')return h('span',{'class':'tag rej',text:'已忽略'});return h('span',{'class':'tag ok',text:'已采纳'})}
+function metaHtml(b){
+ var top='第一候选：<b>'+b.zh+'</b> '+(b.en||'')+' · '+b.conf.toFixed(1)+'%';
+ if(b.status==='ok'&&(b.cur_id!==b.id||b.cur_zh!==b.zh))return top+'<br>当前结果：<b>'+b.cur_zh+'</b> '+(b.cur_en||'')+' <small>（人工修正）</small>';
+ if(b.status==='ok')return '当前结果：<b>'+b.cur_zh+'</b> '+(b.cur_en||'')+' · 置信度 <b>'+b.conf.toFixed(1)+'%</b>';
+ if(b.status==='rej')return top+'<br><em>当前：已忽略</em>';
+ return top}
+function renderBoxes(){var box=document.getElementById('boxes');box.innerHTML='';
  D.boxes.forEach(function(b){
   var bx=h('span',{'class':'bx',style:'left:'+b.bp[0]+'%;top:'+b.bp[1]+'%;width:'+b.bp[2]+'%;height:'+b.bp[3]+'%'});
-  var img=h('img',{src:T(b.name),srcset:T(b.name)+' 1x, '+T2(b.name)+' 2x',loading:'lazy',alt:''});img.onclick=function(){openLB(L(b.name),b.name+' 框'+b.bi+' · '+b.zh+' '+b.conf.toFixed(1)+'%',b.bp.join(','))};
+  var img=h('img',{src:T(b.name),srcset:T(b.name)+' 1x, '+T2(b.name)+' 2x',loading:'lazy',alt:''});img.onclick=function(){openLB(L(b.name),b.name+' 框'+b.bi+' · '+(b.cur_zh||b.zh)+' '+b.conf.toFixed(1)+'%',b.bp.join(','))};
   var res=h('div',{'class':'res'});
   var bA=h('button',{text:'采纳「'+b.zh+'」'}),bR=h('button',{'class':'rej',text:'不是鸟 / 忽略'}),bC=h('button',{'class':'chg',text:'改为…'});
   var inp=h('input',{list:'splist',placeholder:'输入中文名搜索，或手写名称'}),ok=h('button',{text:'确定'}),row=h('div',{'class':'chgrow',hidden:''},[inp,ok]);
-  var card=h('div',{'class':'card','data-q':(b.name+' '+b.zh+' '+(b.en||'')).toLowerCase()},[h('span',{'class':'thumb'},[img,bx]),
-   h('div',{'class':'meta',html:'<b>'+b.name+'</b> · 框'+b.bi+'<br>第一候选：<b>'+b.zh+'</b> '+(b.en||'')+' · 置信度 <b>'+b.conf.toFixed(1)+'%</b>'}),
-   h('div',{'class':'acts'},[bA,bC,bR,]),row,res]);
+  var meta=h('div',{'class':'meta'});meta.innerHTML='<b>'+b.name+'</b> · 框'+b.bi+' ';meta.appendChild(statusTag(b));meta.appendChild(document.createElement('br'));
+  var m2=document.createElement('span');m2.innerHTML=metaHtml(b);meta.appendChild(m2);
+  var acts=[bC,bR];if(b.status!=='ok'||b.cur_id!==b.id)acts.unshift(bA);
+  var card=h('div',{'class':'card st-'+b.status,'data-key':b.key,'data-q':(b.name+' '+b.zh+' '+(b.en||'')+' '+b.cur_zh+' '+(b.cur_en||'')).toLowerCase(),'data-status':b.status},[h('span',{'class':'thumb'},[img,bx]),
+   meta,h('div',{'class':'acts'},acts),row,res]);
   function upd(){var it=ST.items[b.key];res.textContent=desc(it);card.classList.toggle('done',!!it);
    bA.classList.toggle('on',!!it&&it.action==='accept');bR.classList.toggle('on',!!it&&it.action==='reject');bC.classList.toggle('on',!!it&&(it.action==='species'||it.action==='name'))}
   function set(it){var c=ST.items[b.key];if(c&&JSON.stringify(c)===JSON.stringify(it))delete ST.items[b.key];else ST.items[b.key]=it;save();upd()}
@@ -35,8 +62,9 @@ function renderBoxes(){var box=document.getElementById('boxes');
    if(id){ST.items[b.key]={action:'species',id:id}}else{if(!confirm('「'+v+'」不在物种列表里，将作为手写名提交，由人工处理。继续？'))return;ST.items[b.key]={action:'name',name:v}}save();upd();row.hidden=true}
   ok.onclick=apply;inp.onkeydown=function(e){if(e.key==='Enter')apply()};
   upd();box.appendChild(card)})}
-function filter(){var q=document.getElementById('flt').value.trim().toLowerCase(),only=document.getElementById('onlyTodo').checked;
- document.querySelectorAll('.card').forEach(function(c,i){var b=D.boxes[i];c.hidden=(q&&c.dataset.q.indexOf(q)<0)||(only&&ST.items[b.key])})}
+function filter(){var q=document.getElementById('flt').value.trim().toLowerCase(),only=document.getElementById('onlyTodo').checked,vis=0;
+ document.querySelectorAll('.card').forEach(function(c){var st=c.dataset.status,show=(TAB==='all'||st===TAB)&&(!q||c.dataset.q.indexOf(q)>=0)&&(!only||!ST.items[c.dataset.key]);c.hidden=!show;if(show)vis++});
+ var n=document.getElementById('nbox');if(n)n.textContent='当前显示 '+vis+' / '+D.boxes.length+' 个框（待确认 '+counts().todo+' · 已采纳 '+counts().ok+' · 已忽略 '+counts().rej+'）'}
 function renderPicks(){var root=document.getElementById('picks');
  D.atlas.forEach(function(s){if(s.all.length<2)return;var d=h('details',{'class':'sp'}),sm=h('summary');d.appendChild(sm);
   function cur(){return ST.picks[s.id]||s.picks}
