@@ -198,11 +198,12 @@ window.__lbState=function(){return{user:S.user,fit:S.fit,tx:S.tx,ty:S.ty,nw:S.nw
 function formatCap(c){
  if(!c)return '';
  c=String(c);
+ if(c.indexOf('识别置信')>=0)return c; /* 建站已标注则不再改 */
  /* 斑嘴鸭 · file.jpg（53.3%） */
  c=c.replace(/（(\d+(?:\.\d+)?)%）/g,' · 识别置信 $1%');
  c=c.replace(/\((\d+(?:\.\d+)?)%\)/g,' · 识别置信 $1%');
- /* …候选名 53.3%  /  …名 53.3% */
- c=c.replace(/(\s)(\d+(?:\.\d+)?)%$/,'$1· 识别置信 $2%');
+ /* …名 53.3%（末尾裸百分比） */
+ c=c.replace(/(^|[^信])\s(\d+(?:\.\d+)?)%$/,'$1 · 识别置信 $2%');
  return c;
 }
 window.openLB=function(src,c,box,orig,osize,name){var my=++seq;
