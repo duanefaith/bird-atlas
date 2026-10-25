@@ -44,7 +44,7 @@ function metaHtml(b){
 function renderBoxes(){var box=document.getElementById('boxes');box.innerHTML='';
  D.boxes.forEach(function(b){
   var bx=h('span',{'class':'bx',style:'left:'+b.bp[0]+'%;top:'+b.bp[1]+'%;width:'+b.bp[2]+'%;height:'+b.bp[3]+'%'});
-  var img=h('img',{src:T(b.name),srcset:T(b.name)+' 1x, '+T2(b.name)+' 2x',loading:'lazy',alt:''});img.onclick=function(){openLB(L(b.name),b.name+' 框'+b.bi+' · '+(b.cur_zh||b.zh)+' '+b.conf.toFixed(1)+'%',b.bp.join(','))};
+  var img=h('img',{src:T(b.name),srcset:T(b.name)+' 1x, '+T2(b.name)+' 2x',loading:'lazy',alt:''});img.onclick=function(){openLB(L(b.name),b.name+' 框'+b.bi+' · '+(b.cur_zh||b.zh)+' · 识别置信 '+b.conf.toFixed(1)+'%',b.bp.join(','))};
   var res=h('div',{'class':'res'});
   var bA=h('button',{text:'采纳「'+b.zh+'」'}),bR=h('button',{'class':'rej',text:'不是鸟 / 忽略'}),bC=h('button',{'class':'chg',text:'改为…'});
   var inp=h('input',{list:'splist',placeholder:'输入中文名搜索，或手写名称'}),ok=h('button',{text:'确定'}),row=h('div',{'class':'chgrow',hidden:''},[inp,ok]);

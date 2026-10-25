@@ -15,8 +15,8 @@ bar.addEventListener('click',function(e){e.stopPropagation()});
 /* 缩放控件 */
 var zbar=document.createElement('div');zbar.className='lbzoom';
 function mkBtn(cls,label,title){var b=document.createElement('button');b.type='button';b.className=cls;b.textContent=label;if(title)b.title=title;return b}
-var btnOut=mkBtn('lbz','−','缩小'),btnIn=mkBtn('lbz','+','放大'),btnFit=mkBtn('lbz','适合','适合窗口'),btn100=mkBtn('lbz','100%','1:1 像素');
-var zlab=document.createElement('span');zlab.className='lbzlab';zlab.textContent='100%';
+var btnOut=mkBtn('lbz','−','缩小'),btnIn=mkBtn('lbz','+','放大'),btnFit=mkBtn('lbz','适合窗口','缩放到刚好放进当前窗口'),btn100=mkBtn('lbz','1:1','原图像素 1:1（相对原图 100%）');
+var zlab=document.createElement('span');zlab.className='lbzlab';zlab.textContent='相对原图 100%';zlab.title='当前显示相对原图像素的比例；100% 即 1:1';
 zbar.appendChild(btnOut);zbar.appendChild(btnIn);zbar.appendChild(btnFit);zbar.appendChild(btn100);zbar.appendChild(zlab);
 lbin.appendChild(zbar);
 zbar.addEventListener('click',function(e){e.stopPropagation()});
@@ -56,7 +56,7 @@ function applyTransform(){
   lbimg.style.left='calc(50% + '+S.tx+'px)';
   lbimg.style.top='calc(50% + '+S.ty+'px)';
   lbimg.style.transform='translate(-50%,-50%) scale('+sc+')';
-  zlab.textContent=Math.round(sc*100)+'%';
+  zlab.textContent='相对原图 '+Math.round(sc*100)+'%';
   var zoomed=canPan();
   stage.classList.toggle('zoomed',zoomed);
   stage.style.cursor=zoomed?(dragging?'grabbing':'grab'):'zoom-in';
@@ -195,10 +195,20 @@ window.addEventListener('resize',function(){
 /* 调试/验证用 */
 window.__lbState=function(){return{user:S.user,fit:S.fit,tx:S.tx,ty:S.ty,nw:S.nw,nh:S.nh,canPan:canPan(),abs:absScale()}};
 
+function formatCap(c){
+ if(!c)return '';
+ c=String(c);
+ /* 斑嘴鸭 · file.jpg（53.3%） */
+ c=c.replace(/（(\d+(?:\.\d+)?)%）/g,' · 识别置信 $1%');
+ c=c.replace(/\((\d+(?:\.\d+)?)%\)/g,' · 识别置信 $1%');
+ /* …候选名 53.3%  /  …名 53.3% */
+ c=c.replace(/(\s)(\d+(?:\.\d+)?)%$/,'$1· 识别置信 $2%');
+ return c;
+}
 window.openLB=function(src,c,box,orig,osize,name){var my=++seq;
  im.removeAttribute('crossorigin');im.removeAttribute('style');lbimg.removeAttribute('style');
  im.draggable=false;lbimg.draggable=false;
- im.src=src;im.dataset.stage='web';cap.textContent=c||'';
+ im.src=src;im.dataset.stage='web';cap.textContent=formatCap(c);
  if(box){var b=box.split(',');bx.style.left=b[0]+'%';bx.style.top=b[1]+'%';bx.style.width=b[2]+'%';bx.style.height=b[3]+'%';bx.hidden=false}else bx.hidden=true;
  S.user=1;S.tx=0;S.ty=0;S.nw=0;S.nh=0;fittedOnce=false;
  lb.hidden=false;
