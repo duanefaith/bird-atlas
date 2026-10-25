@@ -5,7 +5,7 @@ function save(){localStorage.setItem(KEY,JSON.stringify(ST));stat()}
 function h(t,a,c){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else if(k==='html')e.innerHTML=a[k];else e.setAttribute(k,a[k])}(c||[]).forEach(function(x){e.appendChild(typeof x==='string'?document.createTextNode(x):x)});return e}
 function T(n){return 'img/t/'+encodeURIComponent(n)}function T2(n){return 'img/t2/'+encodeURIComponent(n)}function L(n){return 'img/l/'+encodeURIComponent(n)}
 function qs(){var o={};location.search.slice(1).split('&').forEach(function(p){if(!p)return;var i=p.indexOf('='),k=decodeURIComponent(i<0?p:p.slice(0,i)),v=decodeURIComponent(i<0?'':p.slice(i+1));o[k]=v});return o}
-fetch('data/label.json?v=72fbaac537').then(function(r){return r.json()}).then(function(d){D=d;init()});
+fetch('data/label.json?v=ca698a263e').then(function(r){return r.json()}).then(function(d){D=d;init()});
 function lab(s){return s[1]+(s[2]?'（'+s[2]+'）':'')+' #'+s[0]}
 function counts(){var c={todo:0,ok:0,rej:0,all:D.boxes.length};D.boxes.forEach(function(b){c[b.status]=(c[b.status]||0)+1});return c}
 function init(){
