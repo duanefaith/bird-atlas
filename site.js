@@ -76,12 +76,16 @@ function to100(){
   setUser(1/S.fit,0,0);
   S.tx=0;S.ty=0;applyTransform();
 }
+var fittedOnce=false;
 function onImgReady(){
+  var prevAbs=fittedOnce?absScale():null;
   S.nw=im.naturalWidth||im.width;S.nh=im.naturalHeight||im.height;
   /* 图片以自然尺寸布局，由 transform 缩放到视口 */
   im.style.width=S.nw+'px';im.style.height=S.nh+'px';im.style.maxWidth='none';im.style.maxHeight='none';
   lbimg.style.width=S.nw+'px';lbimg.style.height=S.nh+'px';
-  recomputeFit();toFit();
+  recomputeFit();
+  if(!fittedOnce){fittedOnce=true;toFit()}
+  else{if(S.fit>0&&prevAbs)S.user=clamp(prevAbs/S.fit,0.2,8);applyTransform()}
 }
 
 btnOut.addEventListener('click',function(){zoomBy(1/1.25,0,0)});
@@ -186,7 +190,7 @@ window.openLB=function(src,c,box,orig,osize,name){var my=++seq;
  im.removeAttribute('crossorigin');im.removeAttribute('style');lbimg.removeAttribute('style');
  im.src=src;im.dataset.stage='web';cap.textContent=c||'';
  if(box){var b=box.split(',');bx.style.left=b[0]+'%';bx.style.top=b[1]+'%';bx.style.width=b[2]+'%';bx.style.height=b[3]+'%';bx.hidden=false}else bx.hidden=true;
- S.user=1;S.tx=0;S.ty=0;S.nw=0;S.nh=0;
+ S.user=1;S.tx=0;S.ty=0;S.nw=0;S.nh=0;fittedOnce=false;
  lb.hidden=false;
  if(im.complete&&im.naturalWidth)onImgReady();
  else im.onload=function(){if(my===seq)onImgReady()};
@@ -202,7 +206,7 @@ window.openLB=function(src,c,box,orig,osize,name){var my=++seq;
  o.onerror=function(){if(done||my!==seq)return;done=true;clearTimeout(to);st.className='lbst fail';st.textContent='原图暂不可用'};
  o.src=orig};
 document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a.zoom');if(a){ev.preventDefault();openLB(a.getAttribute('href'),a.dataset.cap,a.dataset.box,a.dataset.orig,a.dataset.osize,a.dataset.name)}});
-function close(){seq++;lb.hidden=true;im.src='';im.dataset.stage='';im.removeAttribute('style');lbimg.removeAttribute('style');S.user=1;S.tx=0;S.ty=0;dragging=false;moved=false}
+function close(){seq++;lb.hidden=true;im.src='';im.dataset.stage='';im.removeAttribute('style');lbimg.removeAttribute('style');S.user=1;S.tx=0;S.ty=0;dragging=false;moved=false;fittedOnce=false}
 document.addEventListener('keydown',function(e){
   if(lb.hidden)return;
   if(e.key==='Escape')close();
