@@ -185,7 +185,7 @@
       catch(e){verified=true;go();}
     }).catch(function(e){clearTimeout(to);fail(e);});
   }
-  fetch('data/news.json?v=6cba23cf30',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
+  fetch('data/news.json?v=dba07ad8cc',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
     window.NEWS=d;var s=document.getElementById('dataok');if(s)s.textContent='已载入 '+d.places.length+' 个地点';initMap(d);
   }).catch(function(e){var s=document.getElementById('dataok');if(s)s.textContent='地图数据加载失败';});
   apply();
