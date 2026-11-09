@@ -61,6 +61,15 @@
   function amapAdapter(A,el){
     var map=new A.Map(el,{zoom:7,center:[120.8,31.2],resizeEnable:true,viewMode:'2D'});
     map.addControl(new A.Scale());map.addControl(new A.ToolBar({position:{right:'10px',top:'10px'}}));
+    var installed=BirdBasemap.installAmap(A,map,BirdBasemap.browserStorage());
+    el.dataset.basemap=installed.mode;
+    el.addEventListener('change',function(ev){
+      var t=ev.target;if(!t||!t.getAttribute||t.getAttribute('data-type')!=='base')return;
+      try{
+        var mode=BirdBasemap.modeFromControl(el);if(!mode)return;
+        el.dataset.basemap=mode;BirdBasemap.write(BirdBasemap.browserStorage(),mode);
+      }catch(e){}
+    });
     var iw=new A.InfoWindow({offset:new A.Pixel(0,-10),closeWhenClickMap:true});
     return {map:map,ready:function(cb){map.on('complete',cb);},
       circle:function(p,hollow){var m=new A.CircleMarker({center:[p.glng,p.glat],radius:hollow?5:(p.is_new?9:7),
@@ -77,11 +86,24 @@
       focus:function(m){map.setZoomAndCenter(Math.max(map.getZoom(),13),m._ll);m.emit('click',{target:m});},
       resize:function(){if(map.resize)map.resize();}};
   }
+  function mountBasemapSwitch(el,ctl){
+    var bar=document.createElement('div');bar.className='basemap-switch';
+    function paint(mode){bar.querySelectorAll('button').forEach(function(b){b.classList.toggle('on',b.dataset.mode===mode);});el.dataset.basemap=mode;}
+    ['normal','satellite'].forEach(function(mode){
+      var b=document.createElement('button');b.type='button';b.dataset.mode=mode;b.textContent=mode==='normal'?'普通':'卫星';
+      b.addEventListener('mousedown',function(ev){ev.stopPropagation();});
+      b.addEventListener('click',function(ev){ev.preventDefault();ev.stopPropagation();var res=ctl.select(mode);paint(res.mode);});
+      bar.appendChild(b);
+    });
+    el.appendChild(bar);paint(ctl.getMode());
+    return {set:paint};
+  }
   // ---- 回退：Leaflet + 高德瓦片 ----
   function leafletAdapter(el){
     var map=L.map(el,{zoomControl:true,attributionControl:true,zoomSnap:0.25,zoomDelta:0.5});map.attributionControl.setPrefix(false);
-    L.tileLayer('https://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}',
-      {subdomains:'1234',maxZoom:18,attribution:'© 高德地图'}).addTo(map);
+    var ui=null;
+    var ctl=BirdBasemap.attachLeaflet(L,map,BirdBasemap.browserStorage(),function(mode){if(ui)ui.set(mode);});
+    ui=mountBasemapSwitch(el,ctl);
     return {map:map,
       circle:function(p,hollow){return (hollow?L.circleMarker([p.glat,p.glng],{radius:5,color:COLORS[p.type]||'#7a4b1d',weight:2,fillColor:'#fff',fillOpacity:.85})
           :L.circleMarker([p.glat,p.glng],{radius:p.is_new?9:7,color:'#fff',weight:2,fillColor:COLORS[p.type]||'#7a4b1d',fillOpacity:.92})).addTo(map);},
@@ -171,7 +193,7 @@
     var restore=function(){Object.keys(orig).forEach(function(k){console[k]=orig[k];});};
     var fail=function(e){if(done)return;done=true;restore();fallback(data,code||(e&&(e.message||e.info||String(e)))||'AMAP_LOAD_FAILED');};
     var to=setTimeout(function(){fail('AMAP_TIMEOUT');},10000);
-    window.AMapLoader.load({key:key,version:'2.0',plugins:['AMap.Scale','AMap.ToolBar','AMap.Geocoder']}).then(function(A){
+    window.AMapLoader.load({key:key,version:'2.0',plugins:['AMap.Scale','AMap.ToolBar','AMap.Geocoder','AMap.MapType']}).then(function(A){
       if(done)return;var ad;try{ad=amapAdapter(A,el);}catch(e){clearTimeout(to);return fail(e);}
       el.__amap=ad.map;
       // 无效 key / 域名不在白名单时底图照样能出，但服务报错 → 用一次官方逆地理编码校验 key（INVALID_USER_KEY、INVALID_USER_DOMAIN、USERKEY_PLAT_NOMATCH 等）
