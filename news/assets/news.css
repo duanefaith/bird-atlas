@@ -117,6 +117,13 @@
 .nc .nbh small{font-size:12px;font-weight:400;color:#8a6d47;letter-spacing:0}
 .nc .nblock .rows{margin-top:4px}
 .nc .nblock details.notes{margin-top:4px}
+.notes .inv{display:block;margin:2px 0 4px}
+.notes .spx{font-weight:700}
+.notes .spx.neg{color:#a8382f}
+.notes .spx.weak{color:#8a6d47}
+.notes .spx.uns{color:#4f6f8a}
+.notes .stt{font-style:normal;font-size:12px;margin:0 8px 0 2px;color:#8a6d47}
+.notes .obsreason{color:#8a6d47}
 #map .basemap-switch{position:absolute;z-index:800;top:8px;right:8px;display:flex}
 #map .basemap-switch button{font:13px/1.2 Georgia,"Noto Serif SC",serif;padding:5px 8px;min-height:28px;border:1px solid #cbb994;background:#fbf8f0;color:#3b2f22}
 #map .basemap-switch button+button{border-left:0}
