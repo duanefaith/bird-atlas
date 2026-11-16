@@ -129,3 +129,9 @@
 #map .basemap-switch button+button{border-left:0}
 #map .basemap-switch button.on{background:#5b4630;color:#fff}
 .nc .hawkrows{list-style:none;margin:8px 0 0;padding:0;border-top:1px dashed #d8c9a6}
+
+/* 未定日线索：不冒充当前目击 */
+section.clues { margin: 1.6rem 0 2rem; padding-top: 1rem; border-top: 1px solid rgba(0,0,0,.12); }
+section.clues h2, section.clues h3 { margin: .6rem 0 .3rem; }
+section.clues .clue-note { color: #555; font-size: .92rem; line-height: 1.45; }
+section.clues li { margin: .25rem 0; }
