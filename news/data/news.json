@@ -5387,5 +5387,92 @@
     }
    ]
   }
+ },
+ "coverage": {
+  "cannot_claim_full_social_coverage": true,
+  "window": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "collection": "20261123_1305",
+  "run_id": "20261123_1704",
+  "generated_at_beijing": "2026-11-23 17:09",
+  "queues_note": "午轮队列是早轮未完成剩余词：小红书 397、微博 431，不是早轮总 492。早轮已查词以 covered_by 早轮 0710/1244 证据说明，不把早轮帖当本午新采。",
+  "xhs": {
+   "this_round_remaining_queue": 397,
+   "completed": 36,
+   "equivalent": 9,
+   "completed_plus_equivalent": 45,
+   "completed_seq": "1–45",
+   "unfinished": 1,
+   "unfinished_detail": [
+    {
+     "seq": 46,
+     "query": "杭州西溪湿地",
+     "reason": "打开帖后遇 404/sec_CAPAhnrY 扫码安全墙后停止",
+     "screenshot": "ebird_snapshots/20261123_1305_jiangzhehu/xhs_seq46_security_wall_20261123_1305.png"
+    }
+   ],
+   "not_run": 351,
+   "empty": 0,
+   "raw": 69,
+   "raw_labels": {
+    "reliable_window": 16,
+    "undated_weak": 26,
+    "unlocated": 8,
+    "excluded": 19
+   },
+   "meta_vs_disk": "meta queries_done/equivalent 略旧，以磁盘重计 completed 36 + equivalent 9 = seq1–45 为准"
+  },
+  "weibo": {
+   "this_round_remaining_queue": 431,
+   "completed": 0,
+   "unfinished": 1,
+   "unfinished_detail": [
+    {
+     "seq": 1,
+     "query": "上虞滨海围垦区 鸟",
+     "reason": "唯一正常实时恢复后结果区仍空白，无验证码也无“未找到”",
+     "screenshot": "ebird_snapshots/20261123_1305_jiangzhehu/weibo_seq01_realtime_blank_20261123_1305.png"
+    }
+   ],
+   "not_run": 430,
+   "raw": 0
+  },
+  "cumulative_same_window": {
+   "xhs_morning": "早轮队列 492：完成 97（seq1–96 与 98），停在 seq97「大宁公园 鸟」扫码安全墙，未跑 394。raw 105。",
+   "xhs_cumulative": "本午剩余队列以「大宁公园」为 seq1 已完成（承接早轮未完成词）。本午又完成剩余队列 seq1–45，停在 seq46「杭州西溪湿地」安全墙；仍未查本午 not_run 351。西溪本午检索未完成，不得写成西溪无鸟讯。",
+   "weibo_morning": "早轮队列 492：查至 seq63（完成 53 + empty 10），seq64/65「上虞滨海围垦区」未完成，未跑 427。raw 29。",
+   "weibo_cumulative": "本午剩余队列 seq1 即早轮「上虞滨海围垦区 鸟」，实时仍空白，本午 0 进展；仍未查 not_run 430。"
+  },
+  "social_fate": {
+   "n_rows": 813,
+   "destination_counts": {
+    "on_card": 329,
+    "unlocated": 364,
+    "undated_clue": 108,
+    "excluded": 12
+   },
+   "carried_from_0710_1244": 755,
+   "added_this_round": 58,
+   "reread_not_added": 11,
+   "new_independent_reliable_with_species": 5
+  },
+  "omitted_counts": {
+   "CN-31": 30,
+   "CN-32": 29,
+   "CN-33": 44
+  },
+  "notes": [
+   "16 raw 可靠经日历锚点与 1244 去重后，本午新可靠独立有种名 5 条，不等于 16。",
+   "两平台均为真实阻断，可部分发布，不得称全覆盖。",
+   "本午 eBird 使西溪国家湿地公园、邵伯湖进入主卡片；个人坐标点等多处仍在未列出名单。主卡片另出现「上海市」「53号 桃源路」个人/泛坐标点，不等于公园目击。"
+  ]
+ },
+ "omitted_reason_zh": {
+  "no_show_no_watch_below_min": "近窗有清单但无亮点/关注种且低于展示阈值",
+  "no_visible_typed_row": "无可见分类行（未形成可展示鸟种行）",
+  "hot_below_min": "热点但低于展示阈值"
  }
 }
