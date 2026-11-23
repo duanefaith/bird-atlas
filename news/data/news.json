@@ -5263,5 +5263,81 @@
     }
    ]
   }
+ },
+ "coverage": {
+  "cannot_claim_full_social_coverage": true,
+  "window": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "collection": "20261123_0710",
+  "run_id": "20261123_1244",
+  "xhs": {
+   "queue": 492,
+   "raw": 105,
+   "raw_classes": {
+    "reliable_window": 13,
+    "undated_weak": 59,
+    "unlocated": 3,
+    "excluded": 30
+   },
+   "completed": 97,
+   "completed_note": "seq 1–96 与 98",
+   "unfinished": 1,
+   "unfinished_items": [
+    {
+     "seq": 97,
+     "query": "大宁公园 鸟",
+     "reason": "打开笔记跳转 App 扫码验证页 /404/sec_*"
+    }
+   ],
+   "empty": 0,
+   "not_run": 394,
+   "stop": "App 扫码墙。本轮不再浏览小红书。not_run 不得记为无鸟讯。"
+  },
+  "weibo": {
+   "queue": 492,
+   "raw": 29,
+   "raw_classes": {
+    "reliable_window": 0,
+    "undated_weak": 22,
+    "unlocated": 0,
+    "excluded": 7
+   },
+   "completed": 53,
+   "empty": 10,
+   "queried_through_seq": 63,
+   "unfinished": 2,
+   "unfinished_items": [
+    {
+     "seq": 64,
+     "query": "上虞滨海围垦区 鸟",
+     "reason": "实时结果区空白；一次正常恢复后仍空白，保存截图后停止"
+    },
+    {
+     "seq": 65,
+     "query": "上虞滨海围垦区",
+     "reason": "同上，unfinished，不记 empty/无鸟"
+    }
+   ],
+   "not_run": 427,
+   "stop": "seq64/65 空白停止。427 not_run 不得记为无鸟讯。",
+   "meta_quirk": "coverage[56] 曾把 seq57 包在 1 元素列表里，扁平化后无缺号：completed 53 + empty 10 = 至 seq63。"
+  },
+  "social_fate": {
+   "n_rows": 755,
+   "destination_counts": {
+    "on_card": 297,
+    "unlocated": 335,
+    "undated_clue": 113,
+    "excluded": 10
+   }
+  }
+ },
+ "omitted_reason_zh": {
+  "no_show_no_watch_below_min": "近窗有清单但无亮点/关注种且低于展示阈值",
+  "no_visible_typed_row": "无可见分类行（未形成可展示鸟种行）",
+  "hot_below_min": "热点但低于展示阈值"
  }
 }
