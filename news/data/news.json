@@ -1,48 +1,33 @@
 {
- "generated_at": "2026-11-23 17:09 (UTC+8)",
- "source_digest": "digest_20261123_1704.json",
+ "generated_at": "2026-11-24 21:57 (UTC+8)",
+ "source_digest": "digest_20261124_2153.json",
  "days": 3,
  "window": [
-  "2026-11-21",
   "2026-11-22",
-  "2026-11-23"
+  "2026-11-23",
+  "2026-11-24"
  ],
  "counts": {
-  "places": 101,
-  "rows": 764,
-  "new": 27,
+  "places": 86,
+  "rows": 612,
+  "new": 118,
   "by_province": {
-   "上海": 40,
-   "江苏": 28,
-   "浙江": 33,
+   "上海": 38,
+   "江苏": 18,
+   "浙江": 30,
    "未知地区": 0
   },
   "by_type": {
-   "图鉴没有·稀有": 30,
-   "国一": 26,
-   "国二": 129,
-   "猛禽迁徙": 5,
-   "其他稀有": 313,
-   "帖子鸟讯": 266,
-   "图鉴没有·常见": 481
+   "图鉴没有·稀有": 16,
+   "国一": 22,
+   "国二": 100,
+   "猛禽迁徙": 2,
+   "其他稀有": 189,
+   "帖子鸟讯": 285,
+   "图鉴没有·常见": 349
   }
  },
  "places": [
-  {
-   "id": "p432c7c19",
-   "name": "南汇东滩",
-   "type": "rare",
-   "pending": false,
-   "glat": 30.946658,
-   "glng": 121.968035,
-   "is_new": false,
-   "top": [
-    "赤颈鸫",
-    "流苏鹬",
-    "灰胸秧鸡"
-   ],
-   "spots": []
-  },
   {
    "id": "pd402bd8b",
    "name": "崇明东滩鸟类自然保护区",
@@ -59,62 +44,17 @@
    "spots": []
   },
   {
-   "id": "pe893a11f",
-   "name": "东滩湿地公园",
+   "id": "p432c7c19",
+   "name": "南汇东滩",
    "type": "rare",
    "pending": false,
-   "glat": 31.500212,
-   "glng": 121.946738,
-   "is_new": false,
+   "glat": 30.946658,
+   "glng": 121.968035,
+   "is_new": true,
    "top": [
-    "达乌里寒鸦",
-    "黑脸琵鹭",
-    "东方白鹳"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pb28a43b0",
-   "name": "崇明北湖湿地",
-   "type": "rare",
-   "pending": false,
-   "glat": 31.6769,
-   "glng": 121.629773,
-   "is_new": false,
-   "top": [
-    "长嘴半蹼鹬",
-    "震旦鸦雀",
-    "反嘴鹬"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p81e76708",
-   "name": "上海植物园",
-   "type": "rare",
-   "pending": false,
-   "glat": 31.145045,
-   "glng": 121.448676,
-   "is_new": false,
-   "top": [
-    "沼泽山雀",
-    "暗绿绣眼鸟",
-    "北红尾鸲"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pa0febb50",
-   "name": "奉贤小魔术林",
-   "type": "rare",
-   "pending": false,
-   "glat": 30.811749,
-   "glng": 121.524583,
-   "is_new": false,
-   "top": [
-    "丝绒海番鸭",
-    "斑脸海番鸭",
-    "黑脸琵鹭"
+    "赤颈鸫",
+    "灰胸秧鸡",
+    "黑嘴鸥"
    ],
    "spots": []
   },
@@ -129,7 +69,7 @@
    "top": [
     "栗鹀",
     "日本绣眼鸟",
-    "灰背鸫"
+    "北红尾鸲"
    ],
    "spots": [
     {
@@ -148,19 +88,31 @@
      "glat": 31.275776,
      "glng": 121.443097,
      "name": "上海大宁公园",
-     "sp": "灰背鸫"
-    },
-    {
-     "glat": 31.275776,
-     "glng": 121.443097,
-     "name": "上海大宁公园",
      "sp": "北红尾鸲"
     },
     {
      "glat": 31.275776,
      "glng": 121.443097,
      "name": "上海大宁公园",
+     "sp": "红胁蓝尾鸲"
+    },
+    {
+     "glat": 31.275776,
+     "glng": 121.443097,
+     "name": "上海大宁公园",
+     "sp": "灰背鸫"
+    },
+    {
+     "glat": 31.275776,
+     "glng": 121.443097,
+     "name": "上海大宁公园",
      "sp": "白眉鸫"
+    },
+    {
+     "glat": 31.275776,
+     "glng": 121.443097,
+     "name": "上海大宁公园",
+     "sp": "乌鸫"
     },
     {
      "glat": 31.275776,
@@ -178,19 +130,13 @@
      "glat": 31.275776,
      "glng": 121.443097,
      "name": "上海大宁公园",
-     "sp": "红胁蓝尾鸲"
+     "sp": "大山雀"
     },
     {
      "glat": 31.275776,
      "glng": 121.443097,
      "name": "上海大宁公园",
-     "sp": "乌鸫"
-    },
-    {
-     "glat": 31.275776,
-     "glng": 121.443097,
-     "name": "上海大宁公园",
-     "sp": "夜鹭"
+     "sp": "鸲姬鹟"
     },
     {
      "glat": 31.275776,
@@ -202,7 +148,7 @@
      "glat": 31.275776,
      "glng": 121.443097,
      "name": "上海大宁公园",
-     "sp": "鸲姬鹟"
+     "sp": "夜鹭"
     }
    ]
   },
@@ -213,7 +159,7 @@
    "pending": false,
    "glat": 31.092487,
    "glng": 121.197419,
-   "is_new": false,
+   "is_new": true,
    "top": [
     "欧亚大山雀",
     "棕腹大仙鹟",
@@ -237,16 +183,29 @@
    "spots": []
   },
   {
-   "id": "p9440ef31",
-   "name": "碧海金沙-奉贤边滩",
+   "id": "p4f947943",
+   "name": "金山边滩新大堤",
    "type": "rare",
    "pending": false,
-   "glat": 30.816584,
-   "glng": 121.551495,
-   "is_new": false,
+   "glat": 30.726469,
+   "glng": 121.377868,
+   "is_new": true,
    "top": [
-    "丝绒海番鸭",
-    "斑脸海番鸭"
+    "斑脸海番鸭",
+    "鹊鸭"
+   ],
+   "spots": []
+  },
+  {
+   "id": "pda6836f3",
+   "name": "西沙明珠湖",
+   "type": "rare",
+   "pending": false,
+   "glat": 31.735926,
+   "glng": 121.257258,
+   "is_new": true,
+   "top": [
+    "中华秋沙鸭"
    ],
    "spots": []
   },
@@ -264,17 +223,32 @@
    "spots": []
   },
   {
-   "id": "p7ba0a856",
-   "name": "北八滧",
+   "id": "p5833de73",
+   "name": "东滩湿地公园",
    "type": "g1",
    "pending": false,
-   "glat": 31.591277,
-   "glng": 121.848989,
-   "is_new": false,
+   "glat": 31.515537,
+   "glng": 121.943494,
+   "is_new": true,
    "top": [
     "东方白鹳",
-    "黑嘴鸥",
-    "小天鹅"
+    "白头鹤",
+    "黑脸琵鹭"
+   ],
+   "spots": []
+  },
+  {
+   "id": "pa0febb50",
+   "name": "奉贤渔人码头",
+   "type": "g1",
+   "pending": false,
+   "glat": 30.811749,
+   "glng": 121.524583,
+   "is_new": false,
+   "top": [
+    "黑脸琵鹭",
+    "云雀",
+    "普通鵟"
    ],
    "spots": []
   },
@@ -288,22 +262,6 @@
    "is_new": false,
    "top": [
     "东方白鹳",
-    "小天鹅",
-    "普通鸬鹚"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p4faa807f",
-   "name": "上海市",
-   "type": "g1",
-   "pending": false,
-   "glat": 31.587245,
-   "glng": 121.892651,
-   "is_new": true,
-   "top": [
-    "东方白鹳",
-    "黑嘴鸥",
     "小天鹅"
    ],
    "spots": []
@@ -323,86 +281,34 @@
    "spots": []
   },
   {
-   "id": "pcd6dab05",
-   "name": "浦东金海湿地公园",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.25313,
-   "glng": 121.651185,
-   "is_new": false,
-   "top": [
-    "鸳鸯",
-    "白鹭",
-    "北红尾鸲"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pa6c3f614",
-   "name": "世纪公园",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.212808,
-   "glng": 121.55387,
-   "is_new": false,
-   "top": [
-    "普通鵟",
-    "灰喜鹊",
-    "白头鹎"
-   ],
-   "spots": []
-  },
-  {
    "id": "p08f3dc36",
    "name": "星愿公园",
    "type": "g2",
    "pending": false,
    "glat": 31.136847,
    "glng": 121.670645,
-   "is_new": true,
+   "is_new": false,
    "top": [
     "雀鹰",
     "罗纹鸭",
-    "白骨顶"
+    "斑嘴鸭"
    ],
    "spots": []
   },
   {
-   "id": "p478c9949",
-   "name": "Dazhi River, Binhai",
+   "id": "pa004d24d",
+   "name": "南汇魔术林",
    "type": "g2",
    "pending": false,
-   "glat": 31.001715,
-   "glng": 121.900722,
-   "is_new": false,
+   "glat": 30.952507,
+   "glng": 121.966396,
+   "is_new": true,
    "top": [
-    "普通鵟",
     "震旦鸦雀",
-    "中华攀雀"
+    "赤颈鸫",
+    "北红尾鸲"
    ],
    "spots": []
-  },
-  {
-   "id": "p9837896d",
-   "name": "大莲湖",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.061436,
-   "glng": 121.001576,
-   "is_new": false,
-   "top": [
-    "普通鵟",
-    "斑嘴鸭",
-    "小䴙䴘"
-   ],
-   "spots": [
-    {
-     "glat": 31.065775,
-     "glng": 120.996542,
-     "name": "、大莲湖",
-     "sp": "普通鵟"
-    }
-   ]
   },
   {
    "id": "pf986ad83",
@@ -415,22 +321,7 @@
    "top": [
     "普通鵟",
     "小䴙䴘",
-    "黑领椋鸟"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pa004d24d",
-   "name": "南汇魔术林",
-   "type": "g2",
-   "pending": false,
-   "glat": 30.952507,
-   "glng": 121.966396,
-   "is_new": false,
-   "top": [
-    "震旦鸦雀",
-    "黑枕王鹟",
-    "赤颈鸫"
+    "池鹭"
    ],
    "spots": []
   },
@@ -449,20 +340,6 @@
    "spots": []
   },
   {
-   "id": "pe8000337",
-   "name": "53号 桃源路, 上海市, 上海市",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.099736,
-   "glng": 121.189658,
-   "is_new": true,
-   "top": [
-    "棕腹大仙鹟",
-    "红嘴相思鸟"
-   ],
-   "spots": []
-  },
-  {
    "id": "pe1b08411",
    "name": "叠桥村荒地",
    "type": "g2",
@@ -476,30 +353,60 @@
    "spots": []
   },
   {
-   "id": "p433a11e8",
-   "name": "上海动物园",
-   "type": "g2",
+   "id": "pa6c3f614",
+   "name": "世纪公园",
+   "type": "other",
    "pending": false,
-   "glat": 31.190688,
-   "glng": 121.36935,
-   "is_new": false,
+   "glat": 31.212808,
+   "glng": 121.55387,
+   "is_new": true,
    "top": [
-    "鸳鸯"
+    "灰喜鹊",
+    "红胁蓝尾鸲",
+    "白头鹎"
    ],
    "spots": []
   },
   {
-   "id": "pc69702ff",
-   "name": "中山公园",
+   "id": "p81e76708",
+   "name": "上海植物园",
    "type": "other",
    "pending": false,
-   "glat": 31.220042,
-   "glng": 121.424708,
+   "glat": 31.145045,
+   "glng": 121.448676,
+   "is_new": true,
+   "top": [
+    "暗绿绣眼鸟",
+    "北红尾鸲",
+    "凤头鹰"
+   ],
+   "spots": []
+  },
+  {
+   "id": "p1797a992",
+   "name": "新虹桥中心花园",
+   "type": "other",
+   "pending": false,
+   "glat": 31.198655,
+   "glng": 121.409705,
+   "is_new": true,
+   "top": [
+    "白腹鸫",
+    "乌鸫",
+    "灰背鸫"
+   ],
+   "spots": []
+  },
+  {
+   "id": "p28114b57",
+   "name": "上海科技大学",
+   "type": "other",
+   "pending": false,
+   "glat": 31.174818,
+   "glng": 121.598071,
    "is_new": false,
    "top": [
-    "灰背鸫",
-    "白头鹎",
-    "红胁蓝尾鸲"
+    "暗绿绣眼鸟"
    ],
    "spots": []
   },
@@ -517,17 +424,32 @@
    "spots": []
   },
   {
+   "id": "pcd6dab05",
+   "name": "浦东金海湿地公园",
+   "type": "social",
+   "pending": false,
+   "glat": 31.25313,
+   "glng": 121.651185,
+   "is_new": false,
+   "top": [
+    "白鹭",
+    "北红尾鸲",
+    "普通翠鸟"
+   ],
+   "spots": []
+  },
+  {
    "id": "pa54dd142",
    "name": "滨江森林公园",
    "type": "social",
    "pending": false,
    "glat": 31.381516,
    "glng": 121.531805,
-   "is_new": false,
+   "is_new": true,
    "top": [
     "北红尾鸲",
     "小䴙䴘",
-    "戴胜"
+    "灰背鸫"
    ],
    "spots": [
     {
@@ -546,12 +468,6 @@
      "glat": 31.383134,
      "glng": 121.528136,
      "name": "森林公园",
-     "sp": "红头长尾山雀"
-    },
-    {
-     "glat": 31.383134,
-     "glng": 121.528136,
-     "name": "森林公园",
      "sp": "红胁蓝尾鸲"
     }
    ]
@@ -565,9 +481,24 @@
    "glng": 121.552354,
    "is_new": false,
    "top": [
-    "白头鹎",
+    "大山雀",
     "鹊鸲",
-    "大山雀"
+    "棕背伯劳"
+   ],
+   "spots": []
+  },
+  {
+   "id": "pfd05367c",
+   "name": "人民公园",
+   "type": "social",
+   "pending": false,
+   "glat": 31.230294,
+   "glng": 121.477737,
+   "is_new": false,
+   "top": [
+    "大山雀",
+    "珠颈斑鸠",
+    "白头鹎"
    ],
    "spots": []
   },
@@ -586,16 +517,28 @@
    "spots": []
   },
   {
-   "id": "p4d2067b0",
-   "name": "世博文化公园",
+   "id": "p962ffec8",
+   "name": "上海外滩",
    "type": "social",
    "pending": false,
-   "glat": 31.180568,
-   "glng": 121.475356,
+   "glat": 31.237344,
+   "glng": 121.494905,
+   "is_new": true,
+   "top": [
+    "海鸥"
+   ],
+   "spots": []
+  },
+  {
+   "id": "p7f1dff2b",
+   "name": "沿北公园",
+   "type": "social",
+   "pending": false,
+   "glat": 31.142052,
+   "glng": 121.595247,
    "is_new": false,
    "top": [
-    "普通鸬鹚",
-    "矶鹬"
+    "白鹡鸰"
    ],
    "spots": []
   },
@@ -620,28 +563,28 @@
    ]
   },
   {
-   "id": "p14477293",
-   "name": "徐家汇公园",
-   "type": "social",
-   "pending": false,
-   "glat": 31.195049,
-   "glng": 121.446919,
+   "id": "pb28a43b0",
+   "name": "崇明北湖湿地",
+   "type": "hot",
+   "pending": true,
+   "glat": 31.6769,
+   "glng": 121.629773,
    "is_new": false,
    "top": [
-    "麻雀"
+    "0 种"
    ],
    "spots": []
   },
   {
-   "id": "p7f1dff2b",
-   "name": "沿北公园",
-   "type": "social",
+   "id": "pbe91c7d0",
+   "name": "北八滧",
+   "type": "hot",
    "pending": false,
-   "glat": 31.142052,
-   "glng": 121.595247,
+   "glat": 31.591277,
+   "glng": 121.848989,
    "is_new": false,
    "top": [
-    "白鹡鸰"
+    "0 种"
    ],
    "spots": []
   },
@@ -652,6 +595,19 @@
    "pending": false,
    "glat": 31.395536,
    "glng": 121.511343,
+   "is_new": false,
+   "top": [
+    "0 种"
+   ],
+   "spots": []
+  },
+  {
+   "id": "pc3dbfd6b",
+   "name": "世博文化公园",
+   "type": "hot",
+   "pending": false,
+   "glat": 31.179763,
+   "glng": 121.48432,
    "is_new": false,
    "top": [
     "0 种"
@@ -711,19 +667,6 @@
    "spots": []
   },
   {
-   "id": "p4956c814",
-   "name": "高邮湖滩郊野公园",
-   "type": "rare",
-   "pending": true,
-   "glat": 32.721001,
-   "glng": 119.402571,
-   "is_new": false,
-   "top": [
-    "绿鹭"
-   ],
-   "spots": []
-  },
-  {
    "id": "p5ee11cd1",
    "name": "独墅湖公园",
    "type": "g1",
@@ -739,43 +682,15 @@
    "spots": []
   },
   {
-   "id": "p3c28c24c",
-   "name": "58 Long Jiang Lu, Nan Jing Shi, Jiang Su Sheng",
-   "type": "g1",
-   "pending": false,
-   "glat": 32.190565,
-   "glng": 118.960802,
-   "is_new": false,
-   "top": [
-    "东方白鹳",
-    "震旦鸦雀",
-    "鸿雁"
-   ],
-   "spots": []
-  },
-  {
    "id": "p651531ad",
    "name": "邵伯湖",
    "type": "g1",
    "pending": false,
    "glat": 32.622237,
    "glng": 119.450499,
-   "is_new": true,
-   "top": [
-    "白头鹤"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p3178032a",
-   "name": "句容九龙山观景平台",
-   "type": "hawk",
-   "pending": true,
-   "glat": 31.668712,
-   "glng": 119.304278,
    "is_new": false,
    "top": [
-    "猛禽迁徙"
+    "白头鹤"
    ],
    "spots": []
   },
@@ -795,47 +710,47 @@
    "spots": []
   },
   {
+   "id": "p398d9e3b",
+   "name": "石臼湖",
+   "type": "g2",
+   "pending": false,
+   "glat": 31.437699,
+   "glng": 118.961291,
+   "is_new": true,
+   "top": [
+    "鸿雁",
+    "小天鹅",
+    "云雀"
+   ],
+   "spots": []
+  },
+  {
    "id": "pd65d27dd",
    "name": "绿水湾湿地",
    "type": "g2",
    "pending": false,
-   "glat": 31.994981,
-   "glng": 118.647237,
-   "is_new": false,
+   "glat": 32.03687,
+   "glng": 118.668038,
+   "is_new": true,
    "top": [
     "黑鸢",
-    "普通鵟",
-    "普通鸬鹚"
+    "普通鸬鹚",
+    "苍鹭"
    ],
    "spots": []
   },
   {
-   "id": "p5643e928",
-   "name": "长秧田",
+   "id": "pa963471f",
+   "name": "白旄湾",
    "type": "g2",
    "pending": false,
-   "glat": 31.983992,
-   "glng": 118.584509,
-   "is_new": false,
+   "glat": 31.437856,
+   "glng": 120.219854,
+   "is_new": true,
    "top": [
-    "云雀",
+    "小天鹅",
     "普通鵟",
-    "黑鸢"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p80ee1b56",
-   "name": "东山森林公园",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.092336,
-   "glng": 120.401661,
-   "is_new": false,
-   "top": [
-    "云雀",
-    "普通鵟",
-    "红嘴相思鸟"
+    "水雉"
    ],
    "spots": []
   },
@@ -855,72 +770,31 @@
    "spots": []
   },
   {
-   "id": "p398d9e3b",
-   "name": "石臼湖",
+   "id": "p5643e928",
+   "name": "长秧田",
    "type": "g2",
    "pending": false,
-   "glat": 31.437699,
-   "glng": 118.961291,
+   "glat": 31.983992,
+   "glng": 118.584509,
    "is_new": false,
    "top": [
-    "小天鹅",
     "云雀",
-    "鸿雁"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pedd9e281",
-   "name": "白旄湾，雪浪街道, 无锡市",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.434908,
-   "glng": 120.22101,
-   "is_new": false,
-   "top": [
-    "小天鹅",
     "普通鵟",
-    "水雉"
+    "白胸翡翠"
    ],
    "spots": []
   },
   {
-   "id": "p2dc443b0",
-   "name": "协兴圩",
+   "id": "p4ba2cba1",
+   "name": "同里镇, 苏州市 CN-江苏省 31.18469, 120.72042 九里湖",
    "type": "g2",
    "pending": false,
-   "glat": 31.927484,
-   "glng": 120.127552,
-   "is_new": false,
+   "glat": 31.182618,
+   "glng": 120.72476,
+   "is_new": true,
    "top": [
-    "鸿雁",
-    "黑鸢"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pd0e9ce2b",
-   "name": "北王家荡",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.065604,
-   "glng": 120.573834,
-   "is_new": false,
-   "top": [
-    "云雀"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p69979d1a",
-   "name": "韦岗村",
-   "type": "g2",
-   "pending": false,
-   "glat": 32.101115,
-   "glng": 119.327285,
-   "is_new": false,
-   "top": [
-    "雕鸮"
+    "白尾鹞",
+    "黑颈䴙䴘"
    ],
    "spots": []
   },
@@ -933,68 +807,12 @@
    "glng": 120.733771,
    "is_new": false,
    "top": [
-    "白尾鹞"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p2f690b13",
-   "name": "长荡湖国家湿地公园",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.558677,
-   "glng": 119.559026,
-   "is_new": false,
-   "top": [
-    "小鸦鹃"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p50d42f53",
-   "name": "Wuzhong",
-   "type": "g2",
-   "pending": false,
-   "glat": 31.121345,
-   "glng": 120.531376,
-   "is_new": false,
-   "top": [
     "普通鵟"
    ],
    "spots": []
   },
   {
-   "id": "p78bda7d1",
-   "name": "苏州虎丘湿地公园",
-   "type": "other",
-   "pending": false,
-   "glat": 31.364362,
-   "glng": 120.577924,
-   "is_new": false,
-   "top": [
-    "北红尾鸲",
-    "小䴙䴘",
-    "白骨顶"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pd0994636",
-   "name": "龙袍湿地",
-   "type": "social",
-   "pending": false,
-   "glat": 32.188102,
-   "glng": 118.994375,
-   "is_new": false,
-   "top": [
-    "白骨顶",
-    "八哥",
-    "凤头潜鸭"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p36587d95",
+   "id": "pc4dbc0d5",
    "name": "南京中山植物园",
    "type": "social",
    "pending": false,
@@ -1004,7 +822,7 @@
    "top": [
     "斑鸫",
     "大斑啄木鸟",
-    "红尾斑鸫"
+    "红嘴蓝鹊"
    ],
    "spots": []
   },
@@ -1017,20 +835,21 @@
    "glng": 120.805411,
    "is_new": true,
    "top": [
-    "流苏鹬"
+    "流苏鹬",
+    "黑腹滨鹬"
    ],
    "spots": []
   },
   {
-   "id": "p8799f030",
-   "name": "斜塘老街",
+   "id": "p5405a74e",
+   "name": "中国常熟世界联合学院",
    "type": "hot",
-   "pending": false,
-   "glat": 31.301606,
-   "glng": 120.745247,
+   "pending": true,
+   "glat": 31.604263,
+   "glng": 120.741158,
    "is_new": false,
    "top": [
-    "6 种"
+    "32 种"
    ],
    "spots": []
   },
@@ -1106,11 +925,11 @@
    "pending": false,
    "glat": 30.204599,
    "glng": 120.146669,
-   "is_new": false,
+   "is_new": true,
    "top": [
     "黑头蜡嘴雀",
     "白鹇",
-    "红嘴相思鸟"
+    "松雀鹰"
    ],
    "spots": []
   },
@@ -1119,13 +938,13 @@
    "name": "余杭南湖",
    "type": "rare",
    "pending": false,
-   "glat": 30.254366,
-   "glng": 119.927547,
+   "glat": 30.245781,
+   "glng": 119.922636,
    "is_new": false,
    "top": [
     "小田鸡",
-    "黑鸢",
-    "普通鵟"
+    "鹗",
+    "云雀"
    ],
    "spots": []
   },
@@ -1136,41 +955,26 @@
    "pending": false,
    "glat": 27.620142,
    "glng": 121.209915,
-   "is_new": false,
+   "is_new": true,
    "top": [
-    "日本绣眼鸟",
     "栗耳短脚鹎",
-    "栗鹀"
+    "黑脸琵鹭",
+    "普通鵟"
    ],
    "spots": []
   },
   {
-   "id": "pb7a8519c",
-   "name": "白沙岛（Baisha island）",
+   "id": "p6e406cb9",
+   "name": "五丰岛",
    "type": "rare",
    "pending": false,
-   "glat": 29.938721,
-   "glng": 122.455881,
-   "is_new": false,
+   "glat": 30.091369,
+   "glng": 120.126105,
+   "is_new": true,
    "top": [
-    "家鸦",
-    "日本绣眼鸟",
-    "栗耳短脚鹎"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pd90f47fa",
-   "name": "东钱湖生态龙虾园",
-   "type": "rare",
-   "pending": false,
-   "glat": 29.791407,
-   "glng": 121.689793,
-   "is_new": false,
-   "top": [
-    "针尾沙锥",
-    "白头鹤",
-    "黑脸琵鹭"
+    "黑头鹀",
+    "灰背隼",
+    "游隼"
    ],
    "spots": []
   },
@@ -1189,30 +993,32 @@
    "spots": []
   },
   {
-   "id": "p0502f13e",
-   "name": "老虎潭水库",
-   "type": "rare",
-   "pending": true,
-   "glat": 30.66047,
-   "glng": 119.946893,
-   "is_new": false,
-   "top": [
-    "小嘴乌鸦"
-   ],
-   "spots": []
-  },
-  {
    "id": "pd2f433c7",
    "name": "浦沿江滩",
    "type": "g1",
    "pending": false,
    "glat": 30.146982,
    "glng": 120.146229,
-   "is_new": false,
+   "is_new": true,
    "top": [
     "黑嘴鸥",
     "小天鹅",
     "罗纹鸭"
+   ],
+   "spots": []
+  },
+  {
+   "id": "pd437487a",
+   "name": "瑞安海滨",
+   "type": "g1",
+   "pending": false,
+   "glat": 27.700806,
+   "glng": 120.729325,
+   "is_new": true,
+   "top": [
+    "黑嘴鸥",
+    "黑脸琵鹭",
+    "云雀"
    ],
    "spots": []
   },
@@ -1232,6 +1038,21 @@
    "spots": []
   },
   {
+   "id": "pd90f47fa",
+   "name": "东钱湖生态龙虾园",
+   "type": "g1",
+   "pending": false,
+   "glat": 29.791407,
+   "glng": 121.689793,
+   "is_new": false,
+   "top": [
+    "黑脸琵鹭",
+    "白尾鹞",
+    "蓝喉歌鸲"
+   ],
+   "spots": []
+  },
+  {
    "id": "p673fa443",
    "name": "王坛镇-舜王庙",
    "type": "g1",
@@ -1247,6 +1068,19 @@
    "spots": []
   },
   {
+   "id": "pf9bb7836",
+   "name": "漩门湾三期围垦区",
+   "type": "g1",
+   "pending": false,
+   "glat": 28.149955,
+   "glng": 121.295025,
+   "is_new": true,
+   "top": [
+    "黑鹳"
+   ],
+   "spots": []
+  },
+  {
    "id": "p55c875f2",
    "name": "北湖草荡",
    "type": "g2",
@@ -1255,8 +1089,8 @@
    "glng": 119.93831,
    "is_new": false,
    "top": [
-    "黑鸢",
     "普通鵟",
+    "黑鸢",
     "云雀"
    ],
    "spots": []
@@ -1271,37 +1105,36 @@
    "is_new": false,
    "top": [
     "白鹇",
-    "淡眉雀鹛",
-    "褐顶雀鹛"
+    "强脚树莺",
+    "淡眉雀鹛"
    ],
    "spots": []
   },
   {
-   "id": "p0031a66d",
-   "name": "曹娥江口",
+   "id": "p58842159",
+   "name": "天目溪流域",
    "type": "g2",
    "pending": false,
-   "glat": 30.218371,
-   "glng": 120.767489,
-   "is_new": false,
+   "glat": 30.048066,
+   "glng": 119.375199,
+   "is_new": true,
    "top": [
-    "云雀",
-    "凤头麦鸡",
-    "普通鸬鹚"
+    "雀鹰",
+    "冠鱼狗"
    ],
    "spots": []
   },
   {
-   "id": "p3d4c5ea3",
-   "name": "英川水库-茶园电站",
+   "id": "p6dfe325b",
+   "name": "湖海塘公园",
    "type": "g2",
    "pending": false,
-   "glat": 27.832237,
-   "glng": 119.287679,
-   "is_new": false,
+   "glat": 29.047711,
+   "glng": 119.644584,
+   "is_new": true,
    "top": [
-    "白眉山鹧鸪",
-    "绿翅鸭"
+    "小天鹅",
+    "雀鹰"
    ],
    "spots": []
   },
@@ -1319,45 +1152,6 @@
    "spots": []
   },
   {
-   "id": "pa68328e5",
-   "name": "五常湿地",
-   "type": "g2",
-   "pending": false,
-   "glat": 30.257935,
-   "glng": 120.029651,
-   "is_new": false,
-   "top": [
-    "普通鵟"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p01e696e6",
-   "name": "九炮山",
-   "type": "g2",
-   "pending": false,
-   "glat": 30.136163,
-   "glng": 120.060916,
-   "is_new": false,
-   "top": [
-    "雕鸮"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p2369a308",
-   "name": "剡溪",
-   "type": "g2",
-   "pending": false,
-   "glat": 29.693087,
-   "glng": 121.305567,
-   "is_new": false,
-   "top": [
-    "雀鹰"
-   ],
-   "spots": []
-  },
-  {
    "id": "pd2c081e2",
    "name": "长街镇, 宁波市",
    "type": "g2",
@@ -1367,19 +1161,6 @@
    "is_new": false,
    "top": [
     "白尾鹞"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p7f484cfd",
-   "name": "温州湾永强海滨",
-   "type": "g2",
-   "pending": false,
-   "glat": 27.821208,
-   "glng": 120.872707,
-   "is_new": false,
-   "top": [
-    "云雀"
    ],
    "spots": []
   },
@@ -1397,15 +1178,41 @@
    "spots": []
   },
   {
-   "id": "pcaf7e67c",
-   "name": "上虞滨海围垦区",
+   "id": "p0370eb2f",
+   "name": "Hangzhou Xihu Scenic Area-Yihu, Hangzhou",
    "type": "g2",
    "pending": false,
-   "glat": 30.211263,
-   "glng": 120.902354,
+   "glat": 30.227989,
+   "glng": 120.146674,
+   "is_new": true,
+   "top": [
+    "鸳鸯"
+   ],
+   "spots": []
+  },
+  {
+   "id": "p01e696e6",
+   "name": "九炮山",
+   "type": "g2",
+   "pending": false,
+   "glat": 30.136163,
+   "glng": 120.060916,
    "is_new": false,
    "top": [
-    "白尾鹞"
+    "雕鸮"
+   ],
+   "spots": []
+  },
+  {
+   "id": "pa68328e5",
+   "name": "五常湿地",
+   "type": "g2",
+   "pending": false,
+   "glat": 30.257935,
+   "glng": 120.029651,
+   "is_new": false,
+   "top": [
+    "普通鵟"
    ],
    "spots": []
   },
@@ -1420,22 +1227,37 @@
    "top": [
     "叉尾太阳鸟",
     "大山雀",
-    "橙腹叶鹎"
+    "红嘴蓝鹊"
    ],
    "spots": []
   },
   {
-   "id": "p7a0f0418",
-   "name": "洪源, 丽水市",
+   "id": "pe20173b7",
+   "name": "青山湖",
    "type": "other",
    "pending": false,
-   "glat": 27.811659,
-   "glng": 119.26648,
-   "is_new": false,
+   "glat": 30.237289,
+   "glng": 119.762164,
+   "is_new": true,
    "top": [
-    "plured2",
-    "松鸦",
-    "淡眉雀鹛"
+    "小䴙䴘",
+    "白骨顶",
+    "绿翅鸭"
+   ],
+   "spots": []
+  },
+  {
+   "id": "p14258543",
+   "name": "隆山公园",
+   "type": "social",
+   "pending": false,
+   "glat": 27.770343,
+   "glng": 120.644391,
+   "is_new": true,
+   "top": [
+    "乌灰鸫",
+    "北红尾鸲",
+    "白腹鸫"
    ],
    "spots": []
   },
@@ -1451,35 +1273,6 @@
     "反嘴鹬",
     "绿翅鸭",
     "北红（原文简称）"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pde5cbd4b",
-   "name": "顺坝垦区",
-   "type": "social",
-   "pending": false,
-   "glat": 30.272225,
-   "glng": 120.281526,
-   "is_new": false,
-   "top": [
-    "北红尾鸲",
-    "灰头鹀",
-    "珠颈斑鸠"
-   ],
-   "spots": []
-  },
-  {
-   "id": "p1f72a45c",
-   "name": "Wetland Park Meishan Scenic Area, Shaoxing",
-   "type": "social",
-   "pending": false,
-   "glat": 30.052988,
-   "glng": 120.583163,
-   "is_new": false,
-   "top": [
-    "北红尾鸲",
-    "红胁蓝尾鸲"
    ],
    "spots": []
   },
@@ -1505,15 +1298,16 @@
    ]
   },
   {
-   "id": "p14258543",
-   "name": "隆山公园",
+   "id": "p1f72a45c",
+   "name": "Wetland Park Meishan Scenic Area, Shaoxing",
    "type": "social",
    "pending": false,
-   "glat": 27.770343,
-   "glng": 120.644391,
+   "glat": 30.052988,
+   "glng": 120.583163,
    "is_new": false,
    "top": [
-    "叉尾太阳鸟"
+    "北红尾鸲",
+    "红胁蓝尾鸲"
    ],
    "spots": []
   },
@@ -1527,19 +1321,6 @@
    "is_new": false,
    "top": [
     "5 种"
-   ],
-   "spots": []
-  },
-  {
-   "id": "pe20173b7",
-   "name": "青山湖",
-   "type": "hot",
-   "pending": true,
-   "glat": 30.237289,
-   "glng": 119.762164,
-   "is_new": false,
-   "top": [
-    "26 种"
    ],
    "spots": []
   },
@@ -1570,7 +1351,7 @@
    "spots": []
   }
  ],
- "ui_updated_at": "2026-11-23 17:09 (UTC+8)",
+ "ui_updated_at": "2026-11-24 21:57 (UTC+8)",
  "undated_clues": [
   {
    "post_id": "xhs:6af44cdc00000000160182ea",
@@ -1694,6 +1475,25 @@
    "spot_detail": "发表日期不作观察日",
    "title": "红胁蓝尾鸲视频",
    "source": "小红书 海哥拾光记",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af59e55000000002903ede0",
+   "url": "https://www.xiaohongshu.com/explore/6af59e55000000002903ede0",
+   "park": null,
+   "place_text": "苏州虎丘湿地公园（正文）",
+   "species_zh": "棕背伯劳（标签）",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated",
+   "spot_detail": "不从发帖时间推观察日",
+   "title": "发霉橘子",
+   "source": "小红书 静鸡鸡望住你",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -1963,6 +1763,25 @@
    "raises_last_seen": false
   },
   {
+   "post_id": "weibo:RrwBzfD4m",
+   "url": "https://weibo.com/1867352731/RrwBzfD4m",
+   "park": "青西郊野公园",
+   "place_text": "青西郊野公园（正文与地点标签）",
+   "species_zh": "鹭（未细分）",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_relative_date; species_unidentified",
+   "spot_detail": "正文称“难得有一个晴朗点的周末”到青西郊野公园，见到未细分鹭类抓鱼；另写小元荡骑车，非本条鸟讯地点。发帖 11月15日 19:37 不得当观察日。评论为同城推荐，无观察日。time 保持 null。",
+   "title": "",
+   "source": "微博 你竟然在代码里下毒",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
    "post_id": "weibo:RrmWgEZRq",
    "url": "https://weibo.com/6556389121/RrmWgEZRq",
    "park": "玄武湖",
@@ -1984,21 +1803,21 @@
    "raises_last_seen": false
   },
   {
-   "post_id": "weibo:Rrw7stfLI",
-   "url": "https://weibo.com/1809524474/Rrw7stfLI",
-   "park": "虹口鲁迅公园",
-   "place_text": "虹口鲁迅公园（正文）",
-   "species_zh": "黑天鹅（死亡个体；园内事件，非活体野外目击）",
+   "post_id": "weibo:RrBjfu57R",
+   "url": "https://weibo.com/2291339513/RrBjfu57R",
+   "park": "苏州虎丘湿地公园",
+   "place_text": "苏州虎丘湿地公园（正文）",
+   "species_zh": "飞鸟（未细分）",
    "also": [],
    "obs_date": "unknown",
    "source_date": null,
    "visibility_label": "weak_undated",
    "reason": "park_assigned_no_card_undated",
    "window_class": "weak_visible",
-   "status": "weak_undated; mortality_report; likely_park_ornamental; not_live_field_observation",
-   "spot_detail": "正文写“上周”虹口鲁迅公园一只黑天鹅死亡，并呼吁勿随意投喂。相对日期“上周”不能定日历日；发帖 26-11-15 18:23 不得当观察日。属园内死亡事件，不作为活鸟野外目击，不抬 last_seen。页面无评论。time 保持 null。",
+   "status": "weak_undated; species_unidentified; tourist_note",
+   "spot_detail": "旅游向正文提到小路偶遇掠过水面的飞鸟，无种名、无日历观察日。发帖“今天07:36”不得当观察日。详情页评论不可读。不与既有虎丘未定日线索借日期。time 保持 null。",
    "title": "",
-   "source": "微博 花苞de麻麻",
+   "source": "微博 一品一晶",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -2060,27 +1879,6 @@
    "spot_detail": "搜索卡片提到南京玄武湖景区的黑天鹅、黑水鸡，正文未给明确日历观察日；发帖时钟 11月17日 08:08 不代替观察日。详情两次打开失败/超时，评论未读。黑天鹅在园内可能为园养，野外属性未核。未定日弱线索，不计可靠或独立目击。",
    "title": "一池静水，藏着好多温柔生灵：黑天鹅优雅地游过莲叶间，黑水鸡在水面慢悠悠划开圈圈涟漪",
    "source": "微博 杰哥的寻访记录",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "weibo:RrNzIvBHY",
-   "url": "https://weibo.com/5663122911/RrNzIvBHY",
-   "park": "花港观鱼",
-   "place_text": "西湖花港观鱼（正文）",
-   "species_zh": "夜鹭",
-   "also": [
-    "水鸟（未细分）"
-   ],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "park_assigned_no_card_undated",
-   "window_class": "weak_visible",
-   "status": "weak_undated; details_unreadable; seasonal_tourism",
-   "spot_detail": "旅游/季节文案描述西湖花港观鱼岸边夜鹭伫立，仅有“冬日”，无明确日历观察日；发帖时间不能替代观察日。仅搜索卡片可见，详情两次空白、评论未读。未定日弱线索，不计可靠/独立目击。",
-   "title": "冬日赴西湖花港观鱼，寻一份江南水岸的悠然。",
-   "source": "微博 夏翡",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -2400,25 +2198,6 @@
    "raises_last_seen": false
   },
   {
-   "post_id": "weibo:RmYeKhgUB",
-   "url": "https://weibo.com/3888052054/RmYeKhgUB",
-   "park": null,
-   "place_text": "延中绿地",
-   "species_zh": null,
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261119_1308",
-   "spot_detail": "unidentified_weak；帖子配问句“南东是什么鸟”且地点标签延中绿地，但未说明鸟种、观察日期或情境；详情页显示无评论。保留为未鉴定线索，不计窗口内可靠目击。 正文仅问“南东是什么鸟”，无观察日期、鸟种或观察过程；不使用发帖日期推定。 26-10-16 20:46（微博发布时间）；无可用日历观察日则 time 留空。来源 20261119_1308，不伪称 1308 午轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "南东是什么鸟[疑问]",
-   "source": "微博 jingjinyoyo",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
    "post_id": "xhs:6afdd23900000000240310be",
    "url": "https://www.xiaohongshu.com/search_result/6afdd23900000000240310be",
    "park": null,
@@ -2525,6 +2304,68 @@
    "spot_detail": "保留为季节性物种/地点弱线索；正文没有单次观察日期，页面相对发布时间不作为观察日，未计可靠目击。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
    "title": "又到了红头长尾山雀又肥又圆的季节",
    "source": "小红书 出门拍点啥",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6afd7e2500000000180286f3",
+   "url": "https://www.xiaohongshu.com/explore/6afd7e2500000000180286f3",
+   "park": null,
+   "place_text": "上海中山公园（标签）",
+   "species_zh": "灰背鸫",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261120_0709",
+   "spot_detail": "物种及#上海中山公园标签明确，但页面位置显示江苏，存在地点冲突；正文无日历观察日期，保留弱线索，不计可靠目击。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "灰背鸫",
+   "source": "小红书 漂流的LV",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af9675f000000002a028086",
+   "url": "https://www.xiaohongshu.com/explore/6af9675f000000002a028086",
+   "park": null,
+   "place_text": "上海中山公园、香花桥",
+   "species_zh": "红胁蓝尾鸲",
+   "also": [
+    "鹊鸲（雌）",
+    "乌鸫",
+    "灰背鸫",
+    "白头鹎"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261120_0709",
+   "spot_detail": "帖子明确为上海中山公园香花桥观鸟并列出配图物种；无日历观察日期，页面定位北京，评论区未能加载/读取，按undated_weak保留，不计可靠目击。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "上海中山公园的香花桥观鸟真的香！",
+   "source": "小红书 该用户已退休",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af85c6c000000002b010f04",
+   "url": "https://www.xiaohongshu.com/explore/6af85c6c000000002b010f04",
+   "park": null,
+   "place_text": "虎丘湿地公园",
+   "species_zh": "北红尾鸲",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261120_0709",
+   "spot_detail": "直接观鸟叙述，地点及北红尾鸲明确；无日历观察日期，且评论区未加载可读内容，按undated_weak保留，不计可靠目击。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "虎丘湿地公园观鸟",
+   "source": "小红书 不吃香菜的闹闹",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -2658,6 +2499,47 @@
    "spot_detail": "标题/话题明示崖沙燕，正文泛称南湖并提杭州；观察期只说“这几天”，无绝对日历日期，评论无日期。不得用相关推荐词条“杭州市余杭区南湖公园”推断位置，不将南湖公园强并为余杭南湖或其他南湖点。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
    "title": "飞天小海豹🦭崖沙燕",
    "source": "小红书 蚁子",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af7289b000000001802a874",
+   "url": "https://www.xiaohongshu.com/explore/6af7289b000000001802a874",
+   "park": null,
+   "place_text": "青西郊野公园、大莲湖（标题所指，未逐种定位）",
+   "species_zh": "普通鵟",
+   "also": [
+    "小白鹭",
+    "红胁蓝尾鸲（雌）"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261120_0709",
+   "spot_detail": "明确列出3种与上海青西郊野公园/大莲湖，但无日历观察日期；页面相对6天不作观察日。个体/鸟种未细分到大莲湖具体位置；评论未加载，已等待一次。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "📍青西郊野公园｜大莲湖秋冬观鸟打卡",
+   "source": "小红书 看山记",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af6c0cf000000001c0301a8",
+   "url": "https://www.xiaohongshu.com/explore/6af6c0cf000000001c0301a8",
+   "park": null,
+   "place_text": "上海青西郊野公园",
+   "species_zh": "斑嘴鸭",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261120_0709",
+   "spot_detail": "地点与斑嘴鸭明确，缺观察日历日期；页面编辑时间不作为观察日。评论未加载，已等待一次。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "漫漫拾羽，第三期",
+   "source": "小红书 松饼观鸟日记🍰",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -2825,27 +2707,6 @@
    "raises_last_seen": false
   },
   {
-   "post_id": "xhs:6afe6704000000001f0164dc",
-   "url": "https://www.xiaohongshu.com/explore/6afe6704000000001f0164dc",
-   "park": "新虹桥",
-   "place_text": "新虹桥花园（题名；隔壁小池塘，咖啡馆对面）",
-   "species_zh": "乌鸫",
-   "also": [
-    "白头鹎"
-   ],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "park_assigned_no_card_undated",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261120_0709; xinhongqiao_not_changxing",
-   "spot_detail": "上海新虹桥花园新点弱线索；正文明确乌鸫、白头鹎在池塘活动，评论补充位置为咖啡馆对面；无正文/评论日历锚点。评论的“椋鸟群”未细分到种，不加入species。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "新虹桥花园新的小鸟浴场",
-   "source": "小红书 Dreamaker",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
    "post_id": "xhs:6aff871b000000002b032e72",
    "url": "https://www.xiaohongshu.com/explore/6aff871b000000002b032e72",
    "park": "赤风港",
@@ -2886,6 +2747,44 @@
    "raises_last_seen": false
   },
   {
+   "post_id": "xhs:6afa81cb000000002500a17e",
+   "url": "https://www.xiaohongshu.com/explore/6afa81cb000000002500a17e",
+   "park": "斜塘老街",
+   "place_text": "苏州工业园区斜塘附近（题名/正文；未细分）、斜塘老街、斜塘河（话题标签；单独记录，不与其他地点合并）",
+   "species_zh": null,
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261120_0709; xietang_old_street_not_shili_xietang",
+   "spot_detail": "斜塘附近救助/疑似走失鸟弱线索；不作野生鸟种目击或可靠观察；未读出日历观察日期，页面/评论的相对时间不作锚点。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "苏州工业园区斜塘附近捡到只鸟",
+   "source": "小红书 郸玥",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6afd56c7000000002a01f9ff",
+   "url": "https://www.xiaohongshu.com/explore/6afd56c7000000002a01f9ff",
+   "park": "斜塘老街",
+   "place_text": "苏州广福冲山岛（题名/话题标签；作为待核来源）",
+   "species_zh": "红嘴鸥",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261120_0709; xietang_old_street_not_shili_xietang",
+   "spot_detail": "跨地域搜索结果提供广福冲山岛红嘴鸥待核来源；与斜塘老街、水八仙、十里斜塘分开。无日历观察日，内容可能为季节性宣传/抒情，未计可靠目击；评论查看后仍未加载。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "苏州广福冲山岛，红嘴鸥又来了！",
+   "source": "小红书 葫噜茅",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
    "post_id": "weibo:RseptcaeL",
    "url": "https://weibo.com/1961594843/RseptcaeL",
    "park": "钱塘大湾区湿地公园",
@@ -2904,6 +2803,28 @@
    "spot_detail": "该本地号短讯转述钱塘大湾区越冬候鸟到达，物种及地点明确但正文仅“近日”，未能确定是否落在观察窗。与20261119_0706中同一杭州发布“近日冷空气后越冬候鸟抵达”资讯为同一事件/稿件主题，故只保留来源并标重复，不计新独立目击。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
    "title": "候鸟大军抵达杭州",
    "source": "微博 杭州微博城事",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "weibo:Rs6RjycK8",
+   "url": "https://weibo.com/1878969684/Rs6RjycK8",
+   "park": null,
+   "place_text": "苏州虎丘湿地公园（正文）",
+   "species_zh": "凤头䴙䴘（原文）",
+   "also": [
+    "罗纹鸭（原文）",
+    "绿头鸭（原文）"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261120_0709",
+   "spot_detail": "本地媒体报道相城秋冬水鸟，虎丘湿地公园段明确提及凤头䴙䴘、罗纹鸭、绿头鸭；无日历观察日，仅以季节性/“初冬”描述，存为undated_weak，不计可靠本窗目击。正文后段属漕湖、莲花岛、西咀公园等不同片区的鸟种不归入虎丘湿地公园。此完整mid在本run及两旧run未见。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "来了！相城迎来越冬“客人”",
+   "source": "微博 965苏州生活广播",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -2986,21 +2907,134 @@
    "raises_last_seen": false
   },
   {
-   "post_id": "weibo:RpoX7z9kA",
-   "url": "https://weibo.com/1072768202/RpoX7z9kA",
-   "park": "新虹桥",
-   "place_text": "新虹桥中心花园",
-   "species_zh": "鸟（泛称；正文仅称“有鸟”）",
+   "post_id": "xhs:6afeb0830000000018039511",
+   "url": "https://www.xiaohongshu.com/explore/6afeb0830000000018039511",
+   "park": null,
+   "place_text": "天钥桥路附近、徐家汇公园、北侧百代小楼附近的树林、瀑布的溪流、南侧靠近肇嘉浜路停车场出入口的水杉林",
+   "species_zh": "麻雀",
+   "also": [
+    "白头鹎",
+    "灰喜鹊",
+    "珠颈斑鸠",
+    "红胁蓝尾鸲",
+    "白眉鸫"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261121_0712; multi_place_kept_unlocated",
+   "spot_detail": "原文与前4条可见评论已读；评论无新的观察日期或地点。仅保留弱线索，未从标题的无年份“1119”或“1天前”推算观察日。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "1119 徐家汇公园 加新白眉鸫",
+   "source": "小红书 丙子秋",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6afadced000000002b0005f8",
+   "url": "https://www.xiaohongshu.com/explore/6afadced000000002b0005f8",
+   "park": null,
+   "place_text": "龙袍湿地",
+   "species_zh": "震旦鸦雀",
    "also": [],
    "obs_date": "unknown",
    "source_date": null,
    "visibility_label": "weak_undated",
-   "reason": "park_assigned_no_card_undated",
+   "reason": "place_text_present_park_null",
    "window_class": "weak_visible",
-   "status": "weak_undated; from_20261120_0709; xinhongqiao_not_changxing",
-   "spot_detail": "概括性描述新虹桥中心花园“有鸟”，未指明鸟种或具体目击日期/事件，弱线索留存，不以11/01发帖日期推定观察日期。；无可用日历观察日则 time 留空。来源 20261120_0709，不伪称 0709 早轮新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "新虹桥中心花园是适合露营的地方，有鸟有湖",
-   "source": "微博 穿裙裙穿裙裙",
+   "status": "weak_undated; from_20261121_0712",
+   "spot_detail": "正文和评论可读；物种见标题，地点见正文及作者回复；无观察日历锚点，不以发帖/评论相对时间推定日期。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "芦苇开始枯黄，震旦鸦雀也开始活跃了",
+   "source": "小红书 可马",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af821e800000000260243b9",
+   "url": "https://www.xiaohongshu.com/explore/6af821e800000000260243b9",
+   "park": null,
+   "place_text": "龙袍湿地公园",
+   "species_zh": "凤头鸊鷉",
+   "also": [
+    "白骨顶",
+    "苍鹭",
+    "斑嘴鸭",
+    "东方白鹳"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261121_0712",
+   "spot_detail": "正文可读；地点与多种鸟类明确，但“周末”无日历锚点，页面相对发帖时间不用于推定观察日。评论区显示无可读评论。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "龙袍湿地公园溜达观鸟",
+   "source": "小红书 momo",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6afed884000000002b02a7c8",
+   "url": "https://www.xiaohongshu.com/explore/6afed884000000002b02a7c8",
+   "park": null,
+   "place_text": "龙袍湿地",
+   "species_zh": "凤头潜鸭",
+   "also": [
+    "绿头潜鸭",
+    "红头潜鸭（评论区网友补充）"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261121_0712",
+   "spot_detail": "正文与2条评论已读；“青头/白眼”未按标题缩写猜测具体种名；正文/评论无观察日历锚点。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "龙袍湿地～青头、白眼、凤头潜鸭齐上阵",
+   "source": "小红书 蓝色的眼睛",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af9c80a000000002b01c3af",
+   "url": "https://www.xiaohongshu.com/explore/6af9c80a000000002b01c3af",
+   "park": null,
+   "place_text": "龙袍湿地",
+   "species_zh": "鸥（评论区网友判断，未确认）",
+   "also": [
+    "黑鸢（评论区作者判断，未确认）"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261121_0712",
+   "spot_detail": "正文及3条评论已读；物种识别不确定，保留评论区不同猜测，不当可靠物种记录；无日历观察日期。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "这是一群什么鸟？太震撼！",
+   "source": "小红书 蓝色的眼睛",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6afc45f3000000002a00dae1",
+   "url": "https://www.xiaohongshu.com/explore/6afc45f3000000002a00dae1",
+   "park": null,
+   "place_text": "龙袍湿地、七乡河",
+   "species_zh": "鸭类（未细分）",
+   "also": [
+    "鸳鸯（七乡河）"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261121_0712; multi_place_kept_unlocated",
+   "spot_detail": "正文和可见评论已读；帖文以鸭类手绘为主，未细分的鸭不升到具体种；仅有“周末”及相对发布时间，未见观察日历锚点。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "冬天来看鸭鸭们🦆",
+   "source": "小红书 金琥-自然故事绘",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -3148,295 +3182,14 @@
    "raises_last_seen": false
   },
   {
-   "post_id": "xhs:69a54df0000000001a025a7d",
-   "url": "https://www.xiaohongshu.com/explore/69a54df0000000001a025a7d",
+   "post_id": "xhs:695d2252000000001a027052",
+   "url": "https://www.xiaohongshu.com/explore/695d2252000000001a027052",
    "park": null,
-   "place_text": "延中绿地（正文）、延中广场公园（标题/话题）",
-   "species_zh": "未分种鸟（作者评论泛称“鵯”，未细分）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712; multi_place_kept_unlocated",
-   "spot_detail": "地点与鸟类摄影明确，物种未分种；发帖/评论日期不替代观察日期，故保存为未定日弱线索，不计入2026-11-19至11-21观察窗。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "奥林巴斯｜延中广场公园拍鸟",
-   "source": "小红书 Summer xia75",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6afa81da00000000180397cf",
-   "url": "https://www.xiaohongshu.com/explore/6afa81da00000000180397cf",
-   "park": null,
-   "place_text": "黄浦区延中绿地（标题明确）",
-   "species_zh": "白鹭（原文泛称，未细分种）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "保存为未定日弱线索；不借用“5天前”发帖相对时间作观察日，不将原文“白鹭”升为具体种。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "黄浦区延中绿地",
-   "source": "小红书 风雨海上",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6965e5ba000000002102aec5",
-   "url": "https://www.xiaohongshu.com/explore/6965e5ba000000002102aec5",
-   "park": null,
-   "place_text": "延中绿地（正文明确）",
-   "species_zh": "大山雀",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "种名与地点由正文明确；发帖提示01-13不作观察日期，不计入2026-11-19至11-21观察窗或last-seen。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中绿地的大山雀，怼脸随便拍",
-   "source": "小红书 听海",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:658439c6000000000901c23a",
-   "url": "https://www.xiaohongshu.com/explore/658439c6000000000901c23a",
-   "park": null,
-   "place_text": "延中广场公园（正文明确，作者描述为延安东路-重庆中路-金陵西路-黄陂南路合围区域）",
-   "species_zh": "未分种鸭/水鸟（原文称“地头鸭”，未鉴定到种）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "仅保留原文未分种的鸭/水鸟线索，不推定具体种；不借用2023-12-21发帖日期作为观察日期，不计入当前观察窗或last-seen。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中广场公园的胆子很大鸭~",
-   "source": "小红书 行云流水的行云",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:68b6edf6000000001d02e178",
-   "url": "https://www.xiaohongshu.com/explore/68b6edf6000000001d02e178",
-   "park": null,
-   "place_text": "延中绿地湖心岛/园内（正文；未细分具体点位）",
-   "species_zh": "番鸭（作者正文声称，低置信）",
-   "also": [
-    "绿头鸭（作者正文声称，低置信）",
-    "黑水鸡（作者正文声称，低置信）",
-    "白鹭（作者正文声称，未细分，低置信）",
-    "乌鸫（作者正文声称，低置信）"
-   ],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "以未定日、未经核验的弱线索保留；正文呈宣传式泛化，不能当可靠原始观察。红嘴蓝鹊、夜鹭仅写“运气好能看到”，不作为目击；不借用发帖日。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "🦆上海延中广场公园の动物奇遇记 🐱",
-   "source": "小红书 HT.W",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:67455827000000000703b150",
-   "url": "https://www.xiaohongshu.com/explore/67455827000000000703b150",
-   "park": null,
-   "place_text": "延中广场公园（话题标签；具体点位未明）",
-   "species_zh": "白鹭（话题标签，未细分种）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "弱线索仅来自标签；不借用2024-11-26发帖时间作观察日，不按“人民广场”标签扩展或改变观察点。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "鸟与猫与人在公园",
-   "source": "小红书 暗中观察",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6adf5faa0000000002008496",
-   "url": "https://www.xiaohongshu.com/explore/6adf5faa0000000002008496",
-   "park": null,
-   "place_text": "延中绿地小水池边（正文）",
-   "species_zh": "翠鸟（未细分）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712; unspecialized_kingfisher_not_upgraded",
-   "spot_detail": "作者声明含AI生成内容，按低置信弱线索保留；严格不把泛称翠鸟升级为普通翠鸟或其他种。白头鹎仅在另一个“阳台”叙述中提及，未证实地点为延中绿地，不纳入该点记录。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "喜大普奔！我看到了翠翠～",
-   "source": "小红书 我是你的小王吖【比心】",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:69c0eee2000000002200db4d",
-   "url": "https://www.xiaohongshu.com/explore/69c0eee2000000002200db4d",
-   "park": null,
-   "place_text": "延中绿地（正文/话题标签）",
-   "species_zh": "柳莺（标签未细分）",
-   "also": [
-    "棕头鸦雀（话题标签）",
-    "北红尾鸲（雌；话题标签）",
-    "红胁蓝尾鸲（话题标签）",
-    "白鹭（标签未细分）"
-   ],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "未定日弱线索；物种仅依标签，后续需members_meta逐种核验。未将“没拍到”的两种山雀列入species，且不借用03-23发帖提示作观察日期。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中绿地历练",
-   "source": "小红书 大魔王慧慧",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6a9e3e29000000001203541e",
-   "url": "https://www.xiaohongshu.com/explore/6a9e3e29000000001203541e",
-   "park": null,
-   "place_text": "延中绿地（标题）",
-   "species_zh": "未分种鸟（话题标签#鸟类实拍，未给种名）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "仅作未定日、未分种弱线索；不从题目推测捕鱼者身份或鸟种，不借用编辑日期作观察日。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中绿地有鸟人捕鱼，还有许可证",
-   "source": "小红书 GreenShow",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6aa53cd70000000011039061",
-   "url": "https://www.xiaohongshu.com/explore/6aa53cd70000000011039061",
-   "park": null,
-   "place_text": "延中绿地（标题/正文）",
-   "species_zh": "鹊鸲（评论者辨认，作者致谢但未独立确认；低置信）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "物种识别保留低置信和评论来源；“夜师傅”仅为标题昵称且作者说未看到，不计夜鹭。观察日期无日历锚点，不借用相对“今天”、编辑或评论日期。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "去延中绿地看夜师傅啦",
-   "source": "小红书 是罗小黑本黑吖",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:69345b5a000000001f00e671",
-   "url": "https://www.xiaohongshu.com/explore/69345b5a000000001f00e671",
-   "park": null,
-   "place_text": "延中广场公园（正文）",
-   "species_zh": "白鸭（原文泛称，未细分；野生/家养状态未明）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "仅保留为弱线索；不将“白鸭”推定为野生种或具体鸭种，也不借用页面编辑或评论日期/相对“今天”作观察日。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中广场公园",
-   "source": "小红书 喜洋洋",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:69383341000000001e000f8d",
-   "url": "https://www.xiaohongshu.com/explore/69383341000000001e000f8d",
-   "park": null,
-   "place_text": "延中广场公园（标题/正文；具体拍摄点未能与观察点等同）",
-   "species_zh": "天鹅（原文泛称；未细分种，野生/引入/装饰属性未核）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "旅游拍照攻略中的弱线索；不据文案将“天鹅”当作可靠野生种记录，不借用编辑日期作观察日。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "橙红橘绿木桥天鹅倒影🍁延中广场公园太浪漫",
-   "source": "小红书 媛媛晓~",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6958e2fd000000002203b9a8",
-   "url": "https://www.xiaohongshu.com/explore/6958e2fd000000002203b9a8",
-   "park": null,
-   "place_text": "延中绿地（正文）、黄陂北路附近（正文另述飞行/停留，不并入公园点）",
-   "species_zh": "白鹭（原文泛称，未细分种）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712; multi_place_kept_unlocated",
-   "spot_detail": "正文位置清楚但观察日历日期缺失；不借用页面/评论日期或相对“今天”。白鹭不细分种；严格将黄陂北路记作另一处，不与延中绿地点混并。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中绿地的常客…白鹭",
-   "source": "小红书 听海",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:695dfd660000000022008397",
-   "url": "https://www.xiaohongshu.com/explore/695dfd660000000022008397",
-   "park": null,
-   "place_text": "黄陂北路西侧延中绿地（乌鸫、白头鹎；正文）、黄陂北路东侧绿地（白鹭、未分种鸭；正文）",
+   "place_text": "黄埔公园（标题原文；城市/行政区及是否为上海黄浦公园未明）",
    "species_zh": "乌鸫",
    "also": [
-    "白头鹎",
-    "白鹭（原文泛称，未细分种）",
-    "鸭（原文泛称，未分种）"
-   ],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712; multi_place_kept_unlocated",
-   "spot_detail": "无观察日历锚点，不借用相对“今天”或页面01-07。严格按黄陂北路分开东西两侧地点；未看到的翠鸟/大山雀不作为目击。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中绿地的老朋友，白鹭",
-   "source": "小红书 听海",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:69a59b88000000001b01f296",
-   "url": "https://www.xiaohongshu.com/explore/69a59b88000000001b01f296",
-   "park": null,
-   "place_text": "延中绿地附近（水域；正文）",
-   "species_zh": "白鹭（原文泛称，未细分种）",
-   "also": [
-    "乌鸫",
-    "白头鹎",
-    "珠颈斑鸠"
+    "树麻雀",
+    "白喉红臀鹎"
    ],
    "obs_date": "unknown",
    "source_date": null,
@@ -3444,49 +3197,9 @@
    "reason": "place_text_present_park_null",
    "window_class": "weak_visible",
    "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "保存为未定日弱线索；不以“月余”或页面03-02推定观察日期。白鹭按原文泛称保留，不细分种。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中绿地的白鹭",
-   "source": "小红书 听海",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6953512e000000002103c87f",
-   "url": "https://www.xiaohongshu.com/explore/6953512e000000002103c87f",
-   "park": null,
-   "place_text": "延中绿地（标题）",
-   "species_zh": "白鹡鸰",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "物种由作者评论确认，但缺观察日历锚点；不以2025-12-30发帖/评论日期代替观察日，不计当前窗口last-seen。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中绿地惬意的白鹡鸰",
-   "source": "小红书 听海",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:61b488b2000000000102c715",
-   "url": "https://www.xiaohongshu.com/explore/61b488b2000000000102c715",
-   "park": null,
-   "place_text": "延中绿地（话题标签）",
-   "species_zh": "天鹅（话题标签，未确认是否本帖实际目击）",
-   "also": [
-    "鸭（作者评论泛称，未分种）"
-   ],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "place_text_present_park_null",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712",
-   "spot_detail": "仅作为低置信历史弱线索保留；不以2021发帖或2022评论日期替代观察日期，未将“天鹅”标签升级为目击或种级记录。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "延中绿地《天鹅湖》",
-   "source": "小红书 小小柯乐罐",
+   "spot_detail": "保留为地点未核实的未定日弱线索，不计入上海黄浦公园当前覆盖或last-seen。页面打开评论控件后出现的点点AI侧栏为生成内容，未当作作者正文/评论证据。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "黄埔公园观鸟",
+   "source": "小红书 Se7en仔",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -3541,92 +3254,6 @@
    "spot_detail": "有用的地点/种级弱线索，但正文只标安吉湿地，严格不归入安吉灵峰山；不借用“秋假”或11小时前判断日期，不计当前窗口/last-seen。普通翠鸟为作者明写，不由泛称“翠鸟”升级。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
    "title": "安吉：随处可见的🦅",
    "source": "小红书 火龙果冻",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6afe49b0000000002b036afe",
-   "url": "https://www.xiaohongshu.com/explore/6afe49b0000000002b036afe",
-   "park": "新虹桥",
-   "place_text": "观察地点未标（页面显示上海，不等于观察点）",
-   "species_zh": "翠鸟（未细分）",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "park_assigned_no_card_undated",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712; xinhongqiao_not_changxing; unspecialized_kingfisher_not_upgraded",
-   "spot_detail": "保留为未定日/未定点弱线索；“昨天”及页面相对时间不提供日历观察锚点，地点未明确，不能归入新虹桥中心花园。作者只写泛称翠鸟，不擅自提升为普通翠鸟。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "小翠开饭了，求小鱼的心理阴影面积",
-   "source": "小红书 Dreamaker",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6b017396000000002b0065fc",
-   "url": "https://www.xiaohongshu.com/explore/6b017396000000002b0065fc",
-   "park": "新虹桥",
-   "place_text": "新虹桥中心花园（标题明确）",
-   "species_zh": "白腹鸫",
-   "also": [
-    "白眉鸫",
-    "灰背鸫",
-    "土画眉",
-    "鹊鸲",
-    "牛头伯劳（鸟友/评论报告，非作者目击）"
-   ],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "park_assigned_no_card_undated",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712; xinhongqiao_not_changxing",
-   "spot_detail": "地点明确但正文/评论只有相对“今天”，不计11/19–21可靠窗口或last-seen。白腹鸫、白眉鸫、灰背鸫、土画眉、鹊鸲为作者报告；牛头伯劳仅鸟友/评论声称，未作为作者目击或可靠日期记录。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "新虹桥中心花园下午观鸟记录",
-   "source": "小红书 Dreamaker",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6b018b14000000002b03c8fd",
-   "url": "https://www.xiaohongshu.com/explore/6b018b14000000002b03c8fd",
-   "park": "新虹桥",
-   "place_text": "新虹桥中心花园（正文话题标签明确）",
-   "species_zh": "红头长尾山雀",
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "park_assigned_no_card_undated",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712; xinhongqiao_not_changxing",
-   "spot_detail": "地点与种名明确，但无日历观察日期，不计11/19–21或last-seen；不借用1小时前页面时间。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "红头！红头！是红头！",
-   "source": "小红书 amanda",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6aff0f7b000000002903c73c",
-   "url": "https://www.xiaohongshu.com/explore/6aff0f7b000000002903c73c",
-   "park": "新虹桥",
-   "place_text": "新虹桥中心花园（标题明确）",
-   "species_zh": "红胁蓝尾鸲",
-   "also": [
-    "北红尾鸲",
-    "白变乌鸫（作者表述）",
-    "家鸽（作者疑似逃逸；不作为野生记录）"
-   ],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "weak_undated",
-   "reason": "park_assigned_no_card_undated",
-   "window_class": "weak_visible",
-   "status": "weak_undated; from_20261121_0712; xinhongqiao_not_changxing",
-   "spot_detail": "合辑覆盖“这两周”但无日历日期，不能把页面时间作为观察日，也不能据此计入11/19–21或last-seen。家鸽保留为作者疑似逃逸/家养个体，不作为野生鸟记录。；无可用日历观察日则 time 留空。来源 20261121_0712，不伪称今日新独立可靠目击。弱线索 show-and-label，不抬 last_reliable。",
-   "title": "新虹桥中心花园 最近两周的美好画面",
-   "source": "小红书 佳佳z🐙",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
   },
@@ -3848,9 +3475,445 @@
    "source": "小红书 📷CC!",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b02d6e6000000002b03a9af",
+   "url": "https://www.xiaohongshu.com/explore/6b02d6e6000000002b03a9af",
+   "park": null,
+   "place_text": "龙袍湿地",
+   "species_zh": "普通鵟",
+   "also": [
+    "喜鹊"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "原文明确未看到震旦鸦雀；提及普通鵟被喜鹊驱赶，地点从标题及评论区作者回复定位至龙袍大水塘西南侧。仅有相对发布标记“编辑于1天前”，正文/评论无可回放日历锚点，time留空，不作可靠窗内记录。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "龙袍湿地观鸟的副产品",
+   "source": "小红书 土拨鼠",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b029694000000002303e5bb",
+   "url": "https://www.xiaohongshu.com/explore/6b029694000000002303e5bb",
+   "park": null,
+   "place_text": "南京龙袍湿地",
+   "species_zh": "震旦鸦雀",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文明确物种及地点，评论区可见两条“1天前/昨天”相对时间；无可回放日历观察锚点，time留空，不作为可靠窗内记录。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "好消息，刷到震旦鸦雀",
+   "source": "小红书 tete小迷糊",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b03ea5d000000002b03cab0",
+   "url": "https://www.xiaohongshu.com/explore/6b03ea5d000000002b03cab0",
+   "park": null,
+   "place_text": "龙袍湿地",
+   "species_zh": "苇鹀",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "标题“龙袍加新：苇鹀”暗示新纪录，正文为物种简介，没有明确观察日历日期/详细实地描述；页面显示“昨天15:25”，不能以相对发帖时间替代观察日，因此time留空，不算可靠窗内记录。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "龙袍加新：苇鹀",
+   "source": "小红书 一万卡路李",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b03d51d000000002501ec14",
+   "url": "https://www.xiaohongshu.com/explore/6b03d51d000000002501ec14",
+   "park": null,
+   "place_text": "三垟湿地",
+   "species_zh": "白鹭",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "标题/标签明确三垟湿地及白鹭，页面仅相对时间“昨天13:54”，无可回放日历锚点，time留空；评论区未显示可读文本。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "三垟湿地的白鹭也是可可爱爱🤭",
+   "source": "小红书 H.H",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b040ede000000002b002362",
+   "url": "https://www.xiaohongshu.com/explore/6b040ede000000002b002362",
+   "park": "钱塘大湾区湿地公园",
+   "place_text": "钱塘大湾区湿地公园",
+   "species_zh": "大雁",
+   "also": [
+    "鸬鹚",
+    "白鹭",
+    "绿头鸭",
+    "黑头鸭"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文为亲历观鸟描述，明确点位钱塘大湾区湿地公园及多种鸟；“今天算是具象了”可结合页面“昨天18:01”回放为2026-11-23，在观察窗内。鸟种按作者原文记录，不校正“大雁/黑头鸭”等泛称。首屏共4条评论均已读；评论只提供坐船、岸边观鸟台线索，不推断精确坐标。；采集曾按今天/昨天/周日/前天+发帖或相对时间回放为日历日，清洗不采用，time 留空，记弱可见，不抬 last_reliable。",
+   "title": "钱塘大湾区湿地公园 本地鸟 外地鸟 大聚会",
+   "source": "小红书 火爸",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b029b35000000002a0277b8",
+   "url": "https://www.xiaohongshu.com/explore/6b029b35000000002a0277b8",
+   "park": "钱塘大湾区湿地公园",
+   "place_text": "钱塘大湾区湿地公园",
+   "species_zh": "黑脸琵鹭",
+   "also": [
+    "白琵鹭"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "标题/视频文案/标签提及黑脸琵鹭、白琵鹭迁徙并精确标签钱塘大湾区湿地公园；作者评论证实坐船观看，但称“我们看了半天也没找到”，未明确观察日历日期，页面仅“1天前”，不能代作观察日。标为未定日候选，等待其他可见证据，不升可靠。首屏共10条评论，读到7条可见内容，折叠回复未展开。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "黑脸琵鹭在哪里系列",
+   "source": "小红书 水边的蒹葭",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b02c5b3000000002c00e961",
+   "url": "https://www.xiaohongshu.com/explore/6b02c5b3000000002c00e961",
+   "park": null,
+   "place_text": "大湾区湿地公园",
+   "species_zh": "黑脸琵鹭",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文明确拍到黑脸琵鹭并称蹲守2天，但没有日历日期；仅有发帖时间“1天前”，不能当作观察日。地点仅标签“大湾区湿地公园”，未写“钱塘”，不擅自并入钱塘大湾区湿地公园或其他湾区点。页面显示3条评论计数，点击评论后仍未显示评论文本；未再试。保留为未定日/地点候选。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "快看！黑脸琵鹭！",
+   "source": "小红书 水边的蒹葭",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b01c10500000000250101c9",
+   "url": "https://www.xiaohongshu.com/explore/6b01c10500000000250101c9",
+   "park": null,
+   "place_text": "大湾区湿地公园",
+   "species_zh": "棕背伯劳",
+   "also": [
+    "野鸭",
+    "绿头鸭",
+    "苍鹭",
+    "棕头鸦雀",
+    "疑似苍鹭",
+    "黑水鸡"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文为实地观鸟叙述，列出多种鸟；但无观察日历锚点，仅“2天前”平台发帖标记，不能当作观察日期。地点标题仅“大湾区湿地公园”，未明确“钱塘”，不跨湾区点推断归属。页面显示2条评论计数，点击评论后仍无可读评论文本；未再尝试。保留未定日/地点候选。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "大湾区湿地公园观鸟",
+   "source": "小红书 桃子2020",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b017bda000000002b027bde",
+   "url": "https://www.xiaohongshu.com/explore/6b017bda000000002b027bde",
+   "park": "钱塘大湾区湿地公园",
+   "place_text": "钱塘江大湾区湿地公园",
+   "species_zh": "白腹鹞",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文原始地点为“钱塘江大湾区湿地公园”。原视频仅说日落看到猛禽、未能定种；不把原视频强行识别为白腹鹞。作者评论写“今天又在这里看到了白腹鹞”，评论显示1天前；以评论“今天”回放到2026-11-23，作为观察窗内的另一条作者现场观察记录。评论区6条均已读；不把网友“江海湿地”留言当作目标地名或坐标。；采集曾按今天/昨天/周日/前天+发帖或相对时间回放为日历日，清洗不采用，time 留空，记弱可见，不抬 last_reliable。",
+   "title": "求大佬科普这是什么猛禽？",
+   "source": "小红书 水边的蒹葭",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b02dfaf0000000026013e60",
+   "url": "https://www.xiaohongshu.com/explore/6b02dfaf0000000026013e60",
+   "park": "钱塘大湾区湿地公园",
+   "place_text": "钱塘大湾区湿地公园",
+   "species_zh": null,
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "视频标题/正文指向目标点与候鸟季，但没有鸟种或具体实地观察日期；平台“1天前”仅为发帖标记，不能代观察日期。评论只说“好听好看”。保留为未定日候选，不升可靠。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "候鸟季",
+   "source": "小红书 路路",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b018e80000000002c00fd0a",
+   "url": "https://www.xiaohongshu.com/explore/6b018e80000000002c00fd0a",
+   "park": "钱塘大湾区湿地公园",
+   "place_text": "钱塘大湾区湿地公园、国家大学科技园",
+   "species_zh": null,
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文称看了候鸟并提到钱塘大湾区湿地公园，但未写具体物种/观察日；“编辑于2天前”是发帖标记，不能直接作为观察日。另含国家大学科技园银杏行程，不把两地合并。候选保留，未升可靠。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "在杭州最美的季节去看树看鸟看日落",
+   "source": "小红书 Withuu",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6aa6277d000000000b002932",
+   "url": "https://www.xiaohongshu.com/explore/6aa6277d000000000b002932",
+   "park": "钱塘大湾区湿地公园",
+   "place_text": "杭州钱塘大湾区湿地公园",
+   "species_zh": null,
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文泛称湿地鸟类栖息地/数量种类繁多，未列具体物种或观察日；平台编辑于2天前不可当观察日期。保留未定日候选，不推断鸟种。评论数11，未打开（正文未构成具体物种候选）。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "杭州钱塘大湾区湿地公园",
+   "source": "小红书 兔子枪手",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b02eae000000000180252ef",
+   "url": "https://www.xiaohongshu.com/explore/6b02eae000000000180252ef",
+   "park": null,
+   "place_text": "良渚遗址公园",
+   "species_zh": "喜鹊",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "主体为园内秋日环境声，提及鸟鸣/咕咕声、滑翔声及喜鹊叽喳声；没有鸟类个体/种数、确切观察日期或鸣声位置。帖子和唯一评论仅显示相对时间“1天前”，不作为可靠日历锚点；保留弱候选，不作可靠last-seen。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "秋天在良渚遗址公园：听觉丰容",
+   "source": "小红书 季繁花",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b0538fa000000002303ec5e",
+   "url": "https://www.xiaohongshu.com/explore/6b0538fa000000002303ec5e",
+   "park": "钱塘大湾区湿地公园",
+   "place_text": "钱塘大湾区湿地公园（标签明确）",
+   "species_zh": "迁徙鸟群（未鉴定）",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "park_assigned_no_card_undated",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "图片显示成群飞鸟，标签明确#钱塘大湾区湿地公园/#迁徙的候鸟；无具体物种或观察日。页面1小时前不作为观察日锚点，保留candidate_unanchored_time。1条评论无可读文本。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "给鸟儿们一方安静",
+   "source": "小红书 洛洛",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6afd7ed3000000002a028e87",
+   "url": "https://www.xiaohongshu.com/explore/6afd7ed3000000002a028e87",
+   "park": null,
+   "place_text": "玉环漩门湾湿地公园（原帖标签）",
+   "species_zh": "黑腹滨鹬",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "地点由原帖标签明确为玉环漩门湾湿地公园，物种见标题/标签；正文、评论无日历观察日期，页面“5天前”不作观察日，保留candidate_unanchored_time，不声称在11/22–24窗内。仅使用原帖与评论，不采用详情页AI生成的概括。读取10条可见评论文本，另2条回复折叠。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "黑腹滨鹬的清晨（下）",
+   "source": "小红书 戴你观鸟",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6ac8d60d000000001403a1ab",
+   "url": "https://www.xiaohongshu.com/explore/6ac8d60d000000001403a1ab",
+   "park": null,
+   "place_text": "玉环漩门湾湿地公园（标题及正文）",
+   "species_zh": "黑天鹅",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "内容虽为游园负面体验，但明确报告玉环漩门湾湿地公园仅见几只黑天鹅，保留为日期弱候选；正文仅“那天”，发帖显示10-09但不代替观察日，不能判断是否在本窗。评论主要谈游园服务，未补日历日期。读取18条可见评论文本/条目，折叠回复未读。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "避雷玉环漩门湾湿地公园",
+   "source": "小红书 天才吃鸡少女",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af7fe8d000000002a00ca41",
+   "url": "https://www.xiaohongshu.com/explore/6af7fe8d000000002a00ca41",
+   "park": null,
+   "place_text": "玉环漩门湾湿地公园三期（正文明确）",
+   "species_zh": "棕背伯劳（黑化型；原文称非独立鸟种）",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "地点/类群明确为玉环漩门湾湿地公园三期；严格不将“三期”自动合并为另入队的“三期围垦区”eBird点。观察日仅“昨日”，无可回放日历日期；检索卡11-17/详情编辑7天前与评论11-14/15存在相对日期不一致，不能据此认定窗内，列candidate_unanchored_time。原文明确该黑化型属棕背伯劳形态，不重复扩种。读取10条可见评论文本，另1条回复折叠。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "黑化魅影｜棕背伯劳（黑化型）",
+   "source": "小红书 戴你观鸟",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af9ca51000000001601aee7",
+   "url": "https://www.xiaohongshu.com/explore/6af9ca51000000001601aee7",
+   "park": null,
+   "place_text": "湖州安吉湿地（正文定位）",
+   "species_zh": "红脚田鸡",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文有实际红脚田鸡记录，位置表述“湖州安吉湿地”较广，未具体到某公园/微点；不由评论的桥/农田/水库线索擅自升级或猜坐标。页面和评论出现11-16为发布/评论日期，不是观察日锚，保留candidate_unanchored_time。读取18条可见评论文本。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "二刷安吉湿地每次都有小惊喜",
+   "source": "小红书 陈二狗",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b02b830000000002b01b55d",
+   "url": "https://www.xiaohongshu.com/explore/6b02b830000000002b01b55d",
+   "park": null,
+   "place_text": "安吉湿地（正文及标签）",
+   "species_zh": "红尾水鸲",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "正文/标签明确安吉湿地红尾水鸲，未写观察日期；页面2天前不代观察日，安吉湿地范围未细化，保留candidate_unanchored_time。读1条可见评论。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "圆滚滚的于一",
+   "source": "小红书 特立独行的猪",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6af9d0ad000000002903c973",
+   "url": "https://www.xiaohongshu.com/explore/6af9d0ad000000002903c973",
+   "park": null,
+   "place_text": "湖州安吉湿地（作者标注；未细分公园）",
+   "species_zh": "斑鱼狗",
+   "also": [
+    "冠鱼狗（作者称未见；评论者称老石坎附近鱼塘常见）"
+   ],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "作者定位为湖州安吉湿地，正文总结“年初一直看到现在”的全年/长期观察，无具体日历观察日，留candidate_unanchored_time。评论中的老石坎鱼塘只是第三方建议，不确认其为帖子观测地点；微点不外推。打开并读8条可见评论，页面提示共9条；展开1条回复后仅加载状态无可回放内容，故不补计。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "你好我可以用10只斑鱼狗换1只冠鱼狗吗",
+   "source": "小红书 陈二狗",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6afe92f1000000002b007c88",
+   "url": "https://www.xiaohongshu.com/explore/6afe92f1000000002b007c88",
+   "park": null,
+   "place_text": "边上公园（未命名）",
+   "species_zh": "红头山雀（评论原文）",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "weak_undated",
+   "reason": "place_text_present_park_null",
+   "window_class": "weak_visible",
+   "status": "weak_undated; from_20261124_1305",
+   "spot_detail": "浙江范围/鸟类照片内容可见，但具体公园缺失，仅“边上公园”，不映射到任何城市公园；且5天前为发布时相、无观察日，记unlocated。读3条当前可见评论（共5，2条回复折叠）。；无可用日历观察日则 time 留空。弱线索 show-and-label，不抬 last_reliable。",
+   "title": "城市公园拍鸟",
+   "source": "小红书 lalalalala",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
   }
  ],
  "excluded_social": [
+  {
+   "post_id": "xhs:6af45b6d000000002a02a2a0",
+   "url": "https://www.xiaohongshu.com/explore/6af45b6d000000002a02a2a0",
+   "park": "碧海金沙-奉贤边滩",
+   "place_text": "上海奉贤碧海金沙（正文）",
+   "species_zh": "丝绒海番鸭",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "outside_excluded",
+   "reason": "outside_window",
+   "window_class": "outside_excluded",
+   "status": "outside_window_1111_excluded_from_reliable",
+   "spot_detail": "正文拍摄于上海奉贤2026-11-11，碧海金沙丝绒海番鸭。1716 已 medium。附着既有奉贤簇，不当今日新独立目击。；已记 2026-11-11，本轮窗口 11-12..11-14 滚出。排除出窗内可靠，不当今日新目击。弱可见但不升。",
+   "title": "",
+   "source": "小红书 沈伯未",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
   {
    "post_id": "weibo:RqCUKpJ6D",
    "url": "https://weibo.com/2050690913/RqCUKpJ6D",
@@ -3930,47 +3993,6 @@
    "raises_last_seen": false
   },
   {
-   "post_id": "xhs:6afd52a6000000002a029ee4",
-   "url": "https://www.xiaohongshu.com/explore/6afd52a6000000002a029ee4",
-   "park": "新虹桥",
-   "place_text": "新虹桥（题名/正文：天池旁香樟树觅食点；不并入长兴岛，不擅自与「新虹桥中心花园」合并）",
-   "species_zh": "白腹鸫",
-   "also": [
-    "伯劳（未细分）",
-    "白鹭"
-   ],
-   "obs_date": "2026-11-18",
-   "source_date": null,
-   "visibility_label": "outside_excluded",
-   "reason": "outside_window",
-   "window_class": "outside_excluded",
-   "status": "dated_primary_observation; from_20261120_0709; xinhongqiao_not_changxing; unspecialized_shrike_not_upgraded; robin_sister_not_inferred; rolled_out_20261121_0712_window_19_21; rolled_out_20261123_0710_window_21_23",
-   "spot_detail": "题名「1118 新虹桥 加新白腹鸫」与正文「今天的主要收获是白腹鸫」共同锚定 2026-11-18。仅记文本确认的白腹鸫、未细分伯劳、白鹭；「鸲妹」不作种级推断。本轮 20261120_0709 新采。；20261121_0712 观察窗滚至 11-19..11-21，本条 2026-11-18 观察日已滚出，不再作为新的可靠目击或续新；time 仍为原观察日，不以发帖日改写。force_unlocated/双点相册隔离如原先已生效则继续生效。；20261123_0710 观察窗滚至 11-21..11-23，本条观察日已滚出，不再作为新的可靠目击或续新；time 仍为原观察日，不以发帖日改写。force_unlocated/双点相册/南汇分区隔离如原先已生效则继续生效。本条为上轮继承，不是本轮新采。",
-   "title": "1118 新虹桥 加新白腹鸫",
-   "source": "小红书 丙子秋",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
-   "post_id": "xhs:6b0008460000000023010b16",
-   "url": "https://www.xiaohongshu.com/explore/6b0008460000000023010b16",
-   "park": "新虹桥",
-   "place_text": "新虹桥中心花园（标题明确）",
-   "species_zh": "白腰文鸟",
-   "also": [],
-   "obs_date": "2026-11-20",
-   "source_date": null,
-   "visibility_label": "outside_excluded",
-   "reason": "outside_window",
-   "window_class": "outside_excluded",
-   "status": "dated_primary_observation; from_20261121_0712; xinhongqiao_not_changxing; comment_thrush_undated_not_merged; rolled_out_20261123_0710_window_21_23",
-   "spot_detail": "标题「新虹桥中心花园11.20观鸟」有日历锚点，正文目击白腰文鸟。评论「今儿我也去了看见很多鸫」及作者未分种鸫无独立日历锚点，不并入物种、不抬 lastseen。页面「昨天16:43」不作观察日。本轮 20261121_0712 新采。；20261123_0710 观察窗滚至 11-21..11-23，本条观察日已滚出，不再作为新的可靠目击或续新；time 仍为原观察日，不以发帖日改写。force_unlocated/双点相册/南汇分区隔离如原先已生效则继续生效。本条为上轮继承，不是本轮新采。",
-   "title": "新虹桥中心花园11.20观鸟",
-   "source": "小红书 想吃火鸡面",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
    "post_id": "xhs:6b02fd24000000002b03beed",
    "url": "https://www.xiaohongshu.com/explore/6b02fd24000000002b03beed",
    "park": null,
@@ -4034,25 +4056,6 @@
    "raises_last_seen": false
   },
   {
-   "post_id": "weibo:Rsyn8w249",
-   "url": "https://weibo.com/1630498960/Rsyn8w249",
-   "park": null,
-   "place_text": "青山湖水上森林公园",
-   "species_zh": null,
-   "also": [],
-   "obs_date": "unknown",
-   "source_date": null,
-   "visibility_label": "outside_excluded",
-   "reason": "outside_window",
-   "window_class": "outside_excluded",
-   "status": "excluded_raw; from_20261123_0710",
-   "spot_detail": "正文为水上森林秋色旅游/景观介绍；“鸟在枝头鸣”是游客宣传式引语，没有实际鸟类观察描述。正文仅“星期天”无可回放日历日期，评论只谈风景；不计目击，排除。；来源 20261123_0710 采集标记 excluded，观察日不在本窗或非独立观察，不作为可靠窗内目击。不以发帖日改写。",
-   "title": "星期天的青山湖水上森林公园",
-   "source": "微博 丹虹秀兰",
-   "masquerades_as_current_sighting": false,
-   "raises_last_seen": false
-  },
-  {
    "post_id": "xhs:6b03a2e8000000002501dcaf",
    "url": "https://www.xiaohongshu.com/explore/6b03a2e8000000002501dcaf",
    "park": null,
@@ -4107,6 +4110,101 @@
    "source": "小红书 詹姆士棒冰",
    "masquerades_as_current_sighting": false,
    "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b049cba000000002b03908b",
+   "url": "https://www.xiaohongshu.com/explore/6b049cba000000002b03908b",
+   "park": null,
+   "place_text": "钱塘大湾区湿地",
+   "species_zh": null,
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "outside_excluded",
+   "reason": "outside_window",
+   "window_class": "outside_excluded",
+   "status": "excluded_raw; from_20261124_1305",
+   "spot_detail": "正文为游览/观景建议及“每年11月前后”年度性候鸟科普，未称本次实际见到白琵鹭，也无本次观察日；裸发帖标记10小时前不作观察日。地点只按原文“钱塘大湾区湿地”记录，不补坐标。无具体目击，排除。评论数1但正文未显示，未计入comments_read。；本午 20261124_1305 新采。不以发帖日改写。",
+   "title": "杭州湿地公园，迎一场候鸟和日落🌇",
+   "source": "小红书 一木 zoe",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b016882000000001802e136",
+   "url": "https://www.xiaohongshu.com/explore/6b016882000000001802e136",
+   "park": null,
+   "place_text": "钱塘大湾区湿地",
+   "species_zh": null,
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "outside_excluded",
+   "reason": "outside_window",
+   "window_class": "outside_excluded",
+   "status": "excluded_raw; from_20261124_1305",
+   "spot_detail": "地点和观鸟主题可见，但正文主要是日落感想，只称“鸟没有想象中的多”，没有具体鸟种或可核实的鸟类观察；#今天的落日是日落标签，不能当作鸟类观察日期。页面2天前只作发帖时间，评论未读。排除为非具体鸟讯。；本午 20261124_1305 新采。不以发帖日改写。",
+   "title": "鸟没有那么多，但日落绝",
+   "source": "小红书 柚子大王",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b022fc5000000002b019715",
+   "url": "https://www.xiaohongshu.com/explore/6b022fc5000000002b019715",
+   "park": null,
+   "place_text": "钱塘大湾湿地公园",
+   "species_zh": null,
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "outside_excluded",
+   "reason": "outside_window",
+   "window_class": "outside_excluded",
+   "status": "excluded_raw; from_20261124_1305",
+   "spot_detail": "明确是摩托骑行追日出/车辆体验，虽然标题有11.22及湿地地点，但未涉及鸟类目击，日期不能转作鸟观察日。可见3条评论中读2条，1条折叠未展开。排除。；本午 20261124_1305 新采。不以发帖日改写。",
+   "title": "11.22钱塘大湾湿地公园日出",
+   "source": "小红书 不准昂昂昂",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b03b3ef000000001b01e874",
+   "url": "https://www.xiaohongshu.com/explore/6b03b3ef000000001b01e874",
+   "park": null,
+   "place_text": "盐城保护区、江苏盐城沿海滩涂",
+   "species_zh": "丹顶鹤",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "outside_excluded",
+   "reason": "outside_window",
+   "window_class": "outside_excluded",
+   "status": "excluded_raw; from_20261124_1305",
+   "spot_detail": "最新排序下6小时前的鸟类相关科普文章。正文讨论丹顶鹤分布、历史数据和保护现状，虽提盐城保护区/沿海及#盐城，并列出2026调查统计，但没有本观察窗内任何个体的现场观测；唯一评论为作者补充种群数字（昨天12:07，广东），非目击证据。故排除，不把统计或科普当成目击。；本午 20261124_1305 新采。不以发帖日改写。",
+   "title": "丹顶鹤：国画里画了千年，野外只剩不到4000",
+   "source": "小红书 地球暗开关",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
+  },
+  {
+   "post_id": "xhs:6b02bb6d0000000016033552",
+   "url": "https://www.xiaohongshu.com/explore/6b02bb6d0000000016033552",
+   "park": null,
+   "place_text": "黄龙景区",
+   "species_zh": "橙翅噪鹛",
+   "also": [],
+   "obs_date": "unknown",
+   "source_date": null,
+   "visibility_label": "outside_excluded",
+   "reason": "outside_window",
+   "window_class": "outside_excluded",
+   "status": "excluded_raw; from_20261124_1305",
+   "spot_detail": "虽卡片出现在隆山公园 鸟搜索结果且帖子约2天前，但正文明确黄龙景区，不是目标瑞安隆山公园，排除。可见评论4条确认种为橙翅噪鹛及讨论其分布；总评论7条，未读折叠回复。；本午 20261124_1305 新采。不以发帖日改写。",
+   "title": "这是什么鸟？",
+   "source": "小红书 绝赞多坑乐子人",
+   "masquerades_as_current_sighting": false,
+   "raises_last_seen": false
   }
  ],
  "clues_contract": {
@@ -4116,40 +4214,48 @@
   "source_date_is_not_obs_date": true
  },
  "social_fate": {
-  "n_rows": 813,
-  "n_posts": 813,
+  "n_rows": 1038,
+  "n_posts": 1038,
   "destination_counts": {
-   "on_card": 329,
-   "unlocated": 364,
-   "undated_clue": 108,
-   "excluded": 12
+   "on_card": 454,
+   "unlocated": 448,
+   "undated_clue": 121,
+   "excluded": 15
   },
   "window_note": "线索仅来自当轮 social_today，不堆积历史旧库。观察日未知，不冒充当前目击。"
  },
  "omitted": {
   "CN-31": {
-   "places": 30,
+   "places": 26,
    "not_in_atlas": [
-    "小䴙䴘",
-    "白骨顶",
+    "暗绿绣眼鸟",
     "黄腰柳莺",
+    "小䴙䴘",
     "白腹鸫",
-    "普通鸬鹚",
-    "黑领椋鸟",
-    "罗纹鸭",
-    "凤头潜鸭",
-    "斑鱼狗",
-    "反嘴鹬",
-    "黄眉柳莺",
-    "斑鸫",
-    "小鹀",
-    "红耳鹎",
+    "白骨顶",
     "白胸苦恶鸟",
     "池鹭",
-    "白眉鸫",
-    "黄雀"
+    "黑领椋鸟",
+    "红头潜鸭",
+    "凤头潜鸭",
+    "斑背潜鸭",
+    "斑脸海番鸭",
+    "普通秋沙鸭",
+    "普通鸬鹚"
    ],
    "place_list": [
+    {
+     "name": "汤巷公园",
+     "key": "P:CN-31:汤巷",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": true,
+     "social_only": false,
+     "reason": "hot_below_min",
+     "loc_ids": [
+      "L41796593"
+     ]
+    },
     {
      "name": "个人坐标点",
      "key": "P:CN-31:个人坐标点",
@@ -4159,7 +4265,67 @@
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L79862407"
+      "L79911141"
+     ]
+    },
+    {
+     "name": "自留地",
+     "key": "P:CN-31:自留地",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L40375872"
+     ]
+    },
+    {
+     "name": "大华清水湾花园1期",
+     "key": "P:CN-31:大华清水湾花园1期",
+     "n_cl": 1,
+     "n_posts": 2,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_visible_typed_row",
+     "loc_ids": [
+      "L79980066"
+     ]
+    },
+    {
+     "name": "黄埔滨江之世博",
+     "key": "P:CN-31:黄埔滨江之世博",
+     "n_cl": 1,
+     "n_posts": 1,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_visible_typed_row",
+     "loc_ids": [
+      "L36665356"
+     ]
+    },
+    {
+     "name": "碧海金沙-奉贤边滩",
+     "key": "P:CN-31:碧海金沙-奉贤边滩",
+     "n_cl": 1,
+     "n_posts": 1,
+     "hot": true,
+     "social_only": false,
+     "reason": "no_visible_typed_row",
+     "loc_ids": [
+      "L19493222"
+     ]
+    },
+    {
+     "name": "家附近自留地",
+     "key": "P:CN-31:家附近自留地",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L66702592"
      ]
     },
     {
@@ -4175,51 +4341,75 @@
      ]
     },
     {
-     "name": "涟动公园",
-     "key": "P:CN-31:涟动",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
+     "name": "张杨北路",
+     "key": "P:CN-31:张杨北路",
+     "n_cl": 2,
+     "n_posts": 1,
+     "hot": false,
      "social_only": false,
-     "reason": "hot_below_min",
+     "reason": "no_visible_typed_row",
      "loc_ids": [
-      "L41542155"
+      "L79900952"
      ]
     },
     {
-     "name": "华东师范大学普陀校区",
-     "key": "P:CN-31:华东师范大学普陀校区",
+     "name": "个人坐标点",
+     "key": "P:CN-31:个人坐标点",
+     "n_cl": 1,
+     "n_posts": 2,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_visible_typed_row",
+     "loc_ids": [
+      "L48290247"
+     ]
+    },
+    {
+     "name": "瀛东度假村",
+     "key": "P:CN-31:瀛东度假村",
      "n_cl": 1,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L59727236"
+      "L79868186"
      ]
     },
     {
-     "name": "汤巷公园",
-     "key": "P:CN-31:汤巷",
+     "name": "祖冲之路绿地",
+     "key": "P:CN-31:祖冲之路绿地",
+     "n_cl": 2,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L62177114"
+     ]
+    },
+    {
+     "name": "江湾湿地北段",
+     "key": "P:CN-31:江湾湿地北段",
      "n_cl": 1,
      "n_posts": 0,
      "hot": true,
      "social_only": false,
      "reason": "hot_below_min",
      "loc_ids": [
-      "L41796593"
+      "L39480842"
      ]
     },
     {
-     "name": "上海科技大学",
-     "key": "P:CN-31:上海科技大学",
-     "n_cl": 2,
+     "name": "个人坐标点",
+     "key": "P:CN-31:个人坐标点",
+     "n_cl": 1,
      "n_posts": 0,
-     "hot": true,
+     "hot": false,
      "social_only": false,
-     "reason": "hot_below_min",
+     "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L37560690"
+      "L79868349"
      ]
     },
     {
@@ -4235,114 +4425,6 @@
      ]
     },
     {
-     "name": "Shanghai Sanjia Port Greenland International Holiday Resort",
-     "key": "P:CN-31:Shanghai Sanjia Port Greenland International Holiday Resort",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79860018"
-     ]
-    },
-    {
-     "name": "瀛东度假村",
-     "key": "P:CN-31:瀛东度假村",
-     "n_cl": 2,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79868186"
-     ]
-    },
-    {
-     "name": "华凌路, 上海市, 上海市",
-     "key": "P:CN-31:华凌路, 上海市, 上海市",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L78283349"
-     ]
-    },
-    {
-     "name": "浦东美术馆",
-     "key": "P:CN-31:浦东美术馆",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79863423"
-     ]
-    },
-    {
-     "name": "上海市",
-     "key": "P:CN-31:上海市",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79861737"
-     ]
-    },
-    {
-     "name": "静安公园",
-     "key": "P:CN-31:静安",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L39939214"
-     ]
-    },
-    {
-     "name": "嘉北郊野公园",
-     "key": "P:CN-31:嘉北郊野",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L17343376"
-     ]
-    },
-    {
-     "name": "牛桥村十组",
-     "key": "P:CN-31:牛桥村十组",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L42985882"
-     ]
-    },
-    {
-     "name": "祖冲之路绿地",
-     "key": "P:CN-31:祖冲之路绿地",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L62177114"
-     ]
-    },
-    {
      "name": "华夏中路荒地",
      "key": "P:CN-31:华夏中路荒地",
      "n_cl": 1,
@@ -4355,34 +4437,22 @@
      ]
     },
     {
-     "name": "张杨北路",
-     "key": "P:CN-31:张杨北路",
-     "n_cl": 2,
-     "n_posts": 1,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_visible_typed_row",
-     "loc_ids": [
-      "L79900952"
-     ]
-    },
-    {
-     "name": "八灶港-姚桥村段",
-     "key": "P:CN-31:八灶港-姚桥村段",
+     "name": "53号 桃源路, 上海市, 上海市",
+     "key": "P:CN-31:53号 桃源路, 上海市, 上海市",
      "n_cl": 1,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L54467839"
+      "L79867362"
      ]
     },
     {
-     "name": "虹口鲁迅公园·上海市",
-     "key": "S:CN-31:虹口鲁迅公园",
+     "name": "青西郊野公园",
+     "key": "S:CN-31:青西郊野公园",
      "n_cl": 0,
-     "n_posts": 1,
+     "n_posts": 3,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -4409,16 +4479,6 @@
      "loc_ids": []
     },
     {
-     "name": "延中绿地",
-     "key": "S:CN-31:延中绿地",
-     "n_cl": 0,
-     "n_posts": 14,
-     "hot": false,
-     "social_only": true,
-     "reason": "no_visible_typed_row",
-     "loc_ids": []
-    },
-    {
      "name": "鲁迅公园",
      "key": "S:CN-31:鲁迅公园",
      "n_cl": 0,
@@ -4433,16 +4493,6 @@
      "key": "S:CN-31:番禺公园",
      "n_cl": 0,
      "n_posts": 2,
-     "hot": false,
-     "social_only": true,
-     "reason": "no_visible_typed_row",
-     "loc_ids": []
-    },
-    {
-     "name": "新虹桥",
-     "key": "S:CN-31:新虹桥",
-     "n_cl": 0,
-     "n_posts": 8,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -4469,8 +4519,8 @@
      "loc_ids": []
     },
     {
-     "name": "陆家嘴滨江",
-     "key": "S:CN-31:陆家嘴滨江",
+     "name": "徐家汇公园",
+     "key": "S:CN-31:徐家汇公园",
      "n_cl": 0,
      "n_posts": 1,
      "hot": false,
@@ -4479,10 +4529,10 @@
      "loc_ids": []
     },
     {
-     "name": "延中广场公园",
-     "key": "S:CN-31:延中广场公园",
+     "name": "陆家嘴滨江",
+     "key": "S:CN-31:陆家嘴滨江",
      "n_cl": 0,
-     "n_posts": 4,
+     "n_posts": 1,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -4491,134 +4541,81 @@
    ]
   },
   "CN-32": {
-   "places": 29,
+   "places": 34,
    "not_in_atlas": [
     "小䴙䴘",
+    "暗绿绣眼鸟",
+    "黄腰柳莺",
+    "黑领椋鸟",
     "白骨顶",
     "普通鸬鹚",
+    "池鹭",
+    "黄雀",
     "银喉长尾山雀",
-    "黄腰柳莺",
-    "斑鸫",
-    "罗纹鸭",
-    "扇尾沙锥",
-    "黄眉柳莺",
     "灰鹡鸰",
-    "琵嘴鸭",
-    "赤颈鸭",
-    "凤头潜鸭",
-    "红嘴鸥",
-    "黑天鹅",
     "黄腹山雀",
+    "红头潜鸭",
+    "罗纹鸭",
+    "赤颈鸭",
+    "绿翅鸭",
+    "凤头潜鸭",
+    "扇尾沙锥",
+    "红嘴鸥",
+    "斑鸫",
+    "斑文鸟",
+    "黑天鹅",
+    "锡嘴雀",
+    "领雀嘴鹎",
+    "琵嘴鸭",
+    "中华攀雀",
+    "白腹鸫",
+    "赤膀鸭",
+    "针尾鸭",
+    "白眼潜鸭",
+    "环颈雉",
+    "白胸苦恶鸟",
+    "金眶鸻",
     "凤头麦鸡",
     "泽鹬",
     "鹤鹬",
+    "达乌里寒鸦",
+    "秃鼻乌鸦",
+    "黄眉柳莺",
+    "褐柳莺",
+    "东亚石䳭",
     "黄鹡鸰",
-    "池鹭",
-    "领雀嘴鹎",
-    "黄雀",
-    "星头啄木鸟",
-    "绿翅鸭",
-    "中华攀雀",
-    "黑领椋鸟",
-    "白腹鸫",
-    "斑文鸟"
+    "栗耳鹀",
+    "红颈苇鹀",
+    "芦鹀",
+    "小鹀",
+    "栗鹀",
+    "灰雁",
+    "绿鹭",
+    "斑鱼狗"
    ],
    "place_list": [
     {
-     "name": "Join in the Grand, SIP, Suzhou",
-     "key": "P:CN-32:Join in the Grand, SIP, Suzhou",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L66400457"
-     ]
-    },
-    {
-     "name": "Wujiang",
-     "key": "P:CN-32:Wujiang",
-     "n_cl": 2,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79867403",
-      "L79902334"
-     ]
-    },
-    {
-     "name": "十里斜塘",
-     "key": "P:CN-32:十里斜塘",
+     "name": "金谷路小树林",
+     "key": "P:CN-32:金谷路小树林",
      "n_cl": 1,
      "n_posts": 0,
      "hot": true,
      "social_only": false,
      "reason": "hot_below_min",
      "loc_ids": [
-      "L26832607"
+      "L26308880"
      ]
     },
     {
-     "name": "南京大学苏州校区",
-     "key": "P:CN-32:南京大学苏州校区",
+     "name": "Tianyi High School",
+     "key": "P:CN-32:Tianyi High School",
      "n_cl": 1,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L79908959"
-     ]
-    },
-    {
-     "name": "白鹭园",
-     "key": "P:CN-32:白鹭园",
-     "n_cl": 2,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L26307800"
-     ]
-    },
-    {
-     "name": "爱涛路",
-     "key": "P:CN-32:爱涛路",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L72246085"
-     ]
-    },
-    {
-     "name": "虞山国家森林公园",
-     "key": "P:CN-32:虞山",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L18932333"
-     ]
-    },
-    {
-     "name": "Youyi Road",
-     "key": "P:CN-32:Youyi Road",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79869085"
+      "L27834885"
      ]
     },
     {
@@ -4634,63 +4631,40 @@
      ]
     },
     {
-     "name": "宝界山林公园",
-     "key": "P:CN-32:宝界山林",
-     "n_cl": 1,
-     "n_posts": 4,
+     "name": "斜塘老街",
+     "key": "P:CN-32:斜塘老街",
+     "n_cl": 2,
+     "n_posts": 2,
      "hot": true,
      "social_only": false,
      "reason": "no_visible_typed_row",
      "loc_ids": [
-      "L26132007"
+      "L26973437",
+      "L46635013"
      ]
     },
     {
-     "name": "Wenxing Plaza, SIP, Suzhou",
-     "key": "P:CN-32:Wenxing Plaza, SIP, Suzhou",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L26346592"
-     ]
-    },
-    {
-     "name": "中国常熟世界联合学院",
-     "key": "P:CN-32:中国常熟世界联合学院",
+     "name": "白鹭园",
+     "key": "P:CN-32:白鹭园",
      "n_cl": 2,
      "n_posts": 0,
      "hot": true,
      "social_only": false,
      "reason": "hot_below_min",
      "loc_ids": [
-      "L16180439"
+      "L26307800"
      ]
     },
     {
-     "name": "邹浦河湿地",
-     "key": "P:CN-32:邹浦河",
+     "name": "Engushan Park",
+     "key": "P:CN-32:Engushan Park",
      "n_cl": 1,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L55093161"
-     ]
-    },
-    {
-     "name": "上金湾",
-     "key": "P:CN-32:上金湾",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79905346"
+      "L75775610"
      ]
     },
     {
@@ -4706,15 +4680,171 @@
      ]
     },
     {
-     "name": "太湖黄金水岸酒店",
-     "key": "P:CN-32:太湖黄金水岸酒店",
+     "name": "No.23 Jincheng East Road",
+     "key": "P:CN-32:No.23 Jincheng East Road",
      "n_cl": 1,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L79862365"
+      "L42538934"
+     ]
+    },
+    {
+     "name": "东园外面",
+     "key": "P:CN-32:东园外面",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79981113"
+     ]
+    },
+    {
+     "name": "拙政园",
+     "key": "P:CN-32:拙政园",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": true,
+     "social_only": false,
+     "reason": "hot_below_min",
+     "loc_ids": [
+      "L28956551"
+     ]
+    },
+    {
+     "name": "东山森林公园",
+     "key": "P:CN-32:东山",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": true,
+     "social_only": false,
+     "reason": "hot_below_min",
+     "loc_ids": [
+      "L22280596"
+     ]
+    },
+    {
+     "name": "虞山国家森林公园",
+     "key": "P:CN-32:虞山",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": true,
+     "social_only": false,
+     "reason": "hot_below_min",
+     "loc_ids": [
+      "L18932333"
+     ]
+    },
+    {
+     "name": "南京大学苏州校区",
+     "key": "P:CN-32:南京大学苏州校区",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79908959"
+     ]
+    },
+    {
+     "name": "北崮山",
+     "key": "P:CN-32:北崮山",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": true,
+     "social_only": false,
+     "reason": "hot_below_min",
+     "loc_ids": [
+      "L39867803"
+     ]
+    },
+    {
+     "name": "宝界山林公园",
+     "key": "P:CN-32:宝界山林",
+     "n_cl": 1,
+     "n_posts": 4,
+     "hot": true,
+     "social_only": false,
+     "reason": "no_visible_typed_row",
+     "loc_ids": [
+      "L26132007"
+     ]
+    },
+    {
+     "name": "上金湾",
+     "key": "P:CN-32:上金湾",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79905346"
+     ]
+    },
+    {
+     "name": "高邮湖滩郊野公园",
+     "key": "P:CN-32:高邮湖滩郊野",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": true,
+     "social_only": false,
+     "reason": "hot_below_min",
+     "loc_ids": [
+      "L56724383"
+     ]
+    },
+    {
+     "name": "Wujiang",
+     "key": "P:CN-32:Wujiang",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79902334"
+     ]
+    },
+    {
+     "name": "黄墅港",
+     "key": "P:CN-32:黄墅港",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L53039746"
+     ]
+    },
+    {
+     "name": "邹浦河湿地",
+     "key": "P:CN-32:邹浦河",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L55093161"
+     ]
+    },
+    {
+     "name": "创苑路新庆路大草坪及树林",
+     "key": "P:CN-32:创苑路新庆路大草坪及树林",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": true,
+     "social_only": false,
+     "reason": "hot_below_min",
+     "loc_ids": [
+      "L26331786"
      ]
     },
     {
@@ -4730,21 +4860,9 @@
      ]
     },
     {
-     "name": "南京农业大学",
-     "key": "P:CN-32:南京农业大学",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L26718825"
-     ]
-    },
-    {
      "name": "新发路新昌路绿地",
      "key": "P:CN-32:新发路新昌路绿地",
-     "n_cl": 1,
+     "n_cl": 2,
      "n_posts": 0,
      "hot": true,
      "social_only": false,
@@ -4754,27 +4872,15 @@
      ]
     },
     {
-     "name": "青剑湖",
-     "key": "P:CN-32:青剑湖",
+     "name": "白龙桥站(有轨电车站)",
+     "key": "P:CN-32:白龙桥站(有轨电车站)",
      "n_cl": 1,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L77998236"
-     ]
-    },
-    {
-     "name": "No.23 Jincheng East Road",
-     "key": "P:CN-32:No.23 Jincheng East Road",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L42538934"
+      "L79972943"
      ]
     },
     {
@@ -4802,6 +4908,16 @@
      "key": "S:CN-32:北极阁公园",
      "n_cl": 0,
      "n_posts": 1,
+     "hot": false,
+     "social_only": true,
+     "reason": "no_visible_typed_row",
+     "loc_ids": []
+    },
+    {
+     "name": "虎丘湿地公园",
+     "key": "S:CN-32:虎丘湿地公园",
+     "n_cl": 0,
+     "n_posts": 4,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -4838,18 +4954,28 @@
      "loc_ids": []
     },
     {
-     "name": "盐城湿地",
-     "key": "S:CN-32:盐城湿地",
+     "name": "龙袍湿地",
+     "key": "S:CN-32:龙袍湿地",
      "n_cl": 0,
-     "n_posts": 1,
+     "n_posts": 9,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
      "loc_ids": []
     },
     {
-     "name": "龙袍长江省级湿地公园",
-     "key": "S:CN-32:龙袍长江省级湿地公园",
+     "name": "盐城湿地",
+     "key": "S:CN-32:盐城湿地",
+     "n_cl": 0,
+     "n_posts": 2,
+     "hot": false,
+     "social_only": true,
+     "reason": "no_visible_typed_row",
+     "loc_ids": []
+    },
+    {
+     "name": "黄龙景区",
+     "key": "S:CN-32:黄龙景区",
      "n_cl": 0,
      "n_posts": 1,
      "hot": false,
@@ -4860,64 +4986,68 @@
    ]
   },
   "CN-33": {
-   "places": 44,
+   "places": 37,
    "not_in_atlas": [
-    "小䴙䴘",
-    "普通鸬鹚",
-    "灰鹡鸰",
     "黄腰柳莺",
-    "银喉长尾山雀",
+    "小䴙䴘",
+    "灰鹡鸰",
     "黄眉柳莺",
     "红脚田鸡",
+    "暗绿绣眼鸟",
     "斑文鸟",
-    "冠鱼狗",
-    "小鹀",
-    "棕脸鹟莺",
-    "淡眉雀鹛",
-    "白骨顶",
-    "褐柳莺",
-    "斑鸫",
-    "grywag1",
-    "黄眉鹀",
-    "褐河乌",
     "黄腹山雀",
     "白腹鸫",
-    "灰雁",
-    "斑鱼狗",
-    "领雀嘴鹎",
-    "橙腹叶鹎",
+    "灰喉山椒鸟",
+    "银喉长尾山雀",
+    "普通鸬鹚",
     "长嘴剑鸻",
     "黑领椋鸟",
-    "斑姬啄木鸟",
-    "烟腹毛脚燕",
-    "华南斑胸钩嘴鹛",
-    "褐顶雀鹛",
-    "丽星鹩鹛",
-    "白冠燕尾"
+    "白眉鸫",
+    "白冠燕尾",
+    "赤胸鸫",
+    "罗纹鸭",
+    "灰胸竹鸡",
+    "秃鼻乌鸦",
+    "小嘴乌鸦",
+    "白颈鸦",
+    "棕颈钩嘴鹛",
+    "小鹀"
    ],
    "place_list": [
     {
-     "name": "No.34 Chongyi Road",
-     "key": "P:CN-33:No.34 Chongyi Road",
+     "name": "杭州萧山国际机场",
+     "key": "P:CN-33:杭州萧山国际机场",
      "n_cl": 1,
      "n_posts": 0,
-     "hot": false,
+     "hot": true,
      "social_only": false,
-     "reason": "no_show_no_watch_below_min",
+     "reason": "hot_below_min",
      "loc_ids": [
-      "L79944924"
+      "L11424506"
      ]
     },
     {
-     "name": "红友村 (Hongyou Village)，海宁，嘉兴，浙江",
-     "key": "P:CN-33:红友村 (Hongyou Village)，海宁，嘉兴，浙江",
+     "name": "宁波诺丁汉大学",
+     "key": "P:CN-33:宁波诺丁汉大学",
      "n_cl": 1,
+     "n_posts": 0,
+     "hot": true,
+     "social_only": false,
+     "reason": "hot_below_min",
+     "loc_ids": [
+      "L3123733"
+     ]
+    },
+    {
+     "name": "Pujian Lakefront Yan, Shaoxing",
+     "key": "P:CN-33:Pujian Lakefront Yan, Shaoxing",
+     "n_cl": 2,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L57729193"
+      "L29865257"
      ]
     },
     {
@@ -4946,186 +5076,6 @@
      ]
     },
     {
-     "name": "对河口水库",
-     "key": "P:CN-33:对河口水库",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L8958835"
-     ]
-    },
-    {
-     "name": "独松关",
-     "key": "P:CN-33:独松关",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79867307"
-     ]
-    },
-    {
-     "name": "陶湖湿地",
-     "key": "P:CN-33:陶湖",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79862598"
-     ]
-    },
-    {
-     "name": "湘溪村",
-     "key": "P:CN-33:湘溪村",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79916309"
-     ]
-    },
-    {
-     "name": "湖海塘公园",
-     "key": "P:CN-33:湖海塘",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L13944767"
-     ]
-    },
-    {
-     "name": "浙江科技大学屏峰校区",
-     "key": "P:CN-33:浙江科技大学屏峰校区",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L55996266"
-     ]
-    },
-    {
-     "name": "环园南路, 杭州市",
-     "key": "P:CN-33:环园南路, 杭州市",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79947349"
-     ]
-    },
-    {
-     "name": "梨树突村",
-     "key": "P:CN-33:梨树突村",
-     "n_cl": 2,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79838983"
-     ]
-    },
-    {
-     "name": "个人坐标点",
-     "key": "P:CN-33:个人坐标点",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79947082"
-     ]
-    },
-    {
-     "name": "宁波诺丁汉大学",
-     "key": "P:CN-33:宁波诺丁汉大学",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L3123733"
-     ]
-    },
-    {
-     "name": "闻堰街道, 杭州市",
-     "key": "P:CN-33:闻堰街道, 杭州市",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79868306"
-     ]
-    },
-    {
-     "name": "雪岙村",
-     "key": "P:CN-33:雪岙村",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L64133249"
-     ]
-    },
-    {
-     "name": "老石坎水库",
-     "key": "P:CN-33:老石坎水库",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": true,
-     "social_only": false,
-     "reason": "hot_below_min",
-     "loc_ids": [
-      "L10824452"
-     ]
-    },
-    {
-     "name": "Guazhuhu Huanhu Tour Road, Shaoxing",
-     "key": "P:CN-33:Guazhuhu Huanhu Tour Road, Shaoxing",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79864366"
-     ]
-    },
-    {
-     "name": "Tianminghu Park (天明湖公园), Ningbo",
-     "key": "P:CN-33:Tianminghu Park (天明湖公园), Ningbo",
-     "n_cl": 1,
-     "n_posts": 0,
-     "hot": false,
-     "social_only": false,
-     "reason": "no_show_no_watch_below_min",
-     "loc_ids": [
-      "L79945733"
-     ]
-    },
-    {
      "name": "鸡冠山游步道",
      "key": "P:CN-33:鸡冠山游步道",
      "n_cl": 1,
@@ -5138,27 +5088,27 @@
      ]
     },
     {
-     "name": "Zhongyan Buddhist Temple, Shaoxing",
-     "key": "P:CN-33:Zhongyan Buddhist Temple, Shaoxing",
+     "name": "红友村 (Hongyou Village)，海宁，嘉兴，浙江",
+     "key": "P:CN-33:红友村 (Hongyou Village)，海宁，嘉兴，浙江",
      "n_cl": 1,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L79864077"
+      "L57729193"
      ]
     },
     {
-     "name": "中坡山森林公园",
-     "key": "P:CN-33:中坡山",
+     "name": "老虎潭水库",
+     "key": "P:CN-33:老虎潭水库",
      "n_cl": 1,
      "n_posts": 0,
-     "hot": false,
+     "hot": true,
      "social_only": false,
-     "reason": "no_show_no_watch_below_min",
+     "reason": "hot_below_min",
      "loc_ids": [
-      "L79872564"
+      "L12757914"
      ]
     },
     {
@@ -5174,15 +5124,111 @@
      ]
     },
     {
-     "name": "Pujian Lakefront Yan, Shaoxing",
-     "key": "P:CN-33:Pujian Lakefront Yan, Shaoxing",
+     "name": "仙降镇西太山",
+     "key": "P:CN-33:仙降镇西太山",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L77958806"
+     ]
+    },
+    {
+     "name": "环园南路, 杭州市",
+     "key": "P:CN-33:环园南路, 杭州市",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79947349"
+     ]
+    },
+    {
+     "name": "个人坐标点",
+     "key": "P:CN-33:个人坐标点",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79947082"
+     ]
+    },
+    {
+     "name": "欧美金融城公园",
+     "key": "P:CN-33:欧美金融城",
      "n_cl": 2,
      "n_posts": 0,
      "hot": false,
      "social_only": false,
      "reason": "no_show_no_watch_below_min",
      "loc_ids": [
-      "L29865257"
+      "L79233667"
+     ]
+    },
+    {
+     "name": "No.78 Longjing West Road",
+     "key": "P:CN-33:No.78 Longjing West Road",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79978214"
+     ]
+    },
+    {
+     "name": "湘溪村",
+     "key": "P:CN-33:湘溪村",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79916309"
+     ]
+    },
+    {
+     "name": "Tianminghu Park (天明湖公园), Ningbo",
+     "key": "P:CN-33:Tianminghu Park (天明湖公园), Ningbo",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79945733"
+     ]
+    },
+    {
+     "name": "瑞安魔术林",
+     "key": "P:CN-33:瑞安魔术林",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79558406"
+     ]
+    },
+    {
+     "name": "No.34 Chongyi Road",
+     "key": "P:CN-33:No.34 Chongyi Road",
+     "n_cl": 1,
+     "n_posts": 0,
+     "hot": false,
+     "social_only": false,
+     "reason": "no_show_no_watch_below_min",
+     "loc_ids": [
+      "L79944924"
      ]
     },
     {
@@ -5209,7 +5255,7 @@
      "name": "三垟湿地",
      "key": "S:CN-33:三垟湿地",
      "n_cl": 0,
-     "n_posts": 8,
+     "n_posts": 9,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -5239,7 +5285,7 @@
      "name": "钱塘大湾区湿地公园",
      "key": "S:CN-33:钱塘大湾区湿地公园",
      "n_cl": 0,
-     "n_posts": 17,
+     "n_posts": 29,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -5266,20 +5312,10 @@
      "loc_ids": []
     },
     {
-     "name": "花港观鱼",
-     "key": "S:CN-33:花港观鱼",
-     "n_cl": 0,
-     "n_posts": 1,
-     "hot": false,
-     "social_only": true,
-     "reason": "no_visible_typed_row",
-     "loc_ids": []
-    },
-    {
      "name": "良渚遗址公园",
      "key": "S:CN-33:良渚遗址公园",
      "n_cl": 0,
-     "n_posts": 2,
+     "n_posts": 3,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -5329,7 +5365,7 @@
      "name": "玉环漩门湾湿地公园",
      "key": "S:CN-33:玉环漩门湾湿地公园",
      "n_cl": 0,
-     "n_posts": 1,
+     "n_posts": 4,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -5349,7 +5385,7 @@
      "name": "安吉湿地",
      "key": "S:CN-33:安吉湿地",
      "n_cl": 0,
-     "n_posts": 1,
+     "n_posts": 4,
      "hot": false,
      "social_only": true,
      "reason": "no_visible_typed_row",
@@ -5376,8 +5412,8 @@
      "loc_ids": []
     },
     {
-     "name": "青山湖水上森林公园",
-     "key": "S:CN-33:青山湖水上森林公园",
+     "name": "边上公园",
+     "key": "S:CN-33:边上公园",
      "n_cl": 0,
      "n_posts": 1,
      "hot": false,
@@ -5387,92 +5423,5 @@
     }
    ]
   }
- },
- "coverage": {
-  "cannot_claim_full_social_coverage": true,
-  "window": [
-   "2026-11-21",
-   "2026-11-22",
-   "2026-11-23"
-  ],
-  "collection": "20261123_1305",
-  "run_id": "20261123_1704",
-  "generated_at_beijing": "2026-11-23 17:09",
-  "queues_note": "午轮队列是早轮未完成剩余词：小红书 397、微博 431，不是早轮总 492。早轮已查词以 covered_by 早轮 0710/1244 证据说明，不把早轮帖当本午新采。",
-  "xhs": {
-   "this_round_remaining_queue": 397,
-   "completed": 36,
-   "equivalent": 9,
-   "completed_plus_equivalent": 45,
-   "completed_seq": "1–45",
-   "unfinished": 1,
-   "unfinished_detail": [
-    {
-     "seq": 46,
-     "query": "杭州西溪湿地",
-     "reason": "打开帖后遇 404/sec_CAPAhnrY 扫码安全墙后停止",
-     "screenshot": "ebird_snapshots/20261123_1305_jiangzhehu/xhs_seq46_security_wall_20261123_1305.png"
-    }
-   ],
-   "not_run": 351,
-   "empty": 0,
-   "raw": 69,
-   "raw_labels": {
-    "reliable_window": 16,
-    "undated_weak": 26,
-    "unlocated": 8,
-    "excluded": 19
-   },
-   "meta_vs_disk": "meta queries_done/equivalent 略旧，以磁盘重计 completed 36 + equivalent 9 = seq1–45 为准"
-  },
-  "weibo": {
-   "this_round_remaining_queue": 431,
-   "completed": 0,
-   "unfinished": 1,
-   "unfinished_detail": [
-    {
-     "seq": 1,
-     "query": "上虞滨海围垦区 鸟",
-     "reason": "唯一正常实时恢复后结果区仍空白，无验证码也无“未找到”",
-     "screenshot": "ebird_snapshots/20261123_1305_jiangzhehu/weibo_seq01_realtime_blank_20261123_1305.png"
-    }
-   ],
-   "not_run": 430,
-   "raw": 0
-  },
-  "cumulative_same_window": {
-   "xhs_morning": "早轮队列 492：完成 97（seq1–96 与 98），停在 seq97「大宁公园 鸟」扫码安全墙，未跑 394。raw 105。",
-   "xhs_cumulative": "本午剩余队列以「大宁公园」为 seq1 已完成（承接早轮未完成词）。本午又完成剩余队列 seq1–45，停在 seq46「杭州西溪湿地」安全墙；仍未查本午 not_run 351。西溪本午检索未完成，不得写成西溪无鸟讯。",
-   "weibo_morning": "早轮队列 492：查至 seq63（完成 53 + empty 10），seq64/65「上虞滨海围垦区」未完成，未跑 427。raw 29。",
-   "weibo_cumulative": "本午剩余队列 seq1 即早轮「上虞滨海围垦区 鸟」，实时仍空白，本午 0 进展；仍未查 not_run 430。"
-  },
-  "social_fate": {
-   "n_rows": 813,
-   "destination_counts": {
-    "on_card": 329,
-    "unlocated": 364,
-    "undated_clue": 108,
-    "excluded": 12
-   },
-   "carried_from_0710_1244": 755,
-   "added_this_round": 58,
-   "reread_not_added": 11,
-   "new_independent_reliable_with_species": 5
-  },
-  "omitted_counts": {
-   "CN-31": 30,
-   "CN-32": 29,
-   "CN-33": 44
-  },
-  "notes": [
-   "16 raw 可靠经日历锚点与 1244 去重后，本午新可靠独立有种名 5 条，不等于 16。",
-   "两平台均为真实阻断，可部分发布，不得称全覆盖。",
-   "本午 eBird 使西溪国家湿地公园、邵伯湖进入主卡片；个人坐标点等多处仍在未列出名单。主卡片另出现「上海市」「53号 桃源路」个人/泛坐标点，不等于公园目击。"
-  ]
- },
- "omitted_reason_zh": {
-  "no_show_no_watch_below_min": "近窗有清单但无亮点/关注种且低于展示阈值",
-  "no_visible_typed_row": "无可见分类行（未形成可展示鸟种行）",
-  "hot_below_min": "热点但低于展示阈值"
  }
 }
