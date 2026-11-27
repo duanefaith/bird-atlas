@@ -6237,5 +6237,127 @@
     }
    ]
   }
+ },
+ "coverage_audit": {
+  "run_id_collection": "20261127_0710",
+  "run_id_official": "20261127_1128",
+  "window": [
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27"
+  ],
+  "generated_at_beijing": "2026-11-27 11:32",
+  "timezone": "Asia/Shanghai",
+  "platforms_frozen": true,
+  "cannot_claim_full_social_coverage": true,
+  "unfinished_or_not_run_is_not_no_birds": true,
+  "empty_vs_site_error": "weibo seq1 is unfinished site_error, empty=0; not_run is not empty and is not no-birds",
+  "sort_note": "XHS seq1–8 completed with 最新 confirmed (filter 已筛选). seq9 乌镇风景区 鸟 unfinished at 300031 before body was opened. Weibo seq1 site_error on 实时, no sort claim.",
+  "xhs": {
+   "planned": 578,
+   "completed": 8,
+   "empty": 0,
+   "unfinished": 1,
+   "not_run": 569,
+   "sum_ok": true,
+   "unfinished_query": "乌镇风景区 鸟",
+   "unfinished_seq": 9,
+   "unfinished_status": "unfinished",
+   "unfinished_reason": "300031",
+   "stop": "error_code 300031 scan-to-view wall while opening a post during seq9 乌镇风景区 鸟; refreshed=false, path_changed=false",
+   "unique_raw": 14,
+   "record_status_counts": {
+    "excluded_old_or_nonwindow": 2,
+    "candidate_unanchored_time": 4,
+    "excluded_non_bird": 2,
+    "reliable_window": 6
+   },
+   "completed_zero_local_posts_not_empty": [
+    "seq1 上虞滨海围垦区 鸟 posts_opened=0：窗内无本地点观鸟帖，completed 不是 empty，不是漏盘",
+    "seq2 上虞滨海围垦区 posts_opened=0：同上",
+    "seq7 盐城珍禽保护区 鸟 posts_opened=0：窗内无本地点观鸟帖，completed 不是 empty，不是漏盘",
+    "seq8 盐城湿地珍禽国家级自然保护区 posts_opened=0：同上"
+   ],
+   "restriction_check_morning": "passed 2026-11-27 07:23-07:26",
+   "screenshot_300031": {
+    "path": "/workspace/birdnews/ebird_snapshots/20261127_0710_jiangzhehu/xhs_300031_scan_wall_explore_20261127_0710_batch3.png",
+    "sha256": "7142ac9f31eed43f605030e1ed2af99412de1ecdefe4191da0da93a8014078bd",
+    "mtime_beijing": "2026-11-27 10:30:54"
+   }
+  },
+  "weibo": {
+   "planned": 578,
+   "completed": 0,
+   "empty": 0,
+   "unfinished": 1,
+   "not_run": 577,
+   "sum_ok": true,
+   "unfinished_query": "上虞滨海围垦区 鸟",
+   "unfinished_seq": 1,
+   "unfinished_status": "unfinished",
+   "unfinished_reason": "site_error",
+   "stop": "realtime page header/tags/hot only, no ordinary cards, no explicit not-found; site_error not empty; refreshed=false, retried=false, path_changed=false",
+   "unique_raw": 0,
+   "raw_is_empty_array": true,
+   "restriction_check_morning": "passed 2026-11-27 07:26, 江苏鸟讯 realtime had ordinary cards",
+   "screenshot_site_error": {
+    "path": "/workspace/birdnews/ebird_snapshots/20261127_0710_jiangzhehu/weibo_site_error_seq1_20261127_105850.png",
+    "sha256": "957e5f23bb73219652cfd68b8a21d0531a956755bfa9c689783728bb22fc0f23",
+    "mtime_beijing": "2026-11-27 10:58:53"
+   },
+   "comprehensive_screenshot": {
+    "path": "/workspace/birdnews/ebird_snapshots/20261127_0710_jiangzhehu/weibo_seq1_comprehensive_20261127_105850.png",
+    "sha256": "1aa7f4c692fed10fcfca89c8928542ab1b7b364fc25f7fe31553599380eee3fa"
+   }
+  },
+  "new_independent_reliable_with_species": [
+   "6b081941000000002a025d47",
+   "6b06b8c9000000002b02561b",
+   "6b06afe2000000002a02be1c",
+   "6b08c331000000002903e6ac"
+  ],
+  "inherited_in_window_reliable_from_1256": [],
+  "rolled_out_2026-11-24": 7,
+  "raw_reliable_not_elevated": [
+   {
+    "id": "6b064574",
+    "title": "世纪公园鸟岛边上情绪相当稳定的普通鵟",
+    "reason": "no calendar anchor; relative 今天/1天前 not used as obs date"
+   },
+   {
+    "id": "6b0837d1",
+    "title": "鸫鸫林五大门派",
+    "reason": "no calendar anchor; 今天+发帖相对日 not used as obs date"
+   }
+  ],
+  "social_fate": {
+   "n_rows": 1141,
+   "n_unique_posts": 1141,
+   "destination_counts": {
+    "on_card": 463,
+    "unlocated": 477,
+    "undated_clue": 169,
+    "excluded": 32
+   },
+   "note": "分母同时报行数与去重帖数。本轮 1141 行 = 1141 唯一帖。"
+  },
+  "omitted_counts": {
+   "CN-33": 39,
+   "CN-32": 24,
+   "CN-31": 29
+  },
+  "omitted_total": 92,
+  "notes": [
+   "两平台均因真实阻断停采，不得声称查全。",
+   "not_run 不得写成 empty 或无鸟。",
+   "微博 raw 为空数组是因为第 1 词 site_error 即停，不是已查无结果。",
+   "11-24 滚出 7 条原可靠记录，不删行，不得称佘山棕腹大仙鹟或孤山 L7785048 永久消失。",
+   "高德 POI 在本轮物化后期出现 USER_ABROAD_DAILY_QUERY_OVER_LIMIT 10045，未猜坐标填回已隔离 spots 键。"
+  ]
+ },
+ "omitted_reason_zh": {
+  "no_show_no_watch_below_min": "近窗有清单但无亮点/关注种且低于展示阈值",
+  "no_visible_typed_row": "无可见分类行（未形成可展示鸟种行）",
+  "hot_below_min": "热点但低于展示阈值"
  }
 }
