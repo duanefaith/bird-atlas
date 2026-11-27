@@ -6473,5 +6473,358 @@
     }
    ]
   }
+ },
+ "coverage_audit": {
+  "run_id_collection": "20261127_1310",
+  "run_id_official": "20261127_1853",
+  "window": [
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27"
+  ],
+  "generated_at_beijing": "2026-11-27 19:17 (UTC+8)",
+  "timezone": "Asia/Shanghai",
+  "platforms_frozen": true,
+  "cannot_claim_full_social_coverage": true,
+  "unfinished_or_not_run_is_not_no_birds": true,
+  "empty_vs_site_error": "weibo seq5-6 创苑路两词页面明确「抱歉，未找到相关结果。」记 empty；seq7「上虞滨海围垦区 鸟」为 unfinished site_error，不是 empty；not_run 不是 empty",
+  "xhs": {
+   "planned": 584,
+   "completed": 24,
+   "empty": 0,
+   "unfinished": 0,
+   "not_run": 560,
+   "sum_ok": true,
+   "unfinished_query": null,
+   "unfinished_seq": null,
+   "unfinished_status": null,
+   "unfinished_reason": null,
+   "stop": "本午小红书未遇 300031；今早 0710 曾在「乌镇风景区 鸟」遇扫码墙，本午该组已完成（seq8 乌镇风景区 鸟 completed）。本午因微博真实阻断（seq7 site_error）收尾社交，小红书停在组10/seq24 完成后，下一未跑词 seq25「绿水湾湿地北段 鸟」。refreshed=false, path_changed=false。",
+   "unique_raw": 24,
+   "record_status_counts": {
+    "excluded_roundup": 1,
+    "candidate_unanchored_time": 4,
+    "excluded_ad_or_gear": 2,
+    "unlocated": 3,
+    "excluded_old_or_nonwindow": 2,
+    "excluded_non_bird": 12
+   },
+   "queries_done": 24,
+   "queries_empty": [],
+   "completed_zero_local_posts_not_empty": [
+    {
+     "seq": 2,
+     "query": "杭州西湖",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 3,
+     "query": "张衡公园 上海 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 4,
+     "query": "上海 张衡公园 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 5,
+     "query": "张衡公园 上海",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 6,
+     "query": "创苑路新庆路大草坪及树林 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 7,
+     "query": "创苑路新庆路大草坪 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 9,
+     "query": "桐乡 乌镇 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 10,
+     "query": "乌镇风景区",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 12,
+     "query": "仇山村 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 13,
+     "query": "上海科技大学 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 14,
+     "query": "上海科技大学",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 18,
+     "query": "沈院 舟山 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 19,
+     "query": "舟山沈院",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 21,
+     "query": "下木桥大堤 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 23,
+     "query": "外滩 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 24,
+     "query": "上海外滩",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    }
+   ],
+   "next_query": "绿水湾湿地北段 鸟",
+   "next_seq": 25,
+   "restriction_check_noon": {
+    "status": "passed",
+    "checked_at_beijing": "2026-11-27 13:29:49",
+    "login_ok": true,
+    "ordinary_cards_visible": true,
+    "ordinary_card_estimate": "25-28",
+    "ai_only_without_cards": false,
+    "error_300031_seen": false,
+    "error_300011_seen": false,
+    "scan_wall_seen": false,
+    "security_verification_seen": false,
+    "login_wall_seen": false,
+    "search_url": "https://www.xiaohongshu.com/search_result_ai?keyword=%25E6%259D%25AD%25E5%25B7%259E%25E8%25A5%25BF%25E6%25B9%2596%2520%25E9%25B8%259F&source=web_explore_feed",
+    "home_url": "https://www.xiaohongshu.com/explore",
+    "home_screenshot": "/workspace/birdnews/ebird_snapshots/20261127_1310_jiangzhehu/restriction_check/xhs_restriction_check_home_20261127_1310.png",
+    "search_screenshot": "/workspace/birdnews/ebird_snapshots/20261127_1310_jiangzhehu/restriction_check/xhs_restriction_check_search_20261127_1310.png",
+    "note": "本午核验词为杭州西湖 鸟。URL 为 search_result_ai，但笔记页有普通帖卡。核验阶段未能找到「最新」筛选项，采集时须再尝试并如实记录 actual_sort。今早 300031 当前看来已解除。核验未开帖、未按队列采集。"
+   },
+   "collected_at": "2026-11-27 18:40:08",
+   "morning_300031_note": "今早 0710 在「乌镇风景区 鸟」遇 300031；本午未遇 300031，该组已完成。"
+  },
+  "weibo": {
+   "planned": 592,
+   "completed": 4,
+   "empty": 2,
+   "unfinished": 1,
+   "not_run": 585,
+   "sum_ok": true,
+   "unfinished_query": "上虞滨海围垦区 鸟",
+   "unfinished_seq": 7,
+   "unfinished_status": "unfinished",
+   "unfinished_reason": "site_error",
+   "stop": "realtime 页结果区仅页头/标签/热搜，无普通微博卡片，也无「未找到」。site_error 不是 empty；refreshed=false, retried=false, path_changed=false。与今早、11-25 午、11-26 早同词同类。不要重试、刷新或换路径。",
+   "unique_raw": 4,
+   "queries_done": [
+    {
+     "seq": 1,
+     "query": "杭州西湖 鸟",
+     "place": "杭州西湖",
+     "region": "杭州",
+     "status": "completed"
+    },
+    {
+     "seq": 2,
+     "query": "杭州西湖",
+     "place": "杭州西湖",
+     "region": "杭州",
+     "status": "completed"
+    },
+    {
+     "seq": 3,
+     "query": "世纪公园 鸟",
+     "place": "世纪公园",
+     "region": "上海",
+     "status": "completed"
+    },
+    {
+     "seq": 4,
+     "query": "世纪公园",
+     "place": "世纪公园",
+     "region": "上海",
+     "status": "completed"
+    },
+    {
+     "seq": 5,
+     "query": "创苑路新庆路大草坪及树林 鸟",
+     "place": "创苑路新庆路大草坪及树林",
+     "region": "江苏",
+     "status": "empty"
+    },
+    {
+     "seq": 6,
+     "query": "创苑路新庆路大草坪 鸟",
+     "place": "创苑路新庆路大草坪及树林",
+     "region": "江苏",
+     "status": "empty"
+    }
+   ],
+   "queries_empty": [
+    {
+     "seq": 5,
+     "query": "创苑路新庆路大草坪及树林 鸟",
+     "place": "创苑路新庆路大草坪及树林",
+     "region": "江苏",
+     "status": "empty"
+    },
+    {
+     "seq": 6,
+     "query": "创苑路新庆路大草坪 鸟",
+     "place": "创苑路新庆路大草坪及树林",
+     "region": "江苏",
+     "status": "empty"
+    }
+   ],
+   "empty_queries_explicit_not_found": [
+    {
+     "seq": 5,
+     "query": "创苑路新庆路大草坪及树林 鸟",
+     "note": "页面明确「抱歉，未找到相关结果。」"
+    },
+    {
+     "seq": 6,
+     "query": "创苑路新庆路大草坪 鸟",
+     "note": "页面明确「抱歉，未找到相关结果。」"
+    }
+   ],
+   "restriction_check_noon": {
+    "afternoon_13_29_status": "passed",
+    "afternoon_13_29_note": "见 checkpoint.weibo_restriction_check（13:29，词「杭州西湖 鸟」，普通卡可见）。13:29 核验不能当作队列 seq1 已完成。",
+    "pre_queue_home_check": {
+     "url": "https://weibo.com/",
+     "login_ok": true,
+     "visible_account": "苍毫入墨",
+     "captcha_or_rate_limit_seen": false,
+     "screenshot": "/workspace/birdnews/ebird_snapshots/20261127_1310_jiangzhehu/weibo_batch1_login_check_home_20261127_1310.png"
+    },
+    "batch2_pre_queue_home_check": {
+     "url": "https://weibo.com/",
+     "login_ok": true,
+     "visible_account": "苍毫入墨",
+     "captcha_or_rate_limit_seen": false,
+     "screenshot": "/workspace/birdnews/ebird_snapshots/20261127_1310_jiangzhehu/weibo_batch2_login_check_home_20261127_1310.png"
+    }
+   },
+   "login_still_valid": "苍毫入墨仍有效",
+   "collected_at": "2026-11-27 18:04:45",
+   "screenshot_site_error": {
+    "path": "/workspace/birdnews/ebird_snapshots/20261127_1310_jiangzhehu/weibo_seq7_shangyu_binhai_weiken_bird_realtime_site_error_batch2_20261127_1310.png",
+    "sha256": "1958ec9eabb08bd96eb6fed382cec569121359a0b255ecbbb45a23e5fc59843e",
+    "mtime_beijing": "2026-11-27 18:04:45"
+   },
+   "site_error_url": "https://s.weibo.com/realtime?q=%E4%B8%8A%E8%99%9E%E6%BB%A8%E6%B5%B7%E5%9B%B4%E5%9E%A6%E5%8C%BA%20%E9%B8%9F&rd=realtime&tw=realtime&Refer=weibo_realtime"
+  },
+  "new_independent_reliable_with_species": [],
+  "inherited_in_window_reliable_from_1128": [
+   {
+    "id": "6b081941000000002a025d47",
+    "time": "2026-11-26",
+    "park": "世纪公园",
+    "species_zh": "白眉鸫",
+    "title": "20261126 世纪公园 白眉鸫 白腹鸫",
+    "is_new_observation": false
+   },
+   {
+    "id": "6b06b8c9000000002b02561b",
+    "time": "2026-11-25",
+    "park": "世纪公园",
+    "species_zh": "北红尾鸲",
+    "title": "11.25世纪公园鸟况",
+    "is_new_observation": false
+   },
+   {
+    "id": "6b06afe2000000002a02be1c",
+    "time": "2026-11-25",
+    "park": "世纪公园",
+    "species_zh": "灰背鸫",
+    "title": "20261125世纪公园拍小鸟",
+    "is_new_observation": false
+   },
+   {
+    "id": "6b08c331000000002903e6ac",
+    "time": "2026-11-27",
+    "park": "世纪公园",
+    "species_zh": "鹊鸲",
+    "title": "世纪公园的朝霞11/27",
+    "is_new_observation": false
+   }
+  ],
+  "rolled_out_additional_this_noon": 0,
+  "social_fate": {
+   "n_rows": 1169,
+   "n_unique_posts": 1169,
+   "destination_counts": {
+    "on_card": 468,
+    "unlocated": 500,
+    "undated_clue": 169,
+    "excluded": 32
+   },
+   "audit_100": true
+  },
+  "omitted_counts": {
+   "CN-31": 26,
+   "CN-33": 46,
+   "CN-32": 31
+  },
+  "omitted_total": 103,
+  "ebird_supplement": {
+   "dir": "/workspace/birdnews/ebird_snapshots/20261127_1846_jiangzhehu_supplement",
+   "fetched_at_beijing": "2026-11-27 18:51:09",
+   "primary_baseline": "20261127_1310 locid_snapshot (2026-11-27 13:20:02)",
+   "new_locIds_since_1310": 26,
+   "new_checklists_since_1310": 45,
+   "today_1127": {
+    "CN-31": 21,
+    "CN-32": 21,
+    "CN-33": 33
+   },
+   "did_not_overwrite_1310_1100_0710": true
+  },
+  "amap_10045": true,
+  "notes": [
+   "继承 official 1128 使用的 social_today_20261127_0710（1141 行）。窗口未滚动，11-24 已在今早标 outside_excluded 的记录维持原状，不称永久消失（含佘山棕腹大仙鹟等）。",
+   "今早 4 条上海世纪公园独立可靠（6b081941 11-26 白眉鸫等、6b06b8c9 11-25 北红尾鸲等、6b06afe2 11-25 灰背鸫/虎斑地鸫等、6b08c331 11-27 鹊鸲）仍在窗内，作为继承保留，is_new_observation=false，不称本午新采。",
+   "本午新采 XHS 24 + 微博 4 = 28 条全部有去向，新独立可靠 0。不得把 candidate_unanchored_time / unlocated / excluded_* 升格。",
+   "XHS：24 completed + 0 empty + 0 unfinished + 560 not_run（计划 584）。unique posts 24。本午未遇 300031（今早 0710 在「乌镇风景区 鸟」遇过，本午该组已完成）。下一未跑词 seq25「绿水湾湿地北段 鸟」。",
+   "微博：4 completed + 2 empty（seq5-6 创苑路两词，页面明确「抱歉，未找到相关结果。」）+ 1 unfinished site_error（seq7「上虞滨海围垦区 鸟」）+ 585 not_run（计划 592）。unique posts 4，均为 candidate_unanchored_time。登录苍毫入墨仍有效。不要重试、刷新或换路径。",
+   "微博 seq7 证据：/workspace/birdnews/ebird_snapshots/20261127_1310_jiangzhehu/weibo_seq7_shangyu_binhai_weiken_bird_realtime_site_error_batch2_20261127_1310.png ；URL https://s.weibo.com/realtime?q=%E4%B8%8A%E8%99%9E%E6%BB%A8%E6%B5%B7%E5%9B%B4%E5%9E%A6%E5%8C%BA%20%E9%B8%9F&rd=realtime&tw=realtime&Refer=weibo_realtime 。结果区仅页头/标签/热搜，无普通卡，也无「未找到」。与今早、11-25 午、11-26 早同词同类。",
+   "相对词今天/昨天/今日/前天+发帖回放一律弱可见，不借发帖日。11-24 及更早日历不得当本窗内新目击。",
+   "未改 0710/1128 原件，未改 cache/state/watchlist/spots。"
+  ]
+ },
+ "omitted_reason_zh": {
+  "no_show_no_watch_below_min": "近窗有清单但无亮点/关注种且低于展示阈值",
+  "no_visible_typed_row": "无可见分类行（未形成可展示鸟种行）",
+  "hot_below_min": "热点但低于展示阈值"
  }
 }
