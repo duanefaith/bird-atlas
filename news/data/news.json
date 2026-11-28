@@ -6144,5 +6144,233 @@
     }
    ]
   }
+ },
+ "coverage_audit": {
+  "run_id_collection": "20261128_0705",
+  "window": [
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28"
+  ],
+  "platforms_frozen": true,
+  "frozen_at_beijing": "2026-11-28 12:53:54",
+  "unfinished_or_not_run_is_not_no_birds": true,
+  "empty_vs_site_error": "小红书 seq8「上虞滨海围垦区」记 empty；seq32「崇明东滩 鸟」为 unfinished（网络较慢，请稍后重试），不是 empty。微博 seq5「绿水湾湿地 南段 鸟」页面明确「抱歉，未找到相关结果。」记 empty；seq7「上虞滨海围垦区 鸟」为 unfinished site_error，不是 empty；not_run 不是 empty。",
+  "cannot_claim_full_social_coverage": true,
+  "xhs": {
+   "planned": 580,
+   "completed": 30,
+   "empty": 1,
+   "unfinished": 1,
+   "not_run": 548,
+   "sum_ok": true,
+   "unfinished_query": "崇明东滩 鸟",
+   "unfinished_seq": 32,
+   "unfinished_status": "unfinished",
+   "unfinished_reason": "retry_wall",
+   "stop": "本早小红书做到 seq32「崇明东滩 鸟」时，拟开老虎头「崇明东滩致死量的国一邪恶大怪鸟」出现「网络较慢，请稍后重试」。已留证并硬停止该平台。未刷新、未换路径、未跳到 seq33。这不是扫码验证墙。seq32 保持 unfinished，限制解除后须从本词续采。",
+   "unique_raw": 59,
+   "record_status_counts": {
+    "candidate_unanchored_time": 31,
+    "excluded_old_or_nonwindow": 6,
+    "unlocated": 14,
+    "compiled_dated_birdnews": 2,
+    "excluded_non_bird": 4,
+    "reliable_window": 2
+   },
+   "queries_done": [
+    "上海中山公园 鸟",
+    "中山公园 上海 鸟",
+    "绿水湾湿地 鸟",
+    "绿水湾",
+    "绿水湾湿地 南段 鸟",
+    "绿水湾 南段",
+    "上虞滨海围垦区 鸟",
+    "上虞滨海围垦区",
+    "杭州西溪湿地 鸟",
+    "杭州西溪湿地",
+    "上海科技大学 鸟",
+    "上海科技大学",
+    "白旄湾 鸟",
+    "白旄湾",
+    "龙港滨海围垦区 鸟",
+    "温州 龙港滨海围垦区 鸟",
+    "龙港滨海围垦区",
+    "杭州城北体育公园 鸟",
+    "城北体育公园 杭州 鸟",
+    "杭州城北体育公园",
+    "南汇东滩 鸟",
+    "南汇嘴 鸟",
+    "南汇魔术林 鸟",
+    "南汇嘴观海公园 鸟",
+    "南汇嘴观海公园",
+    "盐城珍禽保护区 鸟",
+    "盐城湿地珍禽国家级自然保护区",
+    "钱塘大湾区湿地公园 鸟",
+    "钱塘大湾区湿地公园",
+    "江洋畈生态公园 鸟",
+    "江洋畈生态公园"
+   ],
+   "queries_empty": [
+    "上虞滨海围垦区"
+   ],
+   "empty_queries": [
+    {
+     "seq": 8,
+     "query": "上虞滨海围垦区",
+     "note": "页面明确无相关内容/未找到"
+    }
+   ],
+   "completed_zero_local_posts_not_empty": [
+    {
+     "seq": 2,
+     "query": "中山公园 上海 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 4,
+     "query": "绿水湾",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 5,
+     "query": "绿水湾湿地 南段 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 6,
+     "query": "绿水湾 南段",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 7,
+     "query": "上虞滨海围垦区 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 10,
+     "query": "杭州西溪湿地",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 11,
+     "query": "上海科技大学 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 12,
+     "query": "上海科技大学",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 13,
+     "query": "白旄湾 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 14,
+     "query": "白旄湾",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 17,
+     "query": "龙港滨海围垦区",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 19,
+     "query": "城北体育公园 杭州 鸟",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 20,
+     "query": "杭州城北体育公园",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    },
+    {
+     "seq": 27,
+     "query": "盐城湿地珍禽国家级自然保护区",
+     "posts_opened": 0,
+     "note": "窗内无本地点新开观鸟帖，completed 不是 empty，不是漏盘"
+    }
+   ],
+   "next_query": "崇明东滩 鸟",
+   "next_seq": 32,
+   "collected_at": "2026-11-28 10:59:45",
+   "screenshot_retry_wall": {
+    "path": "/workspace/birdnews/ebird_snapshots/20261128_0705_jiangzhehu/xhs_seq32_chongming_dongtan_bird_retry_wall_20261128_0705.png",
+    "sha256": "7dba50fbea601a4448dbfd32783676f85e6b393adf8fa51f25312542f28fd8a6",
+    "mtime_beijing": "2026-11-28 10:59:45",
+    "bytes": 1464329
+   }
+  },
+  "weibo": {
+   "planned": 580,
+   "completed": 5,
+   "empty": 1,
+   "unfinished": 1,
+   "not_run": 573,
+   "sum_ok": true,
+   "unfinished_query": "上虞滨海围垦区 鸟",
+   "unfinished_seq": 7,
+   "unfinished_status": "unfinished",
+   "unfinished_reason": "site_error",
+   "stop": "realtime 页结果区仅页头/标签/热搜，无普通微博卡片，也无「未找到」。site_error 不是 empty；refreshed=false, retried=false, path_changed=false。登录仍可见「苍毫入墨」，不是验证码/限频/418。不要重试、刷新或换路径。不得与龙港滨海围垦区合并。",
+   "unique_raw": 0,
+   "queries_done": [
+    "上海中山公园 鸟",
+    "中山公园 上海 鸟",
+    "绿水湾湿地 鸟",
+    "绿水湾",
+    "绿水湾 南段"
+   ],
+   "queries_empty": [
+    "绿水湾湿地 南段 鸟"
+   ],
+   "empty_queries_explicit_not_found": [
+    {
+     "seq": 5,
+     "query": "绿水湾湿地 南段 鸟",
+     "note": "页面明确「抱歉，未找到相关结果。」"
+    }
+   ],
+   "login_still_valid": "苍毫入墨仍有效（停采时）",
+   "collected_at": "2026-11-28 11:09:37",
+   "screenshot_site_error": {
+    "path": "/workspace/birdnews/ebird_snapshots/20261128_0705_jiangzhehu/weibo_batch1_seq7_shangyu_coastal_bird_site_error_realtime_blank_20261128_1109.png",
+    "sha256": "709135072c517b438b3d40ba74e3dc0691306334317fe7a066978de6478207a4",
+    "mtime_beijing": "2026-11-28 11:09:37",
+    "bytes": 112883
+   },
+   "site_error_url": "https://s.weibo.com/realtime?q=%E4%B8%8A%E8%99%9E%E6%BB%A8%E6%B5%B7%E5%9B%B4%E5%9E%A6%E5%8C%BA%20%E9%B8%9F&rd=realtime&tw=realtime&Refer=weibo_realtime"
+  },
+  "checkpoint_phase": "weibo_batch1_stop_seq7_unfinished_site_error",
+  "xhs_progress_status": "batch7_stop_seq32_unfinished_retry_wall",
+  "notes": [
+   "两平台均因真实阻断停采后，在接近午轮前冻结本轮部分结果，不得声称查全。",
+   "not_run 不得写成 empty 或无鸟。",
+   "微博 seq7 site_error 不是 empty；seq5 才是明确未找到。",
+   "小红书 seq32「稍后重试」不是 empty，也不是扫码验证；seq8 才是 empty。",
+   "分母小红书 580、微博 580 不得改写。",
+   "11-25 记录滚出不是永久消失。"
+  ]
+ },
+ "omitted_reason_zh": {
+  "no_show_no_watch_below_min": "近窗有清单但无亮点/关注种且低于展示阈值",
+  "no_visible_typed_row": "无可见分类行（未形成可展示鸟种行）",
+  "hot_below_min": "热点但低于展示阈值"
  }
 }
